@@ -17,9 +17,9 @@ export function Logo({
       <Image
         src={src}
         alt="Statura Care"
-        width={variant === "dark" ? 200 : 200}
-        height={75}
-        className="h-10 w-auto"
+        width={300}
+        height={120}
+        className="h-20 w-auto"
         priority
       />
     </div>
