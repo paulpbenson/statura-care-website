@@ -65,6 +65,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   category: "technology",
 };
 
@@ -82,7 +86,7 @@ export default function RootLayout({
         name: "Statura Care",
         legalName: "Statura Pty Ltd",
         url: SITE_URL,
-        logo: `${SITE_URL}/icon.svg`,
+        logo: `${SITE_URL}/logo-icon.png`,
         email: "hello@statura.care",
         description: SITE_DESCRIPTION,
         areaServed: {

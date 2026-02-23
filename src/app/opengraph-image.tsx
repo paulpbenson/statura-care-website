@@ -1,11 +1,18 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const alt = "Statura Care — Aged Care Compliance Platform";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
+  const logoData = await readFile(
+    join(process.cwd(), "public", "logo-dark.png")
+  );
+  const logoBase64 = `data:image/png;base64,${logoData.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -37,61 +44,13 @@ export default async function Image() {
           }}
         />
 
-        {/* Logo icon */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "24px",
-            marginBottom: "40px",
-          }}
-        >
-          <div
-            style={{
-              width: "80px",
-              height: "80px",
-              background: "#96A998",
-              borderRadius: "20px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <svg viewBox="0 0 200 200" width="52" height="52">
-              <path
-                d="M100 170 C100 170 30 120 30 78 C30 56 47 40 68 40 C82 40 93 48 100 60 C107 48 118 40 132 40 C153 40 170 56 170 78 C170 120 100 170 100 170Z"
-                fill="white"
-              />
-              <rect x="91" y="96" width="18" height="4" rx="2" fill="#96A998" />
-              <rect x="97" y="90" width="6" height="16" rx="2" fill="#96A998" />
-            </svg>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <span
-              style={{
-                fontSize: "56px",
-                fontWeight: 900,
-                color: "white",
-                lineHeight: 1,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Statura
-              <span style={{ color: "#96A998" }}>.</span>
-            </span>
-            <span
-              style={{
-                fontSize: "16px",
-                fontWeight: 600,
-                color: "#94A3B8",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase" as const,
-              }}
-            >
-              CARE
-            </span>
-          </div>
-        </div>
+        {/* Logo */}
+        <img
+          src={logoBase64}
+          width={400}
+          height={150}
+          style={{ objectFit: "contain", marginBottom: "40px" }}
+        />
 
         {/* Tagline */}
         <p
