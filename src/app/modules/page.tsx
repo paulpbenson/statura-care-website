@@ -8,9 +8,16 @@ import { modules, categories, categoryColours } from "@/data/modules";
 import { ArrowRight, Puzzle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "14 Compliance Modules — Statura Care",
+  title: "14 Compliance Modules",
   description:
-    "Every obligation under the Aged Care Act 2024, one platform. Explore all 14 compliance modules across Governance & People, Safety & Quality, and Financial & Commercial.",
+    "Explore all 14 aged care compliance modules built for the Aged Care Act 2024. Covers SIRS incident reporting, responsible persons, quality standards, workforce compliance, prudential obligations, infection prevention, complaints, whistleblower protection, and more.",
+  alternates: { canonical: "https://statura.care/modules" },
+  openGraph: {
+    title: "14 Aged Care Compliance Modules — Statura Care",
+    description:
+      "Every obligation under the Aged Care Act 2024 in one platform. 14 modules across governance, safety, quality, and financial compliance for Australian aged care providers.",
+    url: "https://statura.care/modules",
+  },
 };
 
 export default function ModulesPage() {

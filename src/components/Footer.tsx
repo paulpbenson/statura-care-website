@@ -38,6 +38,12 @@ export function Footer() {
               Smart applications for regulated industries. Built in Australia for
               Australian aged care providers.
             </p>
+            <a
+              href="mailto:hello@statura.care"
+              className="inline-block mt-4 text-sm text-[#96A998] hover:text-white transition-colors duration-150"
+            >
+              hello@statura.care
+            </a>
           </div>
 
           {/* Link columns */}

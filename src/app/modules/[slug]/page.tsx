@@ -19,11 +19,13 @@ export async function generateMetadata({
   const mod = getModuleBySlug(slug);
   if (!mod) return { title: "Module Not Found — Statura Care" };
   return {
-    title: `${mod.name} — Statura Care`,
+    title: `${mod.name} Module`,
     description: mod.longDescription,
+    alternates: { canonical: `https://statura.care/modules/${slug}` },
     openGraph: {
-      title: `${mod.name} — Statura Care`,
+      title: `${mod.name} — Aged Care Compliance Module | Statura Care`,
       description: mod.shortDescription,
+      url: `https://statura.care/modules/${slug}`,
       type: "website",
       locale: "en_AU",
     },

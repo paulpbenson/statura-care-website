@@ -19,9 +19,16 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Security & Data Protection — Statura Care",
+  title: "Security & Data Protection",
   description:
-    "Your compliance data deserves the same rigour as your compliance. Australian-hosted, row-level security, immutable audit trails, and privacy-by-design architecture.",
+    "Statura Care is Australian-hosted in Sydney with row-level security, immutable audit trails, encryption at rest and in transit, RBAC, passwordless authentication, and Privacy Act 1988 alignment. Your aged care compliance data is protected at every layer.",
+  alternates: { canonical: "https://statura.care/security" },
+  openGraph: {
+    title: "Security & Data Protection — Statura Care",
+    description:
+      "Australian-hosted aged care compliance platform with defence-in-depth security: encryption, row-level security, immutable audit trails, and privacy-by-design architecture.",
+    url: "https://statura.care/security",
+  },
 };
 
 const securityPillars = [

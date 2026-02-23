@@ -5,9 +5,16 @@ import { Footer } from "@/components/Footer";
 import { Mail, Clock, MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact — Statura Care",
+  title: "Contact",
   description:
-    "Request a demo, ask a question, or get in touch with the Statura Care team.",
+    "Request a demo of Statura Care, ask a question about aged care compliance modules, or discuss your organisation's requirements. We respond within one business day.",
+  alternates: { canonical: "https://statura.care/contact" },
+  openGraph: {
+    title: "Contact Statura Care — Request a Demo",
+    description:
+      "Get in touch with the Statura Care team. Request a demo, ask about pricing, or discuss your aged care compliance needs.",
+    url: "https://statura.care/contact",
+  },
 };
 
 export default function ContactPage() {

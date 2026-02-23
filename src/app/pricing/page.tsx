@@ -5,9 +5,16 @@ import { Footer } from "@/components/Footer";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pricing — Statura Care",
+  title: "Pricing",
   description:
-    "Start with what you need, scale as you grow. Every plan includes a 14-day free trial. No credit card required.",
+    "Flexible pricing for aged care compliance software. Choose from Essentials, Professional, or Enterprise plans. Start with the modules you need and scale as you grow. 14-day free trial, no credit card required.",
+  alternates: { canonical: "https://statura.care/pricing" },
+  openGraph: {
+    title: "Pricing — Statura Care Compliance Platform",
+    description:
+      "Flexible modular pricing for Australian aged care providers. Essentials, Professional, and Enterprise plans with 14-day free trial.",
+    url: "https://statura.care/pricing",
+  },
 };
 
 const plans = [
@@ -87,10 +94,27 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function PricingPage() {
   return (
     <>
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <main>
         {/* Hero */}
         <section className="bg-[#0F172A] pt-32 lg:pt-40 pb-20 lg:pb-28">
