@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ContactForm } from "@/components/ContactForm";
 import { Mail, Clock, MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -109,101 +110,7 @@ export default function ContactPage() {
 
               {/* Right — Contact Form */}
               <div>
-                <div className="p-8 rounded-2xl border border-slate-200 bg-[#F8FAFC]">
-                  <h3 className="font-semibold text-[#1E293B] text-lg mb-6">
-                    Request a demo
-                  </h3>
-                  <form
-                    action="mailto:hello@statura.care"
-                    method="POST"
-                    encType="text/plain"
-                    className="space-y-5"
-                  >
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-[#1E293B] mb-1.5">
-                        Your name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-[#1E293B] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#96A998] focus:border-transparent transition"
-                        placeholder="Jane Smith"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-[#1E293B] mb-1.5">
-                        Work email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-[#1E293B] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#96A998] focus:border-transparent transition"
-                        placeholder="jane@yourprovider.com.au"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="organisation" className="block text-sm font-medium text-[#1E293B] mb-1.5">
-                        Organisation
-                      </label>
-                      <input
-                        type="text"
-                        id="organisation"
-                        name="organisation"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-[#1E293B] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#96A998] focus:border-transparent transition"
-                        placeholder="Your aged care provider name"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="enquiry" className="block text-sm font-medium text-[#1E293B] mb-1.5">
-                        What are you most interested in?
-                      </label>
-                      <select
-                        id="enquiry"
-                        name="enquiry"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-[#1E293B] focus:outline-none focus:ring-2 focus:ring-[#96A998] focus:border-transparent transition"
-                      >
-                        <option value="demo">Platform demo</option>
-                        <option value="pricing">Pricing enquiry</option>
-                        <option value="sirs">SIRS & Incidents module</option>
-                        <option value="keyperson">Responsible Persons module</option>
-                        <option value="standards">Quality Standards module</option>
-                        <option value="security">Security & data protection</option>
-                        <option value="other">Something else</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-[#1E293B] mb-1.5">
-                        Message (optional)
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-[#1E293B] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#96A998] focus:border-transparent transition resize-none"
-                        placeholder="Tell us about your compliance priorities..."
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="w-full py-3.5 rounded-xl bg-[#0F172A] text-white font-semibold text-sm hover:bg-[#1E293B] transition-all duration-150 shadow-sm hover:shadow-md"
-                    >
-                      Send enquiry
-                    </button>
-
-                    <p className="text-xs text-slate-400 text-center">
-                      No spam. No obligation. We&apos;ll respond within one business day.
-                    </p>
-                  </form>
-                </div>
+                <ContactForm />
               </div>
             </div>
           </div>
