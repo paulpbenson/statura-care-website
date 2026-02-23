@@ -57,7 +57,7 @@ export function HeroSection() {
           {/* CTAs */}
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <a
-              href="https://app.staturacare.com.au/signup"
+              href="https://app.statura.care/signup"
               className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg hover:shadow-xl"
             >
               Start your free trial
@@ -96,7 +96,7 @@ export function HeroSection() {
               <div className="w-3 h-3 rounded-full bg-green-500/60" />
               <div className="ml-4 flex-1 h-6 rounded-md bg-slate-800/80 max-w-md flex items-center px-3">
                 <span className="text-[10px] text-slate-500">
-                  app.staturacare.com.au
+                  app.statura.care
                 </span>
               </div>
             </div>

@@ -149,7 +149,7 @@ export function Header() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="https://app.staturacare.com.au/login"
+              href="https://app.statura.care/login"
               className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-150 ${
                 isScrolled
                   ? "text-[#1E293B] hover:bg-slate-100"
@@ -159,7 +159,7 @@ export function Header() {
               Sign in
             </a>
             <a
-              href="https://app.staturacare.com.au/signup"
+              href="https://app.statura.care/signup"
               className="text-sm font-semibold px-5 py-2.5 rounded-lg bg-[#0F172A] text-white hover:bg-[#1E293B] transition-all duration-150 shadow-sm hover:shadow-md"
             >
               Start free trial
@@ -197,13 +197,13 @@ export function Header() {
             ))}
             <div className="pt-4 flex flex-col gap-2">
               <a
-                href="https://app.staturacare.com.au/login"
+                href="https://app.statura.care/login"
                 className="text-sm font-medium text-center py-2.5 rounded-lg border-2 border-[#1E293B] text-[#1E293B]"
               >
                 Sign in
               </a>
               <a
-                href="https://app.staturacare.com.au/signup"
+                href="https://app.statura.care/signup"
                 className="text-sm font-semibold text-center py-2.5 rounded-lg bg-[#0F172A] text-white"
               >
                 Start free trial

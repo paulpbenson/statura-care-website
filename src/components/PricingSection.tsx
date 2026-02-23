@@ -118,7 +118,7 @@ export function PricingSection() {
               </div>
 
               <a
-                href="mailto:hello@statura.com.au?subject=Statura%20Care%20Pricing%20Enquiry"
+                href="mailto:hello@statura.care?subject=Statura%20Care%20Pricing%20Enquiry"
                 className={`block text-center text-sm font-semibold py-3 rounded-xl transition-all duration-150 mb-6 ${
                   plan.highlight
                     ? "bg-white text-[#0F172A] hover:bg-slate-100"

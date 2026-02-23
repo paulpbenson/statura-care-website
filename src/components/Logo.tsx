@@ -16,18 +16,18 @@ export function Logo({
     <div className={`flex items-center gap-3 ${className}`}>
       {/* Icon */}
       <div className="w-10 h-10 bg-[#96A998] rounded-[10px] flex items-center justify-center flex-shrink-0">
-        <svg viewBox="0 0 200 200" className="w-6 h-6" aria-hidden="true">
+        <svg viewBox="0 0 200 200" className="w-7 h-7" aria-hidden="true">
           <path
-            d="M100 155 C100 155 45 115 45 82 C45 65 58 52 75 52 C85 52 94 58 100 67 C106 58 115 52 125 52 C142 52 155 65 155 82 C155 115 100 155 100 155Z"
+            d="M100 170 C100 170 30 120 30 78 C30 56 47 40 68 40 C82 40 93 48 100 60 C107 48 118 40 132 40 C153 40 170 56 170 78 C170 120 100 170 100 170Z"
             fill="white"
           />
-          <rect x="93" y="95" width="14" height="3.5" rx="1.75" fill="#96A998" />
+          <rect x="91" y="96" width="18" height="4" rx="2" fill="#96A998" />
           <rect
-            x="98.25"
-            y="89.75"
-            width="3.5"
-            height="14"
-            rx="1.75"
+            x="97"
+            y="90"
+            width="6"
+            height="16"
+            rx="2"
             fill="#96A998"
           />
         </svg>

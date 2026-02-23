@@ -23,7 +23,7 @@ export function CTABanner({
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://app.staturacare.com.au/signup"
+              href="https://app.statura.care/signup"
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
             >
               Start your free trial

@@ -52,8 +52,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-[#1E293B] text-sm mb-1">Email</h3>
-                      <a href="mailto:hello@statura.com.au" className="text-sm text-[#3E5D4A] hover:underline">
-                        hello@statura.com.au
+                      <a href="mailto:hello@statura.care" className="text-sm text-[#3E5D4A] hover:underline">
+                        hello@statura.care
                       </a>
                     </div>
                   </div>
@@ -92,10 +92,10 @@ export default function ContactPage() {
                     Prefer to email directly?
                   </p>
                   <a
-                    href="mailto:hello@statura.com.au?subject=Statura%20Care%20Enquiry"
+                    href="mailto:hello@statura.care?subject=Statura%20Care%20Enquiry"
                     className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#0F172A] text-white font-semibold text-sm hover:bg-[#1E293B] transition-all duration-150"
                   >
-                    Email hello@statura.com.au
+                    Email hello@statura.care
                   </a>
                 </div>
               </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     Request a demo
                   </h3>
                   <form
-                    action="mailto:hello@statura.com.au"
+                    action="mailto:hello@statura.care"
                     method="POST"
                     encType="text/plain"
                     className="space-y-5"

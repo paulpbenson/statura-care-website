@@ -21,10 +21,8 @@ const footerLinks = {
     { label: "Quality Standards", href: "https://www.agedcarequality.gov.au/providers/aged-care-quality-standards", external: true },
   ],
   Company: [
-    { label: "About Statura", href: "https://statura.com.au", external: true },
     { label: "Contact", href: "/contact" },
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms of Service", href: "/terms" },
+    { label: "Security", href: "/security" },
   ],
 };
 
