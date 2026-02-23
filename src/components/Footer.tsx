@@ -6,6 +6,7 @@ const footerLinks = {
   Platform: [
     { label: "Features", href: "/#features" },
     { label: "Modules", href: "/modules" },
+    { label: "Integrations", href: "/integrations" },
     { label: "Security", href: "/security" },
     { label: "Pricing", href: "/pricing" },
   ],

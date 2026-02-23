@@ -9,6 +9,7 @@ import { modules, categories, categoryColours } from "@/data/modules";
 const navItems = [
   { label: "Features", href: "/#features" },
   { label: "Modules", href: "/modules", hasDropdown: true },
+  { label: "Integrations", href: "/integrations" },
   { label: "Security", href: "/security" },
   { label: "Pricing", href: "/pricing" },
   { label: "Contact", href: "/contact" },
