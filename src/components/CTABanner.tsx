@@ -1,17 +1,25 @@
 import React from "react";
 
-export function CTASection() {
+interface CTABannerProps {
+  title?: string;
+  description?: string;
+  compact?: boolean;
+}
+
+export function CTABanner({
+  title = "Ready to structure your compliance?",
+  description = "Start your 14-day free trial. No credit card required.",
+  compact = false,
+}: CTABannerProps) {
   return (
-    <section className="bg-[#0F172A] py-20 lg:py-28">
+    <section className={`bg-[#0F172A] ${compact ? "py-16" : "py-20 lg:py-28"}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif font-black text-3xl lg:text-4xl text-white leading-tight tracking-tight">
-            Ready to structure your compliance?
+          <h2 className={`font-serif font-black text-white leading-tight tracking-tight ${compact ? "text-2xl lg:text-3xl" : "text-3xl lg:text-4xl"}`}>
+            {title}
           </h2>
           <p className="mt-4 text-lg text-slate-300 leading-relaxed">
-            Navigate the Aged Care Act 2024 with confidence. Start your
-            14-day free trial and see how Statura Care structures your
-            compliance from day one.
+            {description}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <a

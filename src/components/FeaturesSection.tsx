@@ -43,7 +43,7 @@ const features = [
     icon: Lock,
     title: "Australian Hosted & Secure",
     description:
-      "Data hosted in Sydney on Australian infrastructure. Row-level security ensures each organisation only sees their own data. WCAG 2.1 AA accessible for government-facing use.",
+      "Data hosted in Sydney on Australian infrastructure. Row-level security ensures each organisation only sees their own data. See our Security page for full details.",
   },
 ];
 

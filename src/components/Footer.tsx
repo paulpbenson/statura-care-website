@@ -1,27 +1,28 @@
 import React from "react";
+import Link from "next/link";
 import { Logo } from "./Logo";
 
 const footerLinks = {
   Platform: [
-    { label: "Features", href: "#features" },
-    { label: "Modules", href: "#modules" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Security", href: "#why-statura" },
+    { label: "Features", href: "/#features" },
+    { label: "Modules", href: "/modules" },
+    { label: "Security", href: "/security" },
+    { label: "Pricing", href: "/pricing" },
   ],
   Modules: [
-    { label: "Responsible Persons", href: "#modules" },
-    { label: "SIRS & Incidents", href: "#modules" },
-    { label: "Quality Standards", href: "#modules" },
-    { label: "Prudential Compliance", href: "#modules" },
+    { label: "Responsible Persons", href: "/modules/responsible-persons" },
+    { label: "SIRS & Incidents", href: "/modules/sirs" },
+    { label: "Quality Standards", href: "/modules/quality-standards" },
+    { label: "Prudential Compliance", href: "/modules/prudential" },
   ],
   Resources: [
-    { label: "Aged Care Act 2024", href: "https://www.legislation.gov.au/C2024A00040/latest" },
-    { label: "ACQSC", href: "https://www.agedcarequality.gov.au" },
-    { label: "Quality Standards", href: "https://www.agedcarequality.gov.au/providers/aged-care-quality-standards" },
+    { label: "Aged Care Act 2024", href: "https://www.legislation.gov.au/C2024A00040/latest", external: true },
+    { label: "ACQSC", href: "https://www.agedcarequality.gov.au", external: true },
+    { label: "Quality Standards", href: "https://www.agedcarequality.gov.au/providers/aged-care-quality-standards", external: true },
   ],
   Company: [
-    { label: "About Statura", href: "https://statura.com.au" },
-    { label: "Contact", href: "mailto:hello@statura.com.au" },
+    { label: "About Statura", href: "https://statura.com.au", external: true },
+    { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
   ],
@@ -50,12 +51,23 @@ export function Footer() {
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-slate-400 hover:text-white transition-colors duration-150"
-                    >
-                      {link.label}
-                    </a>
+                    {"external" in link && link.external ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-slate-400 hover:text-white transition-colors duration-150"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-slate-400 hover:text-white transition-colors duration-150"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -66,8 +78,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} Statura Pty Ltd. ABN 33 676 199 221. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} Statura Pty Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-xs text-slate-500">

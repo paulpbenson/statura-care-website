@@ -2,9 +2,9 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { ComplianceTimelineSection } from "@/components/ComplianceTimelineSection";
-import { ModulesSection } from "@/components/ModulesSection";
+import { HomeModulesSection } from "@/components/HomeModulesSection";
 import { WhyStaturaSection } from "@/components/WhyStaturaSection";
-import { PricingSection } from "@/components/PricingSection";
+import { HomePricingSection } from "@/components/HomePricingSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 
@@ -16,9 +16,9 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <ComplianceTimelineSection />
-        <ModulesSection />
+        <HomeModulesSection />
         <WhyStaturaSection />
-        <PricingSection />
+        <HomePricingSection />
         <CTASection />
       </main>
       <Footer />
