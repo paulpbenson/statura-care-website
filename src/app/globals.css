@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #F8FAFC;
+  --color-foreground: #1E293B;
+  --font-sans: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+
+  /* Statura Brand Colours */
+  --color-statura-green: #96A998;
+  --color-statura-deep: #7B8C7D;
+  --color-statura-green-accessible: #3E5D4A;
+  --color-statura-green-hover: #2F4B3B;
+  --color-statura-ink: #1E293B;
+  --color-statura-ink-dark: #0F172A;
+  --color-mist: #F5F6F2;
+  --color-fog: #F7F8F4;
+
+  /* Shadows */
+  --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.06);
+  --shadow-card-hover: 0 20px 40px rgba(15, 23, 42, 0.1);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+*:focus-visible {
+  outline: 2px solid #96A998;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: #1E293B;
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+}
+
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 700ms ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 300ms ease-out forwards;
+}
