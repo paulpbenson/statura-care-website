@@ -208,10 +208,58 @@ export default function AgedCareQualityStandardsSoftwarePage() {
     screenshot: "https://statura.care/opengraph-image",
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the 8 Aged Care Quality Standards?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The 8 Aged Care Quality Standards are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does self-assessment work in Statura Care?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 14 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How often should providers self-assess against the Quality Standards?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The ACQSC recommends continuous self-assessment rather than point-in-time exercises. Best practice is to conduct formal reviews quarterly with ongoing evidence collection between reviews. Statura Care supports both approaches with real-time compliance dashboards and scheduled assessment workflows.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is an ACQSC assessment contact?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. These can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Statura Care generate audit preparation packs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Statura Care generates comprehensive audit preparation packs that compile evidence across all 8 Quality Standards, including self-assessment ratings, mapped evidence from SIRS, workforce, complaints, and other modules, gap analysis, and improvement action tracking.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
         {/* Hero */}
@@ -530,6 +578,58 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                   </span>
                   <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#3E5D4A] transition-colors flex-shrink-0 ml-2" />
                 </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="bg-[#F8FAFC] py-20 lg:py-28">
+          <div className="max-w-3xl mx-auto px-6 lg:px-8">
+            <div className="mb-14 text-center">
+              <p className="text-xs font-semibold text-[#3E5D4A] uppercase tracking-[0.2em] mb-3">
+                Common Questions
+              </p>
+              <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
+                Frequently asked questions about the{" "}
+                <span className="text-[#3E5D4A]">8 Quality Standards.</span>
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "What are the 8 Aged Care Quality Standards?",
+                  a: "The 8 Aged Care Quality Standards are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
+                },
+                {
+                  q: "How does self-assessment work in Statura Care?",
+                  a: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 14 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
+                },
+                {
+                  q: "How often should providers self-assess against the Quality Standards?",
+                  a: "The ACQSC recommends continuous self-assessment rather than point-in-time exercises. Best practice is to conduct formal reviews quarterly with ongoing evidence collection between reviews. Statura Care supports both approaches with real-time compliance dashboards and scheduled assessment workflows.",
+                },
+                {
+                  q: "What is an ACQSC assessment contact?",
+                  a: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. These can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
+                },
+                {
+                  q: "Can Statura Care generate audit preparation packs?",
+                  a: "Yes. Statura Care generates comprehensive audit preparation packs that compile evidence across all 8 Quality Standards, including self-assessment ratings, mapped evidence from SIRS, workforce, complaints, and other modules, gap analysis, and improvement action tracking.",
+                },
+              ].map((faq, idx) => (
+                <div
+                  key={idx}
+                  className="border border-slate-200 rounded-xl bg-white p-6 hover:shadow-sm transition-shadow"
+                >
+                  <h3 className="font-semibold text-[#1E293B] text-base mb-3">
+                    {faq.q}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {faq.a}
+                  </p>
+                </div>
               ))}
             </div>
           </div>

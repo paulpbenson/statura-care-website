@@ -178,6 +178,53 @@ export default function AgedCareIncidentReportingSoftwarePage() {
     screenshot: "https://statura.care/opengraph-image",
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is SIRS in aged care?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "SIRS stands for the Serious Incident Response Scheme, a mandatory framework under the Aged Care Act 2024 that requires residential aged care providers to identify, record, report, investigate, and resolve serious incidents. Reportable incidents include unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, neglect, and inappropriate restrictive practices.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the SIRS reporting deadlines?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Priority 1 incidents must be reported to the Aged Care Quality and Safety Commission (ACQSC) within 24 hours. Priority 2 incidents must be reported within 30 calendar days. The clock starts from when any staff member becomes aware of the incident, not when management is informed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens if you miss a SIRS reporting deadline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Missing a SIRS reporting deadline can result in regulatory action from the ACQSC, including compliance notices, sanctions, and increased monitoring. It also indicates a systemic failure in incident management that may be examined during assessment contacts.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Statura Care automate SIRS reporting?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Statura Care automates the entire SIRS workflow — from incident capture and automatic priority classification through deadline countdown alerts, ACQSC notification preparation, investigation tracking, and remediation evidence. Escalating alerts ensure no deadline is missed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does the SIRS module integrate with other compliance areas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. SIRS data automatically feeds into Quality Standard 8 (Organisational Governance) evidence, complaints management, restrictive practices tracking, and workforce compliance. Incidents involving restrictive practices are flagged for both SIRS reporting and the restrictive practices register.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -187,6 +234,10 @@ export default function AgedCareIncidentReportingSoftwarePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       <main>
@@ -442,6 +493,58 @@ export default function AgedCareIncidentReportingSoftwarePage() {
                   </span>
                   <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#3E5D4A] transition-colors flex-shrink-0 ml-2" />
                 </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="bg-white py-20 lg:py-28">
+          <div className="max-w-3xl mx-auto px-6 lg:px-8">
+            <div className="mb-14 text-center">
+              <p className="text-xs font-semibold text-[#3E5D4A] uppercase tracking-[0.2em] mb-3">
+                Common Questions
+              </p>
+              <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
+                Frequently asked questions about{" "}
+                <span className="text-[#3E5D4A]">SIRS incident reporting.</span>
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "What is SIRS in aged care?",
+                  a: "SIRS stands for the Serious Incident Response Scheme, a mandatory framework under the Aged Care Act 2024 that requires residential aged care providers to identify, record, report, investigate, and resolve serious incidents. Reportable incidents include unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, neglect, and inappropriate restrictive practices.",
+                },
+                {
+                  q: "What are the SIRS reporting deadlines?",
+                  a: "Priority 1 incidents must be reported to the Aged Care Quality and Safety Commission (ACQSC) within 24 hours. Priority 2 incidents must be reported within 30 calendar days. The clock starts from when any staff member becomes aware of the incident, not when management is informed.",
+                },
+                {
+                  q: "What happens if you miss a SIRS reporting deadline?",
+                  a: "Missing a SIRS reporting deadline can result in regulatory action from the ACQSC, including compliance notices, sanctions, and increased monitoring. It also indicates a systemic failure in incident management that may be examined during assessment contacts.",
+                },
+                {
+                  q: "Can Statura Care automate SIRS reporting?",
+                  a: "Statura Care automates the entire SIRS workflow — from incident capture and automatic priority classification through deadline countdown alerts, ACQSC notification preparation, investigation tracking, and remediation evidence. Escalating alerts ensure no deadline is missed.",
+                },
+                {
+                  q: "Does the SIRS module integrate with other compliance areas?",
+                  a: "Yes. SIRS data automatically feeds into Quality Standard 8 (Organisational Governance) evidence, complaints management, restrictive practices tracking, and workforce compliance. Incidents involving restrictive practices are flagged for both SIRS reporting and the restrictive practices register.",
+                },
+              ].map((faq, idx) => (
+                <div
+                  key={idx}
+                  className="border border-slate-200 rounded-xl bg-white p-6 hover:shadow-sm transition-shadow"
+                >
+                  <h3 className="font-semibold text-[#1E293B] text-base mb-3">
+                    {faq.q}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {faq.a}
+                  </p>
+                </div>
               ))}
             </div>
           </div>

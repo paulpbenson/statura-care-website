@@ -129,10 +129,66 @@ export default function AgedCareComplianceSoftwarePage() {
     screenshot: "https://statura.care/opengraph-image",
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is aged care compliance software?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Aged care compliance software is a digital platform that helps residential aged care providers manage their regulatory obligations under the Aged Care Act 2024. It automates deadline tracking, incident reporting, evidence collection, and audit preparation across areas like SIRS, quality standards, responsible persons, and prudential compliance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is Statura Care different from generic GRC software?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Unlike generic governance, risk, and compliance (GRC) platforms, Statura Care was built specifically for the Aged Care Act 2024. Every module, workflow, deadline, and report maps directly to aged care obligations — no months of configuration required. Generic GRC tools lack aged care-specific features like SIRS deadline automation, care minutes tracking, and quality standards self-assessment.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many modules does Statura Care include?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Statura Care includes 14 compliance modules covering every major obligation area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Restrictive Practices, Infection Prevention, Quality Indicators, Prudential Compliance, Agreements & Consent, and Funding & Claims.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Statura Care hosted in Australia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. All data is stored in Sydney, Australia on Australian infrastructure. Data is encrypted at rest and in transit, and row-level security ensures complete data isolation between organisations.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does Statura Care offer a free trial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Statura Care offers a 14-day free trial with no credit card required. You get full access to all modules with pre-loaded demo data so you can explore the platform immediately.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who is Statura Care designed for?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Statura Care is designed for Australian residential aged care providers — including compliance officers, facility managers, clinical governance teams, and governing body members. It supports seven distinct user roles so each team member sees exactly what they need.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main>
         {/* Hero */}
@@ -365,6 +421,62 @@ export default function AgedCareComplianceSoftwarePage() {
                   </span>
                   <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#3E5D4A] transition-colors flex-shrink-0 ml-2" />
                 </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="bg-white py-20 lg:py-28">
+          <div className="max-w-3xl mx-auto px-6 lg:px-8">
+            <div className="mb-14 text-center">
+              <p className="text-xs font-semibold text-[#3E5D4A] uppercase tracking-[0.2em] mb-3">
+                Common Questions
+              </p>
+              <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
+                Frequently asked questions about{" "}
+                <span className="text-[#3E5D4A]">aged care compliance software.</span>
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  q: "What is aged care compliance software?",
+                  a: "Aged care compliance software is a digital platform that helps residential aged care providers manage their regulatory obligations under the Aged Care Act 2024. It automates deadline tracking, incident reporting, evidence collection, and audit preparation across areas like SIRS, quality standards, responsible persons, and prudential compliance.",
+                },
+                {
+                  q: "How is Statura Care different from generic GRC software?",
+                  a: "Unlike generic governance, risk, and compliance (GRC) platforms, Statura Care was built specifically for the Aged Care Act 2024. Every module, workflow, deadline, and report maps directly to aged care obligations — no months of configuration required. Generic GRC tools lack aged care-specific features like SIRS deadline automation, care minutes tracking, and quality standards self-assessment.",
+                },
+                {
+                  q: "How many modules does Statura Care include?",
+                  a: "Statura Care includes 14 compliance modules covering every major obligation area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Restrictive Practices, Infection Prevention, Quality Indicators, Prudential Compliance, Agreements & Consent, and Funding & Claims.",
+                },
+                {
+                  q: "Is Statura Care hosted in Australia?",
+                  a: "Yes. All data is stored in Sydney, Australia on Australian infrastructure. Data is encrypted at rest and in transit, and row-level security ensures complete data isolation between organisations.",
+                },
+                {
+                  q: "Does Statura Care offer a free trial?",
+                  a: "Yes. Statura Care offers a 14-day free trial with no credit card required. You get full access to all modules with pre-loaded demo data so you can explore the platform immediately.",
+                },
+                {
+                  q: "Who is Statura Care designed for?",
+                  a: "Statura Care is designed for Australian residential aged care providers — including compliance officers, facility managers, clinical governance teams, and governing body members. It supports seven distinct user roles so each team member sees exactly what they need.",
+                },
+              ].map((faq, idx) => (
+                <div
+                  key={idx}
+                  className="border border-slate-200 rounded-xl bg-white p-6 hover:shadow-sm transition-shadow"
+                >
+                  <h3 className="font-semibold text-[#1E293B] text-base mb-3">
+                    {faq.q}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {faq.a}
+                  </p>
+                </div>
               ))}
             </div>
           </div>

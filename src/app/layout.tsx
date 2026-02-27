@@ -81,7 +81,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Organization", "LocalBusiness"],
         "@id": `${SITE_URL}/#organization`,
         name: "Statura Care",
         legalName: "Statura Pty Ltd",
@@ -89,10 +89,22 @@ export default function RootLayout({
         logo: `${SITE_URL}/logo-icon.png`,
         email: "hello@statura.care",
         description: SITE_DESCRIPTION,
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "AU",
+          addressRegion: "NSW",
+          addressLocality: "Sydney",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: -33.8688,
+          longitude: 151.2093,
+        },
         areaServed: {
           "@type": "Country",
           name: "Australia",
         },
+        priceRange: "$$",
         knowsAbout: [
           "Aged Care Act 2024",
           "Aged care compliance",
@@ -103,6 +115,7 @@ export default function RootLayout({
           "AN-ACC classification",
           "Prudential compliance",
         ],
+        sameAs: [],
       },
       {
         "@type": "WebSite",

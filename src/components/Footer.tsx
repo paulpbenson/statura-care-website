@@ -23,9 +23,9 @@ const footerLinks = {
   ],
   Resources: [
     { label: "Blog", href: "/blog" },
+    { label: "Compliance Glossary", href: "/glossary" },
     { label: "Aged Care Act 2024", href: "https://www.legislation.gov.au/C2024A00040/latest", external: true },
     { label: "ACQSC", href: "https://www.agedcarequality.gov.au", external: true },
-    { label: "Quality Standards", href: "https://www.agedcarequality.gov.au/providers/aged-care-quality-standards", external: true },
   ],
   Company: [
     { label: "Contact", href: "/contact" },

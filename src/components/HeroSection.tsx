@@ -43,15 +43,16 @@ export function HeroSection() {
 
           {/* Headline */}
           <h1 className="font-serif font-black text-4xl sm:text-5xl lg:text-[3.5rem] text-white leading-[1.05] tracking-tight">
-            Aged care compliance,{" "}
-            <span className="text-[#96A998]">structured.</span>
+            Aged care compliance software{" "}
+            <span className="text-[#96A998]">built for the new Act.</span>
           </h1>
 
           {/* Subheading */}
           <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-            Statura Care helps providers manage every obligation under the Aged
-            Care Act 2024 — from responsible persons to incident reporting to
-            quality standards. One platform, every module you need.
+            Statura Care is the compliance platform purpose-built for Australian
+            aged care providers. 14 modules covering every obligation under the
+            Aged Care Act 2024 — SIRS reporting, quality standards, responsible
+            persons, workforce compliance, and more.
           </p>
 
           {/* CTAs */}
