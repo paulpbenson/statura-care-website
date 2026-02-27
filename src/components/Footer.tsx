@@ -16,7 +16,13 @@ const footerLinks = {
     { label: "Quality Standards", href: "/modules/quality-standards" },
     { label: "Prudential Compliance", href: "/modules/prudential" },
   ],
+  Solutions: [
+    { label: "Compliance Software", href: "/aged-care-compliance-software" },
+    { label: "Incident Reporting", href: "/aged-care-incident-reporting-software" },
+    { label: "Quality Standards", href: "/aged-care-quality-standards-software" },
+  ],
   Resources: [
+    { label: "Blog", href: "/blog" },
     { label: "Aged Care Act 2024", href: "https://www.legislation.gov.au/C2024A00040/latest", external: true },
     { label: "ACQSC", href: "https://www.agedcarequality.gov.au", external: true },
     { label: "Quality Standards", href: "https://www.agedcarequality.gov.au/providers/aged-care-quality-standards", external: true },
@@ -31,7 +37,7 @@ export function Footer() {
   return (
     <footer className="bg-[#0F172A] border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-1">
             <Logo variant="dark" />

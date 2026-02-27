@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { modules } from "@/data/modules";
+import { blogPosts } from "@/data/blog";
 
 const SITE_URL = "https://statura.care";
 
@@ -9,6 +10,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const blogPages = blogPosts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.updatedAt || post.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
   }));
 
   return [
@@ -48,6 +56,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/aged-care-compliance-software`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/aged-care-incident-reporting-software`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/aged-care-quality-standards-software`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...modulePages,
+    ...blogPages,
   ];
 }
