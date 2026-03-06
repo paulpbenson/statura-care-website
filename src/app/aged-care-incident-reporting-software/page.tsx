@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title:
     "SIRS Incident Reporting Software Australia — Meet Priority 1 & Priority 2 Deadlines",
   description:
-    "Purpose-built SIRS incident reporting and compliance software for Australian aged care providers. Automated Priority 1 (24-hour) and Priority 2 (30-day) deadline tracking. ACQSC notification workflows. Quality Standard 8 evidence mapping. Australian-hosted. 14-day free trial.",
+    "Purpose-built SIRS incident reporting and compliance software for Australian aged care providers. Automated Priority 1 (24-hour) and Priority 2 (30-day) deadline tracking. ACQSC notification workflows. Quality Standard 8 evidence mapping. Australian-hosted.",
   alternates: {
     canonical: "https://statura.care/aged-care-incident-reporting-software",
   },
@@ -130,7 +130,7 @@ const comparisonPoints = [
   { feature: "Role-based access control", statura: true, generic: true },
   { feature: "Automated escalation alerts", statura: true, generic: "partial" },
   { feature: "Australian-hosted (Sydney)", statura: true, generic: "varies" },
-  { feature: "14-day free trial", statura: true, generic: "varies" },
+  { feature: "Guided trial available", statura: true, generic: "varies" },
   { feature: "No credit card required", statura: true, generic: false },
 ];
 
@@ -164,7 +164,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
       priceCurrency: "AUD",
       availability: "https://schema.org/InStock",
       offerCount: 3,
-      description: "14-day free trial. Essentials, Professional, and Enterprise plans.",
+      description: "Contact us for pricing. Essentials, Professional, and Enterprise plans.",
     },
     featureList: [
       "SIRS Priority 1 deadline tracking",
@@ -261,12 +261,12 @@ export default function AgedCareIncidentReportingSoftwarePage() {
                 management tools — built specifically for SIRS compliance.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                <a
-                  href="https://app.statura.care/signup"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
                 >
-                  Start your 14-day free trial
-                </a>
+                  Request a demo
+                </Link>
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
@@ -552,7 +552,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
 
         <CTABanner
           title="Ready to automate SIRS incident reporting?"
-          description="Start your 14-day free trial. No credit card required. Australian-hosted."
+          description="Request a personalised demo tailored to your organisation. Australian-hosted."
         />
       </main>
       <Footer />

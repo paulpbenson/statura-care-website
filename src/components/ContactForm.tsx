@@ -157,10 +157,14 @@ export function ContactForm() {
             className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-[#1E293B] focus:outline-none focus:ring-2 focus:ring-[#96A998] focus:border-transparent transition"
           >
             <option value="demo">Platform demo</option>
+            <option value="trial">Request a guided trial</option>
             <option value="pricing">Pricing enquiry</option>
-            <option value="sirs">SIRS &amp; Incidents module</option>
-            <option value="keyperson">Responsible Persons module</option>
-            <option value="standards">Quality Standards module</option>
+            <option value="compliance">Compliance &amp; Governance modules</option>
+            <option value="clinical">Clinical &amp; Care modules</option>
+            <option value="workforce">Workforce &amp; Rostering modules</option>
+            <option value="financial">Financial &amp; Billing modules</option>
+            <option value="homecare">Home Care modules</option>
+            <option value="analytics">Reporting &amp; Analytics modules</option>
             <option value="security">Security &amp; data protection</option>
             <option value="other">Something else</option>
           </select>

@@ -498,14 +498,14 @@ export default function GlossaryPage() {
               Need help with compliance?
             </h2>
             <p className="text-lg text-slate-300 mb-8">
-              Statura Care provides purpose-built software to manage aged care compliance obligations across all 14 compliance areas.
+              Statura Care provides purpose-built software to manage aged care compliance and care obligations across all 31 modules.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://app.statura.care/signup"
+                href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
               >
-                Start your 14-day free trial
+                Request a demo
               </a>
               <Link
                 href="/contact"

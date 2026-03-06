@@ -87,10 +87,10 @@ export function Header() {
                   {/* Modules Mega Dropdown */}
                   {isModulesOpen && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                      <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(15,23,42,0.15)] border border-slate-200/80 p-6 w-[720px]">
+                      <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(15,23,42,0.15)] border border-slate-200/80 p-6 w-[860px]">
                         <div className="flex items-center justify-between mb-4">
                           <p className="text-xs font-semibold text-slate-400 uppercase tracking-[0.15em]">
-                            14 Compliance Modules
+                            {modules.length} Modules across 6 categories
                           </p>
                           <Link
                             href="/modules"
@@ -100,10 +100,10 @@ export function Header() {
                             View all →
                           </Link>
                         </div>
-                        <div className="grid grid-cols-3 gap-6">
+                        <div className="grid grid-cols-3 gap-x-6 gap-y-5">
                           {categories.map((cat) => (
                             <div key={cat}>
-                              <p className={`text-[10px] font-bold uppercase tracking-[0.15em] mb-2.5 ${categoryColours[cat].text}`}>
+                              <p className={`text-[10px] font-bold uppercase tracking-[0.15em] mb-2 ${categoryColours[cat].text}`}>
                                 {cat}
                               </p>
                               <div className="space-y-0.5">
@@ -113,13 +113,13 @@ export function Header() {
                                     <Link
                                       key={mod.slug}
                                       href={`/modules/${mod.slug}`}
-                                      className="flex items-center gap-2.5 px-2.5 py-2 rounded-lg hover:bg-slate-50 transition-colors group"
+                                      className="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-50 transition-colors group"
                                       onClick={() => setIsModulesOpen(false)}
                                     >
-                                      <div className="w-7 h-7 rounded-lg bg-slate-100 group-hover:bg-[#96A998]/10 flex items-center justify-center flex-shrink-0 transition-colors">
-                                        <mod.icon className="w-3.5 h-3.5 text-[#3E5D4A]" />
+                                      <div className="w-6 h-6 rounded-md bg-slate-100 group-hover:bg-[#96A998]/10 flex items-center justify-center flex-shrink-0 transition-colors">
+                                        <mod.icon className="w-3 h-3 text-[#3E5D4A]" />
                                       </div>
-                                      <span className="text-xs font-medium text-slate-700 group-hover:text-[#1E293B]">
+                                      <span className="text-[11px] font-medium text-slate-700 group-hover:text-[#1E293B]">
                                         {mod.name}
                                       </span>
                                     </Link>
@@ -160,10 +160,10 @@ export function Header() {
               Sign in
             </a>
             <a
-              href="https://app.statura.care/signup"
+              href="/contact"
               className="text-sm font-semibold px-5 py-2.5 rounded-lg bg-[#0F172A] text-white hover:bg-[#1E293B] transition-all duration-150 shadow-sm hover:shadow-md"
             >
-              Start free trial
+              Request a demo
             </a>
           </div>
 
@@ -204,10 +204,10 @@ export function Header() {
                 Sign in
               </a>
               <a
-                href="https://app.statura.care/signup"
+                href="/contact"
                 className="text-sm font-semibold text-center py-2.5 rounded-lg bg-[#0F172A] text-white"
               >
-                Start free trial
+                Request a demo
               </a>
             </div>
           </div>

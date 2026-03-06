@@ -11,10 +11,13 @@ const footerLinks = {
     { label: "Pricing", href: "/pricing" },
   ],
   Modules: [
-    { label: "Responsible Persons", href: "/modules/responsible-persons" },
     { label: "SIRS & Incidents", href: "/modules/sirs" },
     { label: "Quality Standards", href: "/modules/quality-standards" },
-    { label: "Prudential Compliance", href: "/modules/prudential" },
+    { label: "Clinical Care", href: "/modules/clinical-care" },
+    { label: "Workforce Compliance", href: "/modules/workforce" },
+    { label: "Rostering & Scheduling", href: "/modules/rostering" },
+    { label: "Billing & Finance", href: "/modules/billing" },
+    { label: "All Modules", href: "/modules" },
   ],
   Solutions: [
     { label: "Compliance Software", href: "/aged-care-compliance-software" },

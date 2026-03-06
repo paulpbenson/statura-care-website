@@ -7,12 +7,12 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Flexible pricing for aged care compliance software. Choose from Essentials, Professional, or Enterprise plans. Start with the modules you need and scale as you grow. 14-day free trial, no credit card required.",
+    "Flexible pricing for aged care compliance software. Choose from Essentials, Professional, or Enterprise plans. Start with the modules you need and scale as you grow.",
   alternates: { canonical: "https://statura.care/pricing" },
   openGraph: {
     title: "Pricing — Statura Care Compliance Platform",
     description:
-      "Flexible modular pricing for Australian aged care providers. Essentials, Professional, and Enterprise plans with 14-day free trial.",
+      "Flexible modular pricing for Australian aged care providers. Essentials, Professional, and Enterprise plans. Contact us for a tailored quote.",
     url: "https://statura.care/pricing",
   },
 };
@@ -55,7 +55,7 @@ const plans = [
     price: "Contact us",
     highlight: false,
     features: [
-      "All 14 modules",
+      "All 31 modules",
       "Unlimited team members",
       "Everything in Professional",
       "Multi-site management",
@@ -69,8 +69,8 @@ const plans = [
 
 const faqs = [
   {
-    q: "How does the 14-day free trial work?",
-    a: "Sign up and immediately access the platform with sample data loaded. Choose the modules you want to explore. No credit card required — if you don't subscribe after 14 days, your trial simply ends.",
+    q: "Can I try the platform before committing?",
+    a: "Yes. Request a demo and we'll walk you through the platform with your specific compliance priorities. We can also arrange a guided trial tailored to your organisation's modules and workflow.",
   },
   {
     q: "Can I change my plan or add modules later?",
@@ -128,8 +128,8 @@ export default function PricingPage() {
                 <span className="text-[#96A998]">Scale as you grow.</span>
               </h1>
               <p className="mt-6 text-lg text-slate-300 leading-relaxed">
-                Every plan includes a 14-day free trial. No credit card required.
-                Cancel anytime.
+                Contact us for a tailored quote. Request a demo to see the
+                platform in action.
               </p>
             </div>
           </div>

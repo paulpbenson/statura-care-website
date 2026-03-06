@@ -8,7 +8,7 @@ interface CTABannerProps {
 
 export function CTABanner({
   title = "Ready to structure your compliance?",
-  description = "Start your 14-day free trial. No credit card required.",
+  description = "Request a personalised demo tailored to your organisation.",
   compact = false,
 }: CTABannerProps) {
   return (
@@ -23,20 +23,20 @@ export function CTABanner({
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://app.statura.care/signup"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
-            >
-              Start your free trial
-            </a>
-            <a
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
             >
               Request a demo
             </a>
+            <a
+              href="/modules"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
+            >
+              Explore all modules
+            </a>
           </div>
           <p className="mt-6 text-xs text-slate-500">
-            No credit card required. Cancel anytime.
+            No obligation. We&apos;ll tailor the demo to your needs.
           </p>
         </div>
       </div>

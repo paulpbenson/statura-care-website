@@ -65,19 +65,33 @@ export function ModulePageTemplate({ module: mod }: { module: ModuleData }) {
               {mod.longDescription}
             </p>
 
+            {/* Care type badges */}
+            <div className="flex items-center gap-2 mt-6">
+              {mod.applicableTo.includes("residential") && (
+                <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">
+                  Residential Care
+                </span>
+              )}
+              {mod.applicableTo.includes("home-care") && (
+                <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+                  Home Care
+                </span>
+              )}
+            </div>
+
             {/* CTAs */}
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <a
-                href="https://app.statura.care/signup"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
-              >
-                Start your free trial
-              </a>
+            <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
               >
                 Request a demo
+              </a>
+              <a
+                href="/modules"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
+              >
+                Explore all modules
               </a>
             </div>
           </div>
@@ -299,7 +313,7 @@ export function ModulePageTemplate({ module: mod }: { module: ModuleData }) {
       {/* CTA */}
       <CTABanner
         title={`See ${mod.name} in action.`}
-        description={`Start your 14-day free trial and explore the ${mod.name} module with sample data — no credit card required.`}
+        description={`Request a personalised demo of the ${mod.name} module tailored to your organisation.`}
         compact
       />
     </>

@@ -21,12 +21,12 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Compliance Software Australia — Built for the Aged Care Act 2024",
   description:
-    "Purpose-built aged care compliance software for Australian providers. 14 modules covering SIRS reporting, quality standards, responsible persons, workforce compliance, prudential obligations, and more. Australian-hosted. 14-day free trial.",
+    "Purpose-built aged care compliance software for Australian providers. 31 modules covering SIRS reporting, quality standards, responsible persons, workforce compliance, prudential obligations, and more. Australian-hosted. Request a demo.",
   alternates: { canonical: "https://statura.care/aged-care-compliance-software" },
   openGraph: {
     title: "Aged Care Compliance Software Australia | Statura Care",
     description:
-      "The modular compliance platform built specifically for the Aged Care Act 2024. 14 modules. Australian-hosted. Free trial.",
+      "The modular compliance platform built specifically for the Aged Care Act 2024. 31 modules. Australian-hosted. Request a demo.",
     url: "https://statura.care/aged-care-compliance-software",
     type: "website",
     locale: "en_AU",
@@ -86,7 +86,7 @@ const benefits = [
 
 const comparisonPoints = [
   { feature: "Built specifically for Aged Care Act 2024", statura: true, generic: false },
-  { feature: "All 14 compliance obligation areas covered", statura: true, generic: false },
+  { feature: "All 31 compliance and care areas covered", statura: true, generic: false },
   { feature: "SIRS incident reporting with deadline automation", statura: true, generic: "partial" },
   { feature: "Responsible persons suitability assessments", statura: true, generic: false },
   { feature: "Quality Standards self-assessment engine", statura: true, generic: false },
@@ -96,7 +96,7 @@ const comparisonPoints = [
   { feature: "Cross-module evidence mapping", statura: true, generic: false },
   { feature: "Australian-hosted (Sydney)", statura: true, generic: "varies" },
   { feature: "Immutable audit trail", statura: true, generic: "partial" },
-  { feature: "14-day free trial", statura: true, generic: "varies" },
+  { feature: "Guided trial available", statura: true, generic: "varies" },
 ];
 
 export default function AgedCareComplianceSoftwarePage() {
@@ -115,7 +115,7 @@ export default function AgedCareComplianceSoftwarePage() {
     name: "Statura Care — Aged Care Compliance Software",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "Purpose-built aged care compliance software for Australian providers. 14 modules covering every obligation under the Aged Care Act 2024.",
+    description: "Purpose-built aged care compliance software for Australian providers. 31 modules covering every obligation under the Aged Care Act 2024.",
     url: "https://statura.care/aged-care-compliance-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -123,7 +123,7 @@ export default function AgedCareComplianceSoftwarePage() {
       priceCurrency: "AUD",
       availability: "https://schema.org/InStock",
       offerCount: 3,
-      description: "14-day free trial. Essentials, Professional, and Enterprise plans.",
+      description: "Guided trial available. Essentials, Professional, and Enterprise plans.",
     },
     featureList: modules.map((m) => m.name),
     screenshot: "https://statura.care/opengraph-image",
@@ -154,7 +154,7 @@ export default function AgedCareComplianceSoftwarePage() {
         name: "How many modules does Statura Care include?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Statura Care includes 14 compliance modules covering every major obligation area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Restrictive Practices, Infection Prevention, Quality Indicators, Prudential Compliance, Agreements & Consent, and Funding & Claims.",
+          text: "Statura Care includes 31 modules covering every major compliance and care area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Governance, Quality Indicators, Prudential Compliance, Agreements & Consent, Funding & Claims, Clinical Care, Care Delivery, Medications, Infection Prevention, Rostering, WHS, Home Care, Billing, Documents, Integrations, Reporting, Notifications, Analytics, Resident Registry, Advance Care Planning, Family Portal, Accommodation, and Provider Registration.",
         },
       },
       {
@@ -167,10 +167,10 @@ export default function AgedCareComplianceSoftwarePage() {
       },
       {
         "@type": "Question",
-        name: "Does Statura Care offer a free trial?",
+        name: "Can I try the platform before committing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Statura Care offers a 14-day free trial with no credit card required. You get full access to all modules with pre-loaded demo data so you can explore the platform immediately.",
+          text: "Yes. Request a demo and we'll walk you through the platform with your specific compliance priorities. We can also arrange a guided trial tailored to your organisation.",
         },
       },
       {
@@ -205,18 +205,18 @@ export default function AgedCareComplianceSoftwarePage() {
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Statura Care is purpose-built aged care compliance software for
-                Australian providers. 14 modules covering every regulatory obligation
+                Australian providers. 31 modules covering every regulatory obligation
                 — from SIRS incident reporting to quality standards to prudential
                 compliance. Not adapted from generic risk software. Built from the
                 ground up for aged care.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                <a
-                  href="https://app.statura.care/signup"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
                 >
-                  Start your 14-day free trial
-                </a>
+                  Request a demo
+                </Link>
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
@@ -225,7 +225,7 @@ export default function AgedCareComplianceSoftwarePage() {
                 </Link>
               </div>
               <p className="mt-4 text-xs text-slate-500">
-                No credit card required. Australian-hosted in Sydney.
+                Australian-hosted in Sydney.
               </p>
             </div>
           </div>
@@ -271,7 +271,7 @@ export default function AgedCareComplianceSoftwarePage() {
           </div>
         </section>
 
-        {/* 14 Modules */}
+        {/* 31 Modules */}
         <section className="bg-[#F8FAFC] py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-2xl mb-14">
@@ -279,7 +279,7 @@ export default function AgedCareComplianceSoftwarePage() {
                 Complete Coverage
               </p>
               <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
-                14 compliance modules.{" "}
+                31 modules.{" "}
                 <span className="text-[#3E5D4A]">Every obligation covered.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
@@ -377,7 +377,7 @@ export default function AgedCareComplianceSoftwarePage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid sm:grid-cols-4 gap-8 text-center">
               {[
-                { stat: "14", label: "Compliance modules" },
+                { stat: "31", label: "Compliance modules" },
                 { stat: "24hr", label: "P1 SIRS deadline tracking" },
                 { stat: "8", label: "Quality Standards covered" },
                 { stat: "Sydney", label: "Australian-hosted data" },
@@ -451,15 +451,15 @@ export default function AgedCareComplianceSoftwarePage() {
                 },
                 {
                   q: "How many modules does Statura Care include?",
-                  a: "Statura Care includes 14 compliance modules covering every major obligation area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Restrictive Practices, Infection Prevention, Quality Indicators, Prudential Compliance, Agreements & Consent, and Funding & Claims.",
+                  a: "Statura Care includes 31 modules covering every major compliance and care area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Governance, Quality Indicators, Prudential Compliance, Agreements & Consent, Funding & Claims, Clinical Care, Care Delivery, Medications, Infection Prevention, Rostering, WHS, Home Care, Billing, Documents, Integrations, Reporting, Notifications, Analytics, Resident Registry, Advance Care Planning, Family Portal, Accommodation, and Provider Registration.",
                 },
                 {
                   q: "Is Statura Care hosted in Australia?",
                   a: "Yes. All data is stored in Sydney, Australia on Australian infrastructure. Data is encrypted at rest and in transit, and row-level security ensures complete data isolation between organisations.",
                 },
                 {
-                  q: "Does Statura Care offer a free trial?",
-                  a: "Yes. Statura Care offers a 14-day free trial with no credit card required. You get full access to all modules with pre-loaded demo data so you can explore the platform immediately.",
+                  q: "Can I try the platform before committing?",
+                  a: "Yes. Request a demo and we'll walk you through the platform with your specific compliance priorities. We can also arrange a guided trial tailored to your organisation.",
                 },
                 {
                   q: "Who is Statura Care designed for?",
@@ -484,7 +484,7 @@ export default function AgedCareComplianceSoftwarePage() {
 
         <CTABanner
           title="Ready to simplify aged care compliance?"
-          description="Start your 14-day free trial. No credit card required. Australian-hosted."
+          description="Request a demo today. Australian-hosted in Sydney."
         />
       </main>
       <Footer />

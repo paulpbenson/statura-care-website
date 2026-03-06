@@ -42,7 +42,7 @@ const plans = [
     period: "",
     highlight: false,
     features: [
-      "All 14 modules",
+      "All 31 modules",
       "Unlimited team members",
       "Everything in Professional",
       "Multi-site management",
@@ -68,8 +68,7 @@ export function PricingSection() {
             <span className="text-[#3E5D4A]">Scale as you grow.</span>
           </h2>
           <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-            Every plan includes a 14-day free trial. No credit card required.
-            Cancel anytime.
+            Contact us for a tailored quote based on your modules and team size.
           </p>
         </div>
 

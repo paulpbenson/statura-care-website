@@ -4,7 +4,7 @@ import "./globals.css";
 const SITE_URL = "https://statura.care";
 const SITE_NAME = "Statura Care";
 const SITE_DESCRIPTION =
-  "Purpose-built aged care compliance software for Australian providers. 14 modules covering SIRS incident reporting, quality standards, responsible persons, workforce compliance, and prudential obligations under the Aged Care Act 2024. Australian-hosted. Free trial.";
+  "Purpose-built aged care compliance and care management software for Australian providers. 31 modules covering compliance, governance, clinical care, workforce, rostering, billing, home care, and analytics under the Aged Care Act 2024. Australian-hosted.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -34,6 +34,15 @@ export const metadata: Metadata = {
     "AN-ACC classification",
     "aged care governance",
     "residential aged care compliance",
+    "home care software Australia",
+    "aged care rostering software",
+    "aged care clinical software",
+    "aged care billing software",
+    "care minutes compliance",
+    "aged care quality indicators",
+    "aged care medications management",
+    "infection prevention aged care",
+    "aged care analytics",
   ],
   authors: [{ name: "Statura Pty Ltd" }],
   creator: "Statura Pty Ltd",
@@ -153,9 +162,26 @@ export default function RootLayout({
           "Prudential Compliance",
           "Agreements & Consent",
           "Funding & Claims (AN-ACC)",
-          "Registration Management",
+          "Provider Registration",
           "Code of Conduct",
           "Associated Providers",
+          "Governance & Board Management",
+          "Resident Registry",
+          "Advance Care Planning",
+          "Family Portal",
+          "Accommodation Management",
+          "Clinical Care & Assessments",
+          "Care Delivery & Minutes Tracking",
+          "Medications Management",
+          "Rostering & Scheduling",
+          "WHS & Safety",
+          "Home Care Services",
+          "Billing & Finance",
+          "Document Management",
+          "Integrations Hub",
+          "Reporting Hub",
+          "Notifications & Alerts",
+          "Analytics & Benchmarking",
         ],
         screenshot: `${SITE_URL}/opengraph-image`,
       },

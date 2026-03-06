@@ -49,19 +49,19 @@ export function HeroSection() {
 
           {/* Subheading */}
           <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-            Statura Care is the compliance platform purpose-built for Australian
-            aged care providers. 14 modules covering every obligation under the
-            Aged Care Act 2024 — SIRS reporting, quality standards, responsible
-            persons, workforce compliance, and more.
+            Statura Care is the compliance and care management platform
+            purpose-built for Australian aged care providers. 31 modules
+            covering residential care, home care, clinical, workforce,
+            financial, and governance obligations under the Aged Care Act 2024.
           </p>
 
           {/* CTAs */}
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <a
-              href="https://app.statura.care/signup"
+              href="/contact"
               className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg hover:shadow-xl"
             >
-              Start your free trial
+              Request a demo
             </a>
             <a
               href="#features"

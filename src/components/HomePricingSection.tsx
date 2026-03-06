@@ -5,7 +5,7 @@ import { ArrowRight, Check } from "lucide-react";
 const plans = [
   { name: "Essentials", modules: "Up to 3", team: "5 members", highlight: false },
   { name: "Professional", modules: "Up to 8", team: "15 members", highlight: true, badge: "Most popular" },
-  { name: "Enterprise", modules: "All 14", team: "Unlimited", highlight: false },
+  { name: "Enterprise", modules: "All 31", team: "Unlimited", highlight: false },
 ];
 
 export function HomePricingSection() {
@@ -22,7 +22,7 @@ export function HomePricingSection() {
             <span className="text-[#3E5D4A]">Scale as you grow.</span>
           </h2>
           <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-            Every plan includes a 14-day free trial. No credit card required.
+            Contact us for a tailored quote based on your modules and team size.
           </p>
         </div>
 

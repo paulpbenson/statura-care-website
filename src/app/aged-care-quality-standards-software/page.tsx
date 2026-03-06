@@ -24,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Quality Standards Software — ACQSC Compliance & Self-Assessment",
   description:
-    "Purpose-built aged care quality standards software for self-assessment against the 8 Aged Care Quality Standards. Map evidence, rate compliance, identify gaps, and prepare for ACQSC assessment contacts. Australian-hosted. 14-day free trial.",
+    "Purpose-built aged care quality standards software for self-assessment against the 8 Aged Care Quality Standards. Map evidence, rate compliance, identify gaps, and prepare for ACQSC assessment contacts. Australian-hosted.",
   alternates: { canonical: "https://statura.care/aged-care-quality-standards-software" },
   openGraph: {
     title: "Aged Care Quality Standards Software | Statura Care",
@@ -195,7 +195,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
       priceCurrency: "AUD",
       availability: "https://schema.org/InStock",
       offerCount: 3,
-      description: "14-day free trial. Essentials, Professional, and Enterprise plans.",
+      description: "Essentials, Professional, and Enterprise plans available. Request a demo for pricing.",
     },
     featureList: [
       "Self-assessment for all 8 Aged Care Quality Standards",
@@ -225,7 +225,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "How does self-assessment work in Statura Care?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 14 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
+          text: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 31 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
         },
       },
       {
@@ -279,21 +279,21 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 Statura Care's quality standards software helps your organisation assess compliance across all 8 standards, map evidence, identify gaps, and track continuous improvement. Prepare audit-ready documentation in minutes.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                <a
-                  href="https://app.statura.care/signup"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#0F172A] font-semibold text-sm hover:bg-slate-100 transition-all duration-150 shadow-lg"
                 >
-                  Start your 14-day free trial
-                </a>
+                  Request a demo
+                </Link>
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm hover:bg-white/5 transition-all duration-150"
                 >
-                  Request a demo
+                  Contact us
                 </Link>
               </div>
               <p className="mt-4 text-xs text-slate-500">
-                No credit card required. Australian-hosted in Sydney.
+                Australian-hosted in Sydney.
               </p>
             </div>
           </div>
@@ -604,7 +604,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 },
                 {
                   q: "How does self-assessment work in Statura Care?",
-                  a: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 14 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
+                  a: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 31 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
                 },
                 {
                   q: "How often should providers self-assess against the Quality Standards?",
@@ -696,7 +696,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         {/* CTA Banner */}
         <CTABanner
           title="Ready to assess and improve your Quality Standards compliance?"
-          description="Start your 14-day free trial. No credit card required. Australian-hosted."
+          description="Request a personalised demo tailored to your organisation. Australian-hosted."
         />
       </main>
       <Footer />
