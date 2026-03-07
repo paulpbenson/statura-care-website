@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { blogPosts } from "@/data/blog";
+import { blogPosts, blogCategories, toSlug } from "@/data/blog";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -107,25 +107,61 @@ export default function BlogPage() {
           </div>
         </section>
 
+        {/* Category Filter Pills */}
+        <section className="bg-white pt-12 lg:pt-16">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="flex flex-wrap gap-2">
+              {blogCategories.map((category) => {
+                const count = blogPosts.filter((p) => p.category === category).length;
+                return (
+                  <Link
+                    key={category}
+                    href={`/blog/category/${toSlug(category)}`}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-slate-200 text-sm font-medium text-[#1E293B] hover:border-[#3E5D4A] hover:text-[#3E5D4A] transition-colors duration-150"
+                  >
+                    {category}
+                    <span className="text-xs text-slate-400 font-normal">({count})</span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* Blog Grid */}
-        <section className="bg-white py-20 lg:py-28">
+        <section className="bg-white py-12 lg:py-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
               {sortedPosts.map((post) => (
-                <Link
+                <div
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
                   className="group p-7 rounded-2xl border border-slate-200 hover:shadow-[0_12px_30px_rgba(15,23,42,0.06)] transition-all duration-200 bg-white"
                 >
-                  <p className="text-[11px] font-semibold text-[#3E5D4A] uppercase tracking-[0.15em] mb-3">
+                  <Link
+                    href={`/blog/category/${toSlug(post.category)}`}
+                    className="text-[11px] font-semibold text-[#3E5D4A] uppercase tracking-[0.15em] mb-3 inline-block hover:text-[#96A998] transition-colors duration-150"
+                  >
                     {post.category}
-                  </p>
-                  <h2 className="font-serif font-bold text-lg lg:text-xl text-[#1E293B] leading-snug mb-3 group-hover:text-[#3E5D4A] transition-colors duration-150">
-                    {post.title}
-                  </h2>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-5 line-clamp-3">
-                    {post.description}
-                  </p>
+                  </Link>
+                  <Link href={`/blog/${post.slug}`}>
+                    <h2 className="font-serif font-bold text-lg lg:text-xl text-[#1E293B] leading-snug mb-3 group-hover:text-[#3E5D4A] transition-colors duration-150">
+                      {post.title}
+                    </h2>
+                    <p className="text-slate-500 text-sm leading-relaxed mb-4 line-clamp-3">
+                      {post.description}
+                    </p>
+                  </Link>
+                  <div className="flex flex-wrap gap-1.5 mb-5">
+                    {post.tags.map((tag) => (
+                      <Link
+                        key={tag}
+                        href={`/blog/tag/${toSlug(tag)}`}
+                        className="text-[10px] font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full hover:bg-[#3E5D4A] hover:text-white transition-colors duration-150"
+                      >
+                        {tag}
+                      </Link>
+                    ))}
+                  </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4 text-xs text-slate-400">
                       <span className="inline-flex items-center gap-1.5">
@@ -137,12 +173,15 @@ export default function BlogPage() {
                         {post.readingTime}
                       </span>
                     </div>
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#3E5D4A] opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#3E5D4A] opacity-0 group-hover:opacity-100 transition-opacity duration-150"
+                    >
                       Read article
                       <ArrowRight className="w-4 h-4" />
-                    </span>
+                    </Link>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>

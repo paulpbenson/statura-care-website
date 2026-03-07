@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { modules } from "@/data/modules";
-import { blogPosts } from "@/data/blog";
+import { blogPosts, blogCategories, blogTags, toSlug } from "@/data/blog";
 
 const SITE_URL = "https://statura.care";
 
@@ -17,6 +17,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.updatedAt || post.publishedAt),
     changeFrequency: "monthly" as const,
     priority: 0.6,
+  }));
+
+  const categoryPages = blogCategories.map((category) => ({
+    url: `${SITE_URL}/blog/category/${toSlug(category)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  const tagPages = blogTags.map((tag) => ({
+    url: `${SITE_URL}/blog/tag/${toSlug(tag)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
   }));
 
   return [
@@ -190,5 +204,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...modulePages,
     ...blogPages,
+    ...categoryPages,
+    ...tagPages,
   ];
 }

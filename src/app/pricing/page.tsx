@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CTABanner } from "@/components/CTABanner";
 import {
   Check,
   ShieldCheck,
@@ -443,6 +444,7 @@ export default function PricingPage() {
           </div>
         </section>
       </main>
+      <CTABanner />
       <Footer />
     </>
   );

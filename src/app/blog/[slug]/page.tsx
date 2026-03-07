@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CTABanner } from "@/components/CTABanner";
-import { blogPosts, getBlogPostBySlug } from "@/data/blog";
+import { blogPosts, getBlogPostBySlug, toSlug } from "@/data/blog";
 import { blogContent } from "@/data/blog-content";
 import { Calendar, Clock, User, ChevronRight, ArrowLeft } from "lucide-react";
 
@@ -184,9 +184,12 @@ export default async function BlogPostPage({
               </nav>
 
               {/* Category badge */}
-              <p className="text-[11px] font-semibold text-[#96A998] uppercase tracking-[0.15em] mb-4">
+              <Link
+                href={`/blog/category/${toSlug(post.category)}`}
+                className="text-[11px] font-semibold text-[#96A998] uppercase tracking-[0.15em] mb-4 inline-block hover:text-white transition-colors duration-150"
+              >
                 {post.category}
-              </p>
+              </Link>
 
               <h1 className="font-serif font-black text-3xl sm:text-4xl lg:text-[2.75rem] text-white leading-[1.1] tracking-tight">
                 {post.title}
@@ -207,6 +210,21 @@ export default async function BlogPostPage({
                   {post.author}
                 </span>
               </div>
+
+              {/* Tags */}
+              {post.tags.length > 0 && (
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {post.tags.map((tag) => (
+                    <Link
+                      key={tag}
+                      href={`/blog/tag/${toSlug(tag)}`}
+                      className="text-[11px] font-medium text-slate-300 bg-white/10 px-3 py-1 rounded-full hover:bg-white/20 transition-colors duration-150"
+                    >
+                      {tag}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </section>
@@ -251,17 +269,21 @@ export default async function BlogPostPage({
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedPosts.map((related) => (
-                  <Link
+                  <div
                     key={related.slug}
-                    href={`/blog/${related.slug}`}
                     className="group p-7 rounded-2xl border border-slate-200 hover:shadow-[0_12px_30px_rgba(15,23,42,0.06)] transition-all duration-200 bg-white"
                   >
-                    <p className="text-[11px] font-semibold text-[#3E5D4A] uppercase tracking-[0.15em] mb-3">
+                    <Link
+                      href={`/blog/category/${toSlug(related.category)}`}
+                      className="text-[11px] font-semibold text-[#3E5D4A] uppercase tracking-[0.15em] mb-3 inline-block hover:text-[#96A998] transition-colors duration-150"
+                    >
                       {related.category}
-                    </p>
-                    <h3 className="font-serif font-bold text-base lg:text-lg text-[#1E293B] leading-snug mb-3 group-hover:text-[#3E5D4A] transition-colors duration-150">
-                      {related.title}
-                    </h3>
+                    </Link>
+                    <Link href={`/blog/${related.slug}`}>
+                      <h3 className="font-serif font-bold text-base lg:text-lg text-[#1E293B] leading-snug mb-3 group-hover:text-[#3E5D4A] transition-colors duration-150">
+                        {related.title}
+                      </h3>
+                    </Link>
                     <div className="flex items-center gap-3 text-xs text-slate-400">
                       <span className="inline-flex items-center gap-1.5">
                         <Calendar className="w-3.5 h-3.5" />
@@ -272,7 +294,7 @@ export default async function BlogPostPage({
                         {related.readingTime}
                       </span>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>

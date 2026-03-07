@@ -193,4 +193,21 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }
 
+/** Convert a category or tag name to a URL-safe slug. */
+export function toSlug(text: string): string {
+  return text.toLowerCase().replace(/\s+/g, "-");
+}
+
+/** Find the original display name for a category slug. */
+export function getCategoryBySlug(slug: string): string | undefined {
+  return blogCategories.find((c) => toSlug(c) === slug);
+}
+
+/** Find the original display name for a tag slug. */
+export function getTagBySlug(slug: string): string | undefined {
+  return blogTags.find((t) => toSlug(t) === slug);
+}
+
 export const blogCategories = [...new Set(blogPosts.map((p) => p.category))];
+
+export const blogTags = [...new Set(blogPosts.flatMap((p) => p.tags))];
