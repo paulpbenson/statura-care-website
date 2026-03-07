@@ -75,7 +75,7 @@ const checklistSections: ChecklistSection[] = [
       {
         text: "Do you distinguish between Priority 1 and Priority 2 incidents?",
         description:
-          "Priority 1 incidents involve immediate danger, death, or serious injury and require notification within 24 hours. Priority 2 incidents must be reported within 30 business days.",
+          "Priority 1 incidents involve immediate danger, death, or serious injury and require notification within 24 hours. Priority 2 incidents must be reported within 30 calendar days.",
       },
       {
         text: "Is there a process for identifying unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, stealing or financial coercion, neglect, and inappropriate restrictive practices?",
@@ -115,7 +115,7 @@ const checklistSections: ChecklistSection[] = [
   {
     id: "priority-2-reporting",
     number: 3,
-    title: "Priority 2 Reporting (30 business days)",
+    title: "Priority 2 Reporting (30 calendar days)",
     icon: Clock,
     items: [
       {
@@ -124,14 +124,14 @@ const checklistSections: ChecklistSection[] = [
           "Priority 2 incidents are reportable serious incidents that do not meet the threshold for Priority 1 — they do not involve immediate danger, death, or serious injury but are still reportable under SIRS.",
       },
       {
-        text: "Do you have a process to notify ACQSC within 30 business days?",
+        text: "Do you have a process to notify ACQSC within 30 calendar days?",
         description:
           "The 30 business day deadline requires careful tracking. Late notifications are a compliance failure that may trigger regulatory attention.",
       },
       {
-        text: "Do you track business days accurately (excluding weekends and public holidays)?",
+        text: "Do you track the 30 calendar day deadline accurately?",
         description:
-          "Business days exclude weekends and Australian public holidays. If your jurisdiction has state-specific public holidays, these must also be excluded from the count.",
+          "The 30-day deadline is counted in calendar days (not business days). Accurate tracking and automated reminders help ensure notifications are submitted on time.",
       },
     ],
   },
@@ -258,7 +258,7 @@ const automationFeatures = [
   {
     title: "Deadline calculation",
     description:
-      "The system calculates exact notification deadlines — 24 hours for Priority 1, 30 business days for Priority 2 — accounting for weekends and public holidays.",
+      "The system calculates exact notification deadlines — 24 hours for Priority 1, 30 calendar days for Priority 2 — with escalating alerts as deadlines approach.",
   },
   {
     title: "Escalating alerts",

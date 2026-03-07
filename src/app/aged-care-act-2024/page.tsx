@@ -92,7 +92,7 @@ const obligations = [
     title: "Serious Incidents (SIRS)",
     sections: "ss 162\u2013164",
     description:
-      "The Serious Incident Response Scheme requires providers to identify, manage, and report serious incidents. Priority 1 incidents must be notified to the ACQSC within 24 hours. Priority 2 incidents must be notified within 30 business days. Providers must investigate all incidents and implement corrective actions to prevent recurrence.",
+      "The Serious Incident Response Scheme requires providers to identify, manage, and report serious incidents. Priority 1 incidents must be notified to the ACQSC within 24 hours. Priority 2 incidents must be notified within 30 calendar days. Providers must investigate all incidents and implement corrective actions to prevent recurrence.",
     href: "/modules/sirs",
   },
   {
@@ -189,7 +189,7 @@ const faqs = [
   },
   {
     q: "What is SIRS reporting?",
-    a: "SIRS (Serious Incident Response Scheme) is the mandatory incident reporting framework under the Act. Providers must identify, manage, investigate, and report serious incidents to the ACQSC. Priority 1 incidents \u2014 including unreasonable use of force, sexual misconduct, and unexpected death \u2014 must be reported within 24 hours. Priority 2 incidents must be reported within 30 business days. Providers must also have an effective incident management system.",
+    a: "SIRS (Serious Incident Response Scheme) is the mandatory incident reporting framework under the Act. Providers must identify, manage, investigate, and report serious incidents to the ACQSC. Priority 1 incidents \u2014 including unreasonable use of force, sexual misconduct, and unexpected death \u2014 must be reported within 24 hours. Priority 2 incidents must be reported within 30 calendar days. Providers must also have an effective incident management system.",
   },
 ];
 

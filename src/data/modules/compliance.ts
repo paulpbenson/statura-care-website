@@ -162,7 +162,7 @@ export const complianceModules: ModuleData[] = [
     ],
     regulatoryRequirements: [
       { title: "P1: 24-Hour Notification", description: "Priority 1 incidents \u2014 those causing or likely to cause serious harm \u2014 must be notified to the ACQSC within 24 hours." },
-      { title: "P2: 30-Day Notification", description: "Priority 2 incidents must be notified within 30 business days." },
+      { title: "P2: 30-Day Notification", description: "Priority 2 incidents must be notified within 30 calendar days." },
       { title: "P1 Update: 7 Days", description: "An update report for Priority 1 incidents must be submitted within 7 days of the initial notification." },
       { title: "Investigation Required", description: "All serious incidents must be investigated with findings documented." },
     ],

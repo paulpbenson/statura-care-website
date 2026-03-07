@@ -106,7 +106,7 @@ export function HeroSection() {
             <div className="p-6 lg:p-8">
               <div className="grid grid-cols-4 gap-4 mb-6">
                 {[
-                  { label: "Standards Compliant", value: "7/8", color: "text-green-400" },
+                  { label: "Standards Compliant", value: "7/7", color: "text-green-400" },
                   { label: "Active Incidents", value: "3", color: "text-amber-400" },
                   { label: "Overdue Actions", value: "0", color: "text-green-400" },
                   { label: "RP Assessments Due", value: "2", color: "text-blue-400" },
