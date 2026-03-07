@@ -23,7 +23,7 @@ export const reportingModules: ModuleData[] = [
     applicableTo: ["residential", "home-care"],
     capabilities: [
       { title: "Cross-Module Report Generation", description: "Generate reports from any module in the platform \u2014 84 report types covering compliance, clinical, workforce, financial, and operational data. Reports are generated in real time from live data." },
-      { title: "Board Pack Compilation", description: "Compile comprehensive board packs by selecting reports from across modules. Add cover pages, executive summaries, and commentary. Track board pack distribution and acknowledgment." },
+      { title: "Board Pack Compilation", description: "Compile comprehensive board packs by selecting reports from across modules. Add cover pages, executive summaries, and commentary. Track board pack distribution and acknowledgement." },
       { title: "Regulatory Submission Tracking", description: "Track all regulatory submission deadlines \u2014 NAQIMQP, QI reporting, DEX, prudential statements, and more. Submission status, reference numbers, and evidence are recorded for audit." },
       { title: "Scheduled Reports", description: "Configure reports to generate automatically on a daily, weekly, monthly, or quarterly schedule. Reports are delivered to nominated recipients by email or stored in the archive." },
       { title: "Report Archive", description: "Every generated report is archived with timestamp, generator, parameters, and output. Search and retrieve any historical report instantly." },
@@ -65,7 +65,7 @@ export const reportingModules: ModuleData[] = [
       { title: "Bulk Alert Management", description: "Resolve, snooze, or reassign alerts in bulk. Manage alert fatigue by tuning thresholds and reducing low-value notifications." },
     ],
     regulatoryRequirements: [
-      { title: "Timely Response", description: "Regulatory deadlines (SIRS reporting, complaints acknowledgment) require timely awareness and response." },
+      { title: "Timely Response", description: "Regulatory deadlines (SIRS reporting, complaints acknowledgement) require timely awareness and response." },
       { title: "Escalation Protocols", description: "Providers must have escalation protocols ensuring critical issues reach decision-makers promptly." },
       { title: "Audit Trail", description: "Alert history provides evidence of timely awareness and response to compliance events." },
     ],

@@ -36,7 +36,7 @@ const moduleGroups = [
         code: "Conduct",
         section: "ss63-65",
         description:
-          "Track worker acknowledgments, training compliance, breach investigations with natural justice protections, and ACQSC reporting.",
+          "Track worker acknowledgements, training compliance, breach investigations with natural justice protections, and ACQSC reporting.",
       },
       {
         icon: Users,
@@ -83,7 +83,7 @@ const moduleGroups = [
         code: "Complaints",
         section: "ss196-201",
         description:
-          "5-business-day acknowledgment and 30-day resolution tracking, escalation workflow, systemic issue identification, and adverse action monitoring.",
+          "5-business-day acknowledgement and 30-day resolution tracking, escalation workflow, systemic issue identification, and adverse action monitoring.",
       },
       {
         icon: ShieldAlert,

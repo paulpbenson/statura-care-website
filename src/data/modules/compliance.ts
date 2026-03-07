@@ -103,15 +103,15 @@ export const complianceModules: ModuleData[] = [
     section: "ss63\u201365",
     tagline: "Every worker acknowledged. Every breach investigated.",
     shortDescription:
-      "Track worker acknowledgments, training compliance, breach investigations with natural justice protections, and ACQSC reporting.",
+      "Track worker acknowledgements, training compliance, breach investigations with natural justice protections, and ACQSC reporting.",
     longDescription:
       "The Aged Care Act 2024 establishes a statutory Code of Conduct covering eight obligations that apply to every person working in aged care \u2014 employees, contractors, volunteers, and governing persons. Statura Care\u2019s Code of Conduct module ensures every worker acknowledges the Code, completes mandatory training, and that any alleged breaches are investigated with full natural justice protections.",
     problemStatement:
-      "Every worker and governing person in aged care is subject to the statutory Code of Conduct. Providers must ensure 100% acknowledgment, deliver training, and investigate breaches with documented natural justice. Tracking this across hundreds of workers with spreadsheets leaves gaps that expose your organisation to regulatory action.",
+      "Every worker and governing person in aged care is subject to the statutory Code of Conduct. Providers must ensure 100% acknowledgement, deliver training, and investigate breaches with documented natural justice. Tracking this across hundreds of workers with spreadsheets leaves gaps that expose your organisation to regulatory action.",
     applicableTo: ["residential", "home-care"],
     capabilities: [
-      { title: "Worker Register", description: "Maintain a register of every person subject to the Code \u2014 employees, contractors, volunteers, governing persons, and agency staff. Track their acknowledgment status, training compliance, and any conduct history." },
-      { title: "Acknowledgment Tracking", description: "Every worker must acknowledge reading and understanding the Code. Track acknowledgment dates with version control. When the Code is updated, the system triggers re-acknowledgment requirements automatically." },
+      { title: "Worker Register", description: "Maintain a register of every person subject to the Code \u2014 employees, contractors, volunteers, governing persons, and agency staff. Track their acknowledgement status, training compliance, and any conduct history." },
+      { title: "Acknowledgment Tracking", description: "Every worker must acknowledge reading and understanding the Code. Track acknowledgement dates with version control. When the Code is updated, the system triggers re-acknowledgement requirements automatically." },
       { title: "Training Management", description: "Induction and periodic refresher training tracked with completion dates, expiry dates, and compliance rates. Training modules cover all eight statutory obligations." },
       { title: "Breach Investigation Workflow", description: "Structured investigation process: intake, investigator assignment (separate from the subject), terms of reference, evidence gathering, interviews, and the subject\u2019s right to respond before findings are made." },
       { title: "Outcome & Action Recording", description: "Record findings as substantiated, unsubstantiated, or inconclusive. Document actions taken \u2014 from counselling and training to warnings, suspension, termination, or ACQSC reporting for banning order consideration." },
@@ -119,7 +119,7 @@ export const complianceModules: ModuleData[] = [
     ],
     regulatoryRequirements: [
       { title: "Universal Coverage", description: "All workers and governing persons are subject to the Code \u2014 no exceptions." },
-      { title: "Mandatory Acknowledgment", description: "Every person must acknowledge the Code in writing, with re-acknowledgment when the Code is updated." },
+      { title: "Mandatory Acknowledgment", description: "Every person must acknowledge the Code in writing, with re-acknowledgement when the Code is updated." },
       { title: "Natural Justice", description: "Breach investigations must provide the subject a right to respond before findings are made." },
       { title: "Serious Breach Reporting", description: "Serious breaches must be reported to the ACQSC Commissioner, who may issue banning orders." },
     ],
@@ -230,7 +230,7 @@ export const complianceModules: ModuleData[] = [
       { title: "Eligible Recipient Access Control", description: "Discloser identity is restricted to designated eligible recipients (typically compliance officer, CEO, board chair). Every access to confidential identity fields is logged." },
       { title: "Investigation Management", description: "Structured investigation: assign an investigator (who is not the subject), set terms of reference, gather evidence, document findings, and recommend actions with procedural fairness." },
       { title: "Discloser Protection Monitoring", description: "After a disclosure, actively monitor the discloser (if known) for potential reprisal. Track employment changes, schedule regular check-ins, and record any concerns." },
-      { title: "Policy & Acknowledgment Management", description: "Maintain your whistleblower policy with version control, track distribution to staff, and record acknowledgments. Annual policy review reminders ensure your policy stays current." },
+      { title: "Policy & Acknowledgment Management", description: "Maintain your whistleblower policy with version control, track distribution to staff, and record acknowledgements. Annual policy review reminders ensure your policy stays current." },
     ],
     regulatoryRequirements: [
       { title: "Documented Policy", description: "Providers must have a documented whistleblower policy, reviewed at least annually." },
@@ -254,7 +254,7 @@ export const complianceModules: ModuleData[] = [
     section: "ss196\u2013201",
     tagline: "Acknowledge in 5. Resolve in 30. Track every interaction.",
     shortDescription:
-      "5-business-day acknowledgment and 30-day resolution tracking, escalation workflow, systemic issue identification, and adverse action monitoring.",
+      "5-business-day acknowledgement and 30-day resolution tracking, escalation workflow, systemic issue identification, and adverse action monitoring.",
     longDescription:
       "The Act requires providers to acknowledge complaints within 5 business days and resolve them within 30. Statura Care\u2019s Complaints module structures the entire lifecycle \u2014 from receipt through investigation and resolution \u2014 with built-in deadline tracking, escalation pathways, and monitoring to ensure complainants don\u2019t suffer adverse action.",
     problemStatement:
@@ -262,7 +262,7 @@ export const complianceModules: ModuleData[] = [
     applicableTo: ["residential", "home-care"],
     capabilities: [
       { title: "Complaints Register", description: "Track every complaint from receipt to resolution with auto-generated complaint numbers. Classify across 14 categories with severity grading." },
-      { title: "Statutory Deadline Tracking", description: "The system auto-calculates the 5-business-day acknowledgment deadline and 30-business-day resolution deadline from receipt. Escalating alerts ensure you never miss a statutory timeframe." },
+      { title: "Statutory Deadline Tracking", description: "The system auto-calculates the 5-business-day acknowledgement deadline and 30-business-day resolution deadline from receipt. Escalating alerts ensure you never miss a statutory timeframe." },
       { title: "Communication Log", description: "Document every interaction with the complainant \u2014 phone, email, in-person, letter. A chronological record of all communications demonstrates your commitment to resolution." },
       { title: "Escalation Management", description: "Track internal escalations (to management) and external escalations (to the Commissioner) with reference numbers. Some complaints may need to be escalated to the SIRS or Whistleblower modules." },
       { title: "Adverse Action Monitoring", description: "After a complaint is lodged, monitor the care recipient for adverse action \u2014 ensuring they don\u2019t experience negative treatment as a result of complaining." },

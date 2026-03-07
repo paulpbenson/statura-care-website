@@ -63,8 +63,8 @@ export const residentModules: ModuleData[] = [
       { title: "Agreement Register", description: "Track every resident agreement with parties, execution date, commencement date, type (residential, home care, flexible, respite, short-term restorative), and current status." },
       { title: "Mandatory Content Checklist", description: "The system tracks all 10 legislated mandatory content areas for each agreement \u2014 care and services, fees, rights, provider obligations, complaints process, termination, notice periods, security of tenure, privacy, and information consent." },
       { title: "Consent Management", description: "Track all consents: care plan, restrictive practices, information sharing, photography, advance care directives, research, medication, transport, outings, and financial management." },
-      { title: "Fee Schedule Tracking", description: "Itemise all fees and charges per agreement with change history. The system calculates required notice periods for fee changes and tracks acknowledgment." },
-      { title: "Variation Management", description: "When care, services, or fees change, track the variation with notice given, acknowledgment received, and effective date." },
+      { title: "Fee Schedule Tracking", description: "Itemise all fees and charges per agreement with change history. The system calculates required notice periods for fee changes and tracks acknowledgement." },
+      { title: "Variation Management", description: "When care, services, or fees change, track the variation with notice given, acknowledgement received, and effective date." },
       { title: "Regulatory Disclosure Tracking", description: "Track required disclosures to care recipients: Charter of Aged Care Rights, fees and charges, complaints process, privacy notice, security of tenure, and advocacy services." },
     ],
     regulatoryRequirements: [
