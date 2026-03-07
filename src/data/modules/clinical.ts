@@ -13,7 +13,7 @@ export const clinicalModules: ModuleData[] = [
     code: "ClinicalCare",
     category: "Clinical & Care",
     icon: Activity,
-    section: "Standards 2\u20133",
+    section: "Standards 3 & 5",
     tagline: "Clinical intelligence at the point of care.",
     shortDescription:
       "Vital signs monitoring with abnormal detection, 9 standardised clinical assessments (MMSE, Braden, ADL, MoCA, and more), wound management, and care planning.",
@@ -31,8 +31,8 @@ export const clinicalModules: ModuleData[] = [
       { title: "Clinical Reporting", description: "Vital signs trends, assessment summaries, wound registers, and care plan compliance reports for clinical governance and Quality Standard evidence." },
     ],
     regulatoryRequirements: [
-      { title: "Ongoing Clinical Assessment", description: "Quality Standard 2 requires ongoing assessment and planning with the consumer to optimise health and wellbeing." },
-      { title: "Clinical Care Standards", description: "Quality Standard 3 requires safe, effective clinical care that meets the consumer\u2019s needs and is delivered by competent staff." },
+      { title: "Ongoing Clinical Assessment", description: "Quality Standard 3 (The Care and Services) requires ongoing assessment and planning with the consumer to optimise health and wellbeing." },
+      { title: "Clinical Care Standards", description: "Quality Standard 5 (Clinical Care) requires safe, effective clinical care that meets the consumer\u2019s needs and is delivered by competent staff." },
       { title: "Care Plan Documentation", description: "Care plans must be documented, regularly reviewed, and reflect the consumer\u2019s current needs and preferences." },
     ],
     integrations: [
@@ -49,7 +49,7 @@ export const clinicalModules: ModuleData[] = [
     code: "CareDelivery",
     category: "Clinical & Care",
     icon: Clipboard,
-    section: "Standard 7",
+    section: "Standard 3",
     tagline: "Track every minute of care delivered.",
     shortDescription:
       "Progress notes, shift handover reports, and care minutes tracking against the 215/44 mandate with daily and quarterly compliance views.",
@@ -85,7 +85,7 @@ export const clinicalModules: ModuleData[] = [
     code: "Medications",
     category: "Clinical & Care",
     icon: Pill,
-    section: "Standard 3",
+    section: "Standard 5",
     tagline: "Safe medication management from order to administration.",
     shortDescription:
       "Medication orders, administration recording, Schedule 8 controlled drug register, adverse reaction tracking, drug interaction checking, and reconciliation.",
@@ -103,7 +103,7 @@ export const clinicalModules: ModuleData[] = [
       { title: "Medication Reconciliation", description: "Structured reconciliation on admission, transfer, and discharge. Compare ordered medications against actual supply and identify discrepancies for clinical review." },
     ],
     regulatoryRequirements: [
-      { title: "Safe Medication Practices", description: "Quality Standard 3 requires safe medication management including prescribing, dispensing, administration, and review." },
+      { title: "Safe Medication Practices", description: "Quality Standard 5 (Clinical Care) requires safe medication management including prescribing, dispensing, administration, and review." },
       { title: "S8 Record Keeping", description: "Schedule 8 drugs require a formal register with receipt, administration, disposal, and balance records maintained at all times." },
       { title: "Medication Review", description: "Residents should receive regular medication reviews, particularly those on multiple medications (polypharmacy)." },
       { title: "Incident Reporting", description: "Medication incidents must be recorded and reported through the incident management system." },
@@ -121,7 +121,7 @@ export const clinicalModules: ModuleData[] = [
     code: "IPC",
     category: "Clinical & Care",
     icon: ShieldPlus,
-    section: "Standards 3 & 5",
+    section: "Standards 4 & 5",
     tagline: "Detect outbreaks early. Respond systematically. Prove the controls.",
     shortDescription:
       "Infection surveillance, outbreak auto-detection, hand hygiene audits, antimicrobial stewardship, and outbreak management with notification tracking.",
@@ -146,7 +146,7 @@ export const clinicalModules: ModuleData[] = [
     ],
     integrations: [
       { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Outbreak-related serious harm may be reportable as a SIRS incident." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "IPC data feeds into Standard 3 (Clinical Care) and Standard 5 (Service Environment)." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "IPC data feeds into Standard 4 (The Environment) and Standard 5 (Clinical Care)." },
       { moduleSlug: "workforce", moduleName: "Workforce Compliance", description: "IPC training records tracked in the workforce module." },
     ],
   },

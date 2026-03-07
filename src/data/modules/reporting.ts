@@ -100,7 +100,7 @@ export const reportingModules: ModuleData[] = [
       { title: "Star Rating Projection", description: "Based on your current data, project your likely Star Rating across the four domains: residents\u2019 experience, compliance, quality measures, and staffing." },
     ],
     regulatoryRequirements: [
-      { title: "Continuous Improvement", description: "Quality Standard 8 requires providers to actively pursue continuous improvement based on data and evidence." },
+      { title: "Continuous Improvement", description: "Quality Standard 2 (The Organisation) requires providers to actively pursue continuous improvement based on data and evidence." },
       { title: "Governing Body Oversight", description: "Governing bodies must have access to performance data to fulfil their oversight obligations." },
       { title: "Star Ratings Awareness", description: "Providers should monitor their performance against Star Rating domains to maintain competitive positioning." },
     ],

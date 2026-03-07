@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Rostering Software — Care Minutes Tracking & Compliance",
   description:
-    "Rostering software built for aged care compliance. Track care minutes against the 200-minute target, manage 24/7 RN coverage, SCHADS Award calculations, and workforce compliance under the Aged Care Act 2024.",
+    "Rostering software built for aged care compliance. Track care minutes against the 215-minute target, manage 24/7 RN coverage, SCHADS Award calculations, and workforce compliance under the Aged Care Act 2024.",
   alternates: { canonical: "https://statura.care/aged-care-rostering-software" },
   openGraph: {
     title: "Aged Care Rostering Software | Statura Care",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "aged care rostering software",
     "care minutes tracking",
     "aged care staffing software",
-    "200 care minutes",
+    "215 care minutes",
     "RN coverage aged care",
     "aged care workforce management",
     "SCHADS calculator",
@@ -44,7 +44,7 @@ const benefits = [
     icon: Clock,
     title: "Care Minutes Tracking",
     description:
-      "Real-time tracking against the 200-minute (incl. 40-minute RN) target per resident per day. See exactly where you stand against the mandatory care minutes requirement at any point in the quarter.",
+      "Real-time tracking against the 215-minute (incl. 44-minute RN) target per resident per day. See exactly where you stand against the mandatory care minutes requirement at any point in the quarter.",
   },
   {
     icon: Stethoscope,
@@ -95,7 +95,7 @@ export default function AgedCareRosteringSoftwarePage() {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "Rostering software built for aged care compliance. Track care minutes against the 200-minute target, manage 24/7 RN coverage, SCHADS Award calculations, and workforce compliance under the Aged Care Act 2024.",
+      "Rostering software built for aged care compliance. Track care minutes against the 215-minute target, manage 24/7 RN coverage, SCHADS Award calculations, and workforce compliance under the Aged Care Act 2024.",
     url: "https://statura.care/aged-care-rostering-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -106,7 +106,7 @@ export default function AgedCareRosteringSoftwarePage() {
       description: "Essentials, Professional, and Enterprise plans available. Request a demo for pricing.",
     },
     featureList: [
-      "Care minutes tracking (200-minute target)",
+      "Care minutes tracking (215-minute target)",
       "24/7 RN coverage monitoring",
       "SCHADS Award pay calculator",
       "Shift management with qualification matching",
@@ -122,10 +122,10 @@ export default function AgedCareRosteringSoftwarePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is the 200 care minutes target?",
+        name: "What is the 215 care minutes target?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The 200 care minutes target requires residential aged care facilities to provide an average of 200 minutes of care per resident per day, including at least 40 minutes from a registered nurse. This is a mandatory requirement under the Aged Care Act 2024, not a guideline.",
+          text: "The 215 care minutes target requires residential aged care facilities to provide an average of 215 minutes of care per resident per day, including at least 44 minutes from a registered nurse. This mandatory target has applied since 1 October 2024 under the Aged Care Act 2024, and is not a guideline.",
         },
       },
       {
@@ -141,7 +141,7 @@ export default function AgedCareRosteringSoftwarePage() {
         name: "How does care minutes tracking work?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Statura Care tracks care minutes in real time based on rostered and actual shifts. It calculates the average minutes per resident per day and shows how you're tracking against the 200-minute target (including the 40-minute RN component) throughout the quarter.",
+          text: "Statura Care tracks care minutes in real time based on rostered and actual shifts. It calculates the average minutes per resident per day and shows how you're tracking against the 215-minute target (including the 44-minute RN component) throughout the quarter.",
         },
       },
       {
@@ -177,7 +177,7 @@ export default function AgedCareRosteringSoftwarePage() {
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Not just schedules — care minutes tracking, 24/7 RN coverage
                 monitoring, SCHADS Award calculations, and workforce compliance.
-                Built for the 200-minute target.
+                Built for the 215-minute target.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -246,7 +246,7 @@ export default function AgedCareRosteringSoftwarePage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="font-serif font-bold text-2xl lg:text-3xl text-white leading-tight tracking-tight mb-6">
-                200 minutes per resident per day. 40 minutes from a registered
+                215 minutes per resident per day. 44 minutes from a registered
                 nurse. 24/7 RN coverage.
               </h2>
               <p className="text-lg text-slate-400 leading-relaxed">
@@ -257,8 +257,8 @@ export default function AgedCareRosteringSoftwarePage() {
             </div>
             <div className="grid sm:grid-cols-4 gap-8 text-center mt-12">
               {[
-                { stat: "200", label: "Care minutes per resident per day" },
-                { stat: "40", label: "RN minutes per resident per day" },
+                { stat: "215", label: "Care minutes per resident per day" },
+                { stat: "44", label: "RN minutes per resident per day" },
                 { stat: "24/7", label: "Registered nurse coverage" },
                 { stat: "15", label: "SCHADS classification levels" },
               ].map((item) => (
@@ -285,7 +285,7 @@ export default function AgedCareRosteringSoftwarePage() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { title: "Meeting the 200 Care Minutes Target", href: "/blog/care-minutes-target-200-minutes-compliance" },
+                { title: "Meeting the 215 Care Minutes Target", href: "/blog/care-minutes-target-200-minutes-compliance" },
                 { title: "SCHADS Award Pay Rates Explained", href: "/blog/schads-award-pay-rates-aged-care" },
                 { title: "24/7 RN Coverage Requirements", href: "/blog/24-7-rn-coverage-requirements-aged-care" },
                 { title: "Workforce Compliance Under the Act", href: "/blog/workforce-compliance-aged-care-act-2024" },
@@ -323,8 +323,8 @@ export default function AgedCareRosteringSoftwarePage() {
             <div className="space-y-6">
               {[
                 {
-                  q: "What is the 200 care minutes target?",
-                  a: "The 200 care minutes target requires residential aged care facilities to provide an average of 200 minutes of care per resident per day, including at least 40 minutes from a registered nurse. This is a mandatory requirement under the Aged Care Act 2024, not a guideline.",
+                  q: "What is the 215 care minutes target?",
+                  a: "The 215 care minutes target requires residential aged care facilities to provide an average of 215 minutes of care per resident per day, including at least 44 minutes from a registered nurse. This mandatory target has applied since 1 October 2024 under the Aged Care Act 2024, and is not a guideline.",
                 },
                 {
                   q: "Does Statura Care calculate SCHADS Award pay rates?",
@@ -332,7 +332,7 @@ export default function AgedCareRosteringSoftwarePage() {
                 },
                 {
                   q: "How does care minutes tracking work?",
-                  a: "Statura Care tracks care minutes in real time based on rostered and actual shifts. It calculates the average minutes per resident per day and shows how you're tracking against the 200-minute target (including the 40-minute RN component) throughout the quarter.",
+                  a: "Statura Care tracks care minutes in real time based on rostered and actual shifts. It calculates the average minutes per resident per day and shows how you're tracking against the 215-minute target (including the 44-minute RN component) throughout the quarter.",
                 },
                 {
                   q: "Can it manage 24/7 RN coverage?",

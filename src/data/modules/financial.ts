@@ -40,7 +40,7 @@ export const financialModules: ModuleData[] = [
     ],
     integrations: [
       { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Governing body financial expertise from the skills matrix displayed as evidence for Prudential Standard 1." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Prudential compliance feeds into Quality Standard 8 (Governance)." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Prudential compliance feeds into Quality Standard 2 (The Organisation)." },
       { moduleSlug: "agreements", moduleName: "Agreements & Consent", description: "Accommodation payment terms in agreements link to deposit records." },
       { moduleSlug: "billing", moduleName: "Billing & Finance", description: "DAP charges and deposit interest flow into resident billing." },
     ],
@@ -79,7 +79,7 @@ export const financialModules: ModuleData[] = [
       { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Incidents causing care level changes prompt reclassification review alerts." },
       { moduleSlug: "prudential", moduleName: "Prudential Compliance", description: "Funding data feeds into financial position and liquidity planning." },
       { moduleSlug: "billing", moduleName: "Billing & Finance", description: "Subsidy income flows into billing and financial reconciliation." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Funding governance feeds into Quality Standard 8 evidence." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Funding governance feeds into Quality Standard 2 (The Organisation) evidence." },
     ],
   },
 

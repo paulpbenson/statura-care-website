@@ -141,9 +141,10 @@ export default function ForHomeCarePage() {
                 <span className="text-[#3E5D4A]">are navigating right now.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                The Support at Home program replaced HCP and CHSP with an entirely
-                new funding model. These are the challenges Statura Care was
-                built to solve for home care providers.
+                The Support at Home program replaced HCP with an entirely
+                new funding model (CHSP transitions no earlier than July 2027).
+                These are the challenges Statura Care was built to solve for
+                home care providers.
               </p>
             </div>
 

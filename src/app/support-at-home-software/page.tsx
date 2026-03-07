@@ -135,7 +135,7 @@ export default function SupportAtHomeSoftwarePage() {
         name: "What is the Support at Home program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Support at Home (SAH) program replaced HCP and CHSP from 1 July 2025. It introduced 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals.",
+          text: "The Support at Home (SAH) program replaced HCP from 1 November 2025. It introduced 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals. CHSP will transition to Support at Home no earlier than 1 July 2027.",
         },
       },
       {
@@ -366,7 +366,7 @@ export default function SupportAtHomeSoftwarePage() {
               {[
                 {
                   q: "What is the Support at Home program?",
-                  a: "The Support at Home (SAH) program replaced HCP and CHSP from 1 July 2025. It introduced 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals. The program provides a single, streamlined home care system that focuses on wellness, reablement, and independence.",
+                  a: "The Support at Home (SAH) program replaced HCP from 1 November 2025. It introduced 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals. The CHSP will transition to Support at Home no earlier than 1 July 2027. The program provides a single, streamlined home care system that focuses on wellness, reablement, and independence.",
                 },
                 {
                   q: "Can I use Statura Care for both residential and home care?",

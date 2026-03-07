@@ -76,7 +76,7 @@ const benefits = [
     icon: BarChart3,
     title: "Cross-module intelligence",
     description:
-      "SIRS data feeds Quality Standard 8 evidence. Workforce staffing feeds Standard 7. Complaint trends feed Standard 6. Data entered once works everywhere.",
+      "SIRS data feeds Quality Standard 2 (The Organisation) evidence. Workforce staffing feeds Standard 2. Clinical data feeds Standard 5. Complaint trends feed Standard 2. Data entered once works everywhere.",
   },
   {
     icon: Puzzle,
@@ -421,7 +421,7 @@ export default function AgedCareComplianceSoftwarePage() {
                 { title: "SIRS Reporting Obligations Under the Aged Care Act 2024", href: "/blog/sirs-reporting-obligations-aged-care-act-2024" },
                 { title: "How to Build a Responsible Persons Register", href: "/blog/responsible-persons-register-guide" },
                 { title: "Quality Standards Self-Assessment Checklist", href: "/blog/aged-care-quality-standards-self-assessment-checklist" },
-                { title: "Meeting the 200 Care Minutes Target", href: "/blog/care-minutes-target-200-minutes-compliance" },
+                { title: "Meeting the 215 Care Minutes Target", href: "/blog/care-minutes-target-200-minutes-compliance" },
                 { title: "Prudential Compliance for Aged Care", href: "/blog/prudential-compliance-refundable-deposits-aged-care" },
                 { title: "View all modules", href: "/modules" },
               ].map((link) => (

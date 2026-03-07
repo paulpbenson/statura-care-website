@@ -138,7 +138,7 @@ export const residentModules: ModuleData[] = [
       { title: "Engagement Reporting", description: "Track family engagement metrics: active members, message frequency, feedback themes, and response times." },
     ],
     regulatoryRequirements: [
-      { title: "Consumer Engagement", description: "Quality Standard 6 requires providers to support consumers and their families to provide feedback and be involved in care." },
+      { title: "Consumer Engagement", description: "Quality Standard 1 (The Individual) and Standard 2 (The Organisation) require providers to support consumers and their families to provide feedback and be involved in care." },
       { title: "Information Access", description: "Families have a right to access information about their loved one\u2019s care, subject to privacy requirements and resident consent." },
       { title: "Feedback Mechanisms", description: "Providers must have accessible mechanisms for families to provide feedback and raise concerns." },
     ],
@@ -173,7 +173,7 @@ export const residentModules: ModuleData[] = [
     ],
     regulatoryRequirements: [
       { title: "Approved Places", description: "Providers must operate within their approved number of places for each facility location." },
-      { title: "Service Environment", description: "Quality Standard 5 requires a safe, comfortable, and well-maintained service environment." },
+      { title: "The Environment", description: "Quality Standard 4 (The Environment) requires a safe, comfortable, and welcoming service environment." },
       { title: "Accommodation Records", description: "Accurate records of accommodation arrangements must be maintained for each resident." },
     ],
     integrations: [

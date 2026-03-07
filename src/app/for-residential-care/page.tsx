@@ -50,7 +50,7 @@ const challenges = [
   },
   {
     icon: Clock,
-    title: "200 care minutes per day",
+    title: "215 care minutes per day",
     description:
       "The 215/44 mandate requires 215 minutes of direct care per resident per day, with 44 from a registered nurse. Non-compliance carries financial penalties. You need daily visibility into care minutes delivery, not a quarterly surprise.",
   },
@@ -72,7 +72,7 @@ const workflowSteps = [
   { step: "01", title: "Report the incident", description: "Staff report a serious incident. The system auto-classifies priority and calculates the ACQSC notification deadline." },
   { step: "02", title: "Track the deadline", description: "Priority 1 triggers a 24-hour countdown with escalating alerts. Priority 2 has a 30-day deadline with alerts at 14, 25, and 28 days." },
   { step: "03", title: "Investigate and document", description: "Assign an investigator, record findings, identify root causes, and document recommendations with full audit trail." },
-  { step: "04", title: "Map evidence to standards", description: "Incident data auto-feeds into Quality Standard 8. Clinical data feeds Standards 2 and 3. Evidence builds through normal operations." },
+  { step: "04", title: "Map evidence to standards", description: "Incident data auto-feeds into Standard 2 (The Organisation) and Standard 3 (The Care and Services). Clinical data feeds Standard 5 (Clinical Care). Evidence builds through normal operations." },
   { step: "05", title: "Track workforce compliance", description: "Screening expiries, mandatory training, daily care minutes, and 24/7 RN coverage are monitored continuously." },
   { step: "06", title: "Generate the audit pack", description: "When the ACQSC arrives, generate a comprehensive audit preparation pack with all self-assessments, evidence, and improvement actions." },
 ];
@@ -277,8 +277,8 @@ export default function ForResidentialCarePage() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
               {[
-                { stat: "200+", label: "Care minutes per day" },
-                { stat: "40", label: "RN minutes minimum" },
+                { stat: "215", label: "Care minutes per day" },
+                { stat: "44", label: "RN minutes minimum" },
                 { stat: "24/7", label: "RN coverage required" },
                 { stat: "8", label: "Quality Standards" },
               ].map((item) => (

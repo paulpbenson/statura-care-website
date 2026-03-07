@@ -37,7 +37,7 @@ const reasons = [
     icon: Puzzle,
     title: "Cross-module intelligence",
     description:
-      "When a SIRS incident is logged, it auto-creates evidence for Quality Standard 8. When a responsible person's screening expires, it flags in both KeyPerson and Workforce. Intelligence compounds across modules.",
+      "When a SIRS incident is logged, it auto-creates evidence for Quality Standard 2 (The Organisation). When a responsible person's screening expires, it flags in both KeyPerson and Workforce. Intelligence compounds across modules.",
   },
   {
     icon: HeartHandshake,

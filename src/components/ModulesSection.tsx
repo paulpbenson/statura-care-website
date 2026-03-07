@@ -75,7 +75,7 @@ const moduleGroups = [
         code: "Standards",
         section: "ss146-147",
         description:
-          "Self-assess against all 8 Quality Standards, map evidence from across modules, track continuous improvement, and generate audit preparation packs.",
+          "Self-assess against all 7 Quality Standards, map evidence from across modules, track continuous improvement, and generate audit preparation packs.",
       },
       {
         icon: MessageSquareWarning,
@@ -97,7 +97,7 @@ const moduleGroups = [
         icon: Microscope,
         name: "Infection Prevention",
         code: "IPC",
-        section: "Standard 3 & 5",
+        section: "Standard 4 & 5",
         description:
           "Infection surveillance, outbreak auto-detection, hand hygiene audits, antimicrobial stewardship, and outbreak notifications.",
       },

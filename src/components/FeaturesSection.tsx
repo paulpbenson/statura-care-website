@@ -37,7 +37,7 @@ const features = [
     icon: BarChart3,
     title: "Real-Time Compliance Dashboard",
     description:
-      "See your compliance posture at a glance. Colour-coded heatmaps across all 8 Quality Standards, active alert counts, overdue items, and upcoming deadlines — all in one view.",
+      "See your compliance posture at a glance. Colour-coded heatmaps across all 7 Quality Standards, active alert counts, overdue items, and upcoming deadlines — all in one view.",
   },
   {
     icon: Lock,

@@ -24,12 +24,12 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Quality Standards Software — ACQSC Compliance & Self-Assessment",
   description:
-    "Purpose-built quality standards software for residential aged care and Support at Home providers. Self-assess against all 8 Aged Care Quality Standards, map evidence, identify gaps, and prepare for ACQSC assessment contacts. Australian-hosted.",
+    "Purpose-built quality standards software for residential aged care and Support at Home providers. Self-assess against all 7 Strengthened Aged Care Quality Standards, map evidence, identify gaps, and prepare for ACQSC assessment contacts. Australian-hosted.",
   alternates: { canonical: "https://statura.care/aged-care-quality-standards-software" },
   openGraph: {
     title: "Aged Care Quality Standards Software | Statura Care",
     description:
-      "Self-assessment software for the 8 Aged Care Quality Standards. For residential and Support at Home providers. Evidence mapping, continuous improvement, and ACQSC audit preparation.",
+      "Self-assessment software for the 7 Strengthened Aged Care Quality Standards. For residential and Support at Home providers. Evidence mapping, continuous improvement, and ACQSC audit preparation.",
     url: "https://statura.care/aged-care-quality-standards-software",
     type: "website",
     locale: "en_AU",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "ACQSC quality standards compliance",
     "aged care self-assessment software",
     "quality standards assessment tool",
-    "aged care quality standards 1-8",
+    "aged care quality standards 1-7",
     "ACQSC compliance software",
     "aged care quality improvement",
     "self-assessment framework",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 const benefits = [
   {
     icon: ShieldCheck,
-    title: "Self-assess all 8 Quality Standards",
+    title: "Self-assess all 7 Quality Standards",
     description:
       "Rate compliance for each standard from 1-5 with detailed criteria. Build evidence profiles showing exactly what meets, exceeds, or needs improvement.",
   },
@@ -83,58 +83,52 @@ const benefits = [
     icon: Clock,
     title: "Real-time compliance insights",
     description:
-      "Dashboard shows current compliance status across all 8 standards. See what changed since last review and what action is pending.",
+      "Dashboard shows current compliance status across all 7 standards. See what changed since last review and what action is pending.",
   },
 ];
 
 const qualityStandards = [
   {
     number: "1",
-    title: "Person-Centred Care",
+    title: "The Individual",
     description:
-      "Assess how well your organisation provides person-centred care that respects values, preferences, and individual needs. Map evidence from care plans, consumer feedback, and incident records.",
+      "Assess how well your organisation treats older people with dignity, respects their choices, identity, culture, and autonomy. Map evidence from care plans, consumer feedback, and consent records.",
   },
   {
     number: "2",
-    title: "Organisational Governance",
+    title: "The Organisation",
     description:
-      "Evaluate governance structure, accountability, and decision-making. Evidence from compliance policies, board minutes, and management records.",
+      "Evaluate governance structure, leadership accountability, culture of safety and quality, and workforce governance. Evidence from board minutes, risk registers, and management records.",
   },
   {
     number: "3",
-    title: "Feedback and Complaints",
+    title: "The Care and Services",
     description:
-      "Review complaints management, feedback systems, and resolution processes. Track all complaints, trends, and outcomes for quality improvement.",
+      "Review personal care, clinical care, and support services for safety, effectiveness, and person-centredness. Track care plans, assessments, and incident responses.",
   },
   {
     number: "4",
-    title: "Staffing and Organisational Planning",
+    title: "The Environment",
     description:
-      "Assess workforce planning, staffing adequacy, and care minutes targets. Monitor staffing levels, training, and workforce suitability across residential and home care services.",
+      "Assess whether service environments are safe, comfortable, welcoming, and meet consumers' needs. Monitor maintenance, equipment, and hazard management.",
   },
   {
     number: "5",
-    title: "Infection Control and Preventive Health",
+    title: "Clinical Care",
     description:
-      "Evaluate infection prevention, health promotion, and disease management. Map evidence from incident reports, health records, and prevention protocols.",
+      "Evaluate clinical governance, medication management, infection prevention, wound care, palliative care, and clinical deterioration response. Map evidence from clinical records and incident reports.",
   },
   {
     number: "6",
-    title: "Medicines Management",
+    title: "Food and Nutrition",
     description:
-      "Assess medication safety, storage, documentation, and adverse events. Track all medicine-related incidents and corrective actions.",
+      "Review food service quality, dietary requirements, nutritional assessment, meal preferences, and cultural food needs. Track menu planning and consumer satisfaction.",
   },
   {
     number: "7",
-    title: "Nutrition, Hydration and Meals",
+    title: "The Residential Community",
     description:
-      "Review meal provision, dietary requirements, and nutrition assessment. Evidence from menus, assessments, and incident records.",
-  },
-  {
-    number: "8",
-    title: "Regulation Compliance and Managing Serious Incidents",
-    description:
-      "Monitor compliance with the Aged Care Act 2024, SIRS reporting, and serious incident management. Automated deadline tracking for all reportable incidents.",
+      "Assess community life, social connections, meaningful activities, and how the residential setting supports quality of life. Evidence from activity programs, consumer feedback, and community engagement.",
   },
 ];
 
@@ -187,7 +181,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
     name: "Statura Care — Aged Care Quality Standards Software",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "Purpose-built quality standards software for residential aged care and Support at Home providers. Self-assessment against the 8 Aged Care Quality Standards, evidence mapping, continuous improvement, and ACQSC audit preparation.",
+    description: "Purpose-built quality standards software for residential aged care and Support at Home providers. Self-assessment against the 7 Strengthened Aged Care Quality Standards, evidence mapping, continuous improvement, and ACQSC audit preparation.",
     url: "https://statura.care/aged-care-quality-standards-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -198,7 +192,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
       description: "Essentials, Professional, and Enterprise plans available. Request a demo for pricing.",
     },
     featureList: [
-      "Self-assessment for all 8 Aged Care Quality Standards",
+      "Self-assessment for all 7 Strengthened Aged Care Quality Standards",
       "Evidence mapping across modules",
       "Continuous improvement tracking",
       "ACQSC audit preparation",
@@ -214,10 +208,10 @@ export default function AgedCareQualityStandardsSoftwarePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What are the 8 Aged Care Quality Standards?",
+        name: "What are the 7 Strengthened Aged Care Quality Standards?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The 8 Aged Care Quality Standards apply to all registered aged care providers, including both residential care and Support at Home services. They are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
+          text: "The 7 Strengthened Aged Care Quality Standards took effect on 1 November 2025 and apply to all registered aged care providers. They are: Standard 1 (The Individual), Standard 2 (The Organisation), Standard 3 (The Care and Services), Standard 4 (The Environment), Standard 5 (Clinical Care), Standard 6 (Food and Nutrition), and Standard 7 (The Residential Community). Standards 1\u20136 apply to both residential care and Support at Home providers. Standard 7 applies specifically to residential care.",
         },
       },
       {
@@ -241,7 +235,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "What is an ACQSC assessment contact?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. Assessment contacts apply to both residential aged care and Support at Home providers. They can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
+          text: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. Assessment contacts apply to both residential aged care and Support at Home providers. They can be announced or unannounced and may focus on specific standards or cover all seven. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
         },
       },
       {
@@ -249,7 +243,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "Can Statura Care generate audit preparation packs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Statura Care generates comprehensive audit preparation packs that compile evidence across all 8 Quality Standards, including self-assessment ratings, mapped evidence from SIRS, workforce, complaints, and other modules, gap analysis, and improvement action tracking.",
+          text: "Yes. Statura Care generates comprehensive audit preparation packs that compile evidence across all 7 Quality Standards, including self-assessment ratings, mapped evidence from SIRS, workforce, complaints, and other modules, gap analysis, and improvement action tracking.",
         },
       },
     ],
@@ -272,11 +266,11 @@ export default function AgedCareQualityStandardsSoftwarePage() {
               </p>
               <h1 className="font-serif font-black text-4xl sm:text-5xl lg:text-[3.5rem] text-white leading-[1.05] tracking-tight">
                 Self-assess all{" "}
-                <span className="text-[#96A998]">8 Aged Care Quality Standards.</span>{" "}
+                <span className="text-[#96A998]">7 Aged Care Quality Standards.</span>{" "}
                 Prepare for ACQSC assessment contacts with confidence.
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Whether you operate residential aged care or Support at Home services, the 8 Quality Standards apply equally. Statura Care helps you assess compliance across all 8 standards, map evidence, identify gaps, and track continuous improvement. Prepare audit-ready documentation in minutes.
+                Whether you operate residential aged care or Support at Home services, the Strengthened Quality Standards apply to you. Statura Care helps you assess compliance across all 7 standards, map evidence, identify gaps, and track continuous improvement. Prepare audit-ready documentation in minutes. Note: Standard 7 (The Residential Community) applies specifically to residential care; Support at Home providers are assessed against Standards 1\u20136.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -336,7 +330,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
           </div>
         </section>
 
-        {/* The 8 Quality Standards */}
+        {/* The 7 Quality Standards */}
         <section className="bg-[#F8FAFC] py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-2xl mb-14">
@@ -344,11 +338,11 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 Complete Coverage
               </p>
               <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
-                The 8 Aged Care Quality Standards.{" "}
+                The 7 Aged Care Quality Standards.{" "}
                 <span className="text-[#3E5D4A]">Self-assess all of them.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                The 8 Quality Standards apply to all registered aged care providers — residential and Support at Home alike. Self-assess your organisation against each standard, map evidence, understand compliance gaps, and track improvement.
+                The 7 Strengthened Quality Standards apply to all registered aged care providers. Standards 1\u20136 apply to both residential and Support at Home providers. Standard 7 (The Residential Community) applies specifically to residential care. Self-assess your organisation against each standard, map evidence, understand compliance gaps, and track improvement.
               </p>
             </div>
 
@@ -431,7 +425,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid sm:grid-cols-4 gap-8 text-center">
               {[
-                { stat: "8", label: "Quality Standards covered" },
+                { stat: "7", label: "Quality Standards covered" },
                 { stat: "∞", label: "Evidence connections" },
                 { stat: "Real-time", label: "Compliance visibility" },
                 { stat: "Sydney", label: "Australian-hosted data" },
@@ -503,7 +497,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
 
               <div className="space-y-3">
                 {[
-                  { feature: "Self-assess all 8 Quality Standards", spreadsheet: false, statura: true },
+                  { feature: "Self-assess all 7 Quality Standards", spreadsheet: false, statura: true },
                   { feature: "Connect evidence across modules automatically", spreadsheet: false, statura: true },
                   { feature: "Track compliance trends over time", spreadsheet: false, statura: true },
                   { feature: "Generate audit-ready documentation", spreadsheet: false, statura: true },
@@ -556,12 +550,12 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 Quality standards resources
               </h2>
               <p className="mt-3 text-base text-slate-500 leading-relaxed">
-                Guides and frameworks to help you understand and assess the 8 Aged Care Quality Standards.
+                Guides and frameworks to help you understand and assess the 7 Aged Care Quality Standards.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { title: "8 Aged Care Quality Standards Explained", href: "/blog/aged-care-quality-standards-explained" },
+                { title: "7 Aged Care Quality Standards Explained", href: "/blog/aged-care-quality-standards-explained" },
                 { title: "Quality Standards Self-Assessment Checklist", href: "/blog/aged-care-quality-standards-self-assessment-checklist" },
                 { title: "ACQSC Assessment Contact Preparation Guide", href: "/blog/acqsc-assessment-contact-preparation" },
                 { title: "Continuous Improvement in Aged Care", href: "/blog/continuous-improvement-aged-care" },
@@ -592,15 +586,15 @@ export default function AgedCareQualityStandardsSoftwarePage() {
               </p>
               <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
                 Frequently asked questions about the{" "}
-                <span className="text-[#3E5D4A]">8 Quality Standards.</span>
+                <span className="text-[#3E5D4A]">7 Quality Standards.</span>
               </h2>
             </div>
 
             <div className="space-y-6">
               {[
                 {
-                  q: "What are the 8 Aged Care Quality Standards?",
-                  a: "The 8 Aged Care Quality Standards apply to all registered aged care providers, including both residential care and Support at Home services. They are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
+                  q: "What are the 7 Strengthened Aged Care Quality Standards?",
+                  a: "The 7 Strengthened Aged Care Quality Standards took effect on 1 November 2025 and apply to all registered aged care providers. They are: Standard 1 (The Individual), Standard 2 (The Organisation), Standard 3 (The Care and Services), Standard 4 (The Environment), Standard 5 (Clinical Care), Standard 6 (Food and Nutrition), and Standard 7 (The Residential Community). Standards 1\u20136 apply to both residential care and Support at Home providers. Standard 7 applies specifically to residential care.",
                 },
                 {
                   q: "How does self-assessment work in Statura Care?",
@@ -612,11 +606,11 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 },
                 {
                   q: "What is an ACQSC assessment contact?",
-                  a: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. Assessment contacts apply to both residential aged care and Support at Home providers. They can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
+                  a: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. Assessment contacts apply to both residential aged care and Support at Home providers. They can be announced or unannounced and may focus on specific standards or cover all seven. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
                 },
                 {
                   q: "Can Statura Care generate audit preparation packs?",
-                  a: "Yes. Statura Care generates comprehensive audit preparation packs that compile evidence across all 8 Quality Standards, including self-assessment ratings, mapped evidence from SIRS, workforce, complaints, and other modules, gap analysis, and improvement action tracking.",
+                  a: "Yes. Statura Care generates comprehensive audit preparation packs that compile evidence across all 7 Quality Standards, including self-assessment ratings, mapped evidence from SIRS, workforce, complaints, and other modules, gap analysis, and improvement action tracking.",
                 },
               ].map((faq, idx) => (
                 <div
@@ -656,17 +650,17 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 {
                   icon: ShieldCheck,
                   title: "SIRS Incident Integration",
-                  description: "SIRS incidents automatically feed into Standard 8 (Regulation Compliance) and other relevant standards. Incident trends inform quality improvement decisions.",
+                  description: "SIRS incidents automatically feed into Standard 2 (The Organisation) and Standard 3 (The Care and Services). Incident trends inform quality improvement decisions.",
                 },
                 {
                   icon: Users,
                   title: "Staffing & Care Minutes",
-                  description: "Your care minutes and staffing data automatically supports Standard 4 (Staffing and Planning) and Standard 7 (Nutrition and Meals) assessments.",
+                  description: "Your care minutes and staffing data automatically supports Standard 2 (The Organisation) workforce governance assessments.",
                 },
                 {
                   icon: Clock,
                   title: "Complaints & Feedback",
-                  description: "Complaint trends and feedback automatically map to Standard 3 (Feedback and Complaints) and inform continuous improvement across all standards.",
+                  description: "Complaint trends and feedback automatically map to Standard 2 (The Organisation) and Standard 3 (The Care and Services), informing continuous improvement across all standards.",
                 },
                 {
                   icon: Lock,

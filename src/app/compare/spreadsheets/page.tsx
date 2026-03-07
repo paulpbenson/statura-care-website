@@ -66,7 +66,7 @@ const problems = [
     icon: Link2,
     title: "No cross-referencing",
     description:
-      "A SIRS incident should automatically create evidence for Quality Standard 8. In a spreadsheet, that's a manual copy-paste.",
+      "A SIRS incident should automatically create evidence for Quality Standard 2 (The Organisation). In a spreadsheet, that's a manual copy-paste.",
   },
   {
     icon: HardDrive,

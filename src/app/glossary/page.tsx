@@ -77,7 +77,7 @@ const glossaryTerms: GlossaryTerm[] = [
     id: "assessment-contact",
     letter: "A",
     term: "Assessment Contact",
-    definition: "A regulatory visit conducted by the ACQSC to assess a provider's compliance with the Aged Care Quality Standards and legislative obligations. Assessment contacts involve onsite inspections, document review, and interviews with staff and residents. Providers must prepare evidence packs demonstrating compliance across all eight quality standards.",
+    definition: "A regulatory visit conducted by the ACQSC to assess a provider's compliance with the Aged Care Quality Standards and legislative obligations. Assessment contacts involve onsite inspections, document review, and interviews with staff and residents. Providers must prepare evidence packs demonstrating compliance across all seven quality standards.",
     related: [
       { label: "Quality Standards self-assessment", href: "/modules/quality-standards" },
     ],
@@ -97,14 +97,14 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Behaviour Support Plan",
     definition: "A documented strategy for managing a resident's challenging behaviours. It must be developed in consultation with the resident, family, and clinical staff, and must identify triggers, agreed strategies, and review timeframes. Behaviour support plans are a key component of person-centred care and restrictive practice minimisation.",
     related: [
-      { label: "Restrictive Practice module", href: "/modules/restrictive-practices" },
+      { label: "SIRS & Incidents module", href: "/modules/sirs" },
     ],
   },
   {
     id: "care-minutes",
     letter: "C",
     term: "Care Minutes",
-    definition: "The total amount of direct and indirect care provided to residents, measured in minutes per day per resident. The Aged Care Act 2024 establishes a minimum target of 200 care minutes per resident per day, including 40 minutes of registered nurse time. Care minutes tracking is essential for compliance and funding justification.",
+    definition: "The total amount of direct and indirect care provided to residents, measured in minutes per day per resident. Since 1 October 2024, the Aged Care Act 2024 requires a minimum of 215 care minutes per resident per day, including 44 minutes of registered nurse time. Care minutes tracking is essential for compliance and funding justification.",
     related: [
       { label: "Care minutes calculator guide", href: "/blog/care-minutes-target-200-minutes-compliance" },
     ],
@@ -126,7 +126,7 @@ const glossaryTerms: GlossaryTerm[] = [
     definition: "A set of mandatory ethical and professional standards that must guide the behaviour of all aged care workers. The Code of Conduct under the Aged Care Act 2024 covers respectful communication, professional boundaries, confidentiality, and accountability. Breaches can result in sanctions including workforce exclusions.",
     related: [
       { label: "Code of Conduct module", href: "/modules/code-of-conduct" },
-      { label: "Workforce Compliance module", href: "/modules/workforce-compliance" },
+      { label: "Workforce module", href: "/modules/workforce" },
     ],
   },
   {
@@ -171,7 +171,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Funding & Claims",
     definition: "The financial processes and reporting requirements for aged care funding. Providers must accurately claim funding from the Australian government based on resident classification, care minutes, and compliance with conditions of funding. Errors or misrepresentations can trigger audits and reclaim demands.",
     related: [
-      { label: "Funding & Claims module", href: "/modules/funding-claims" },
+      { label: "Funding & Claims module", href: "/modules/funding" },
     ],
   },
   {
@@ -180,7 +180,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Governing Body",
     definition: "The board, committee, or management structure responsible for strategic leadership, oversight, and accountability in an aged care provider organisation. The governing body must ensure the provider meets all obligations under the Aged Care Act 2024 and Quality Standards, including financial management, risk oversight, and compliance monitoring.",
     related: [
-      { label: "Organisational Governance module", href: "/modules/organisational-governance" },
+      { label: "Governance module", href: "/modules/governance" },
     ],
   },
   {
@@ -236,7 +236,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Organisational Governance",
     definition: "The overall structure, processes, and accountability mechanisms through which an aged care provider is managed and controlled. Organisational governance encompasses board oversight, risk management, compliance frameworks, financial stewardship, and ethical decision-making aligned with aged care values.",
     related: [
-      { label: "Organisational Governance module", href: "/modules/organisational-governance" },
+      { label: "Governance module", href: "/modules/governance" },
     ],
   },
   {
@@ -272,7 +272,7 @@ const glossaryTerms: GlossaryTerm[] = [
     id: "quality-standards",
     letter: "Q",
     term: "Quality Standards (Aged Care Quality Standards)",
-    definition: "Eight core quality standards that all aged care providers must meet under the Aged Care Act 2024: Consumer dignity and choice, Safety, Accountability, Complaints and feedback, Staffing and management, Resident lifestyle and activities, Governance and management, and Quality assessment and improvement. These standards drive person-centred, safe, accountable aged care.",
+    definition: "Seven Strengthened Quality Standards that all aged care providers must meet under the Aged Care Act 2024 (effective 1 November 2025): (1) The Individual, (2) The Organisation, (3) The Care and Services, (4) The Environment, (5) Clinical Care, (6) Food and Nutrition, and (7) The Residential Community (residential care only). Standards 1\u20136 apply to all providers. These standards drive person-centred, safe, accountable aged care.",
     related: [
       { label: "Quality Standards module", href: "/modules/quality-standards" },
       { label: "Self-assessment checklist", href: "/blog/aged-care-quality-standards-self-assessment-checklist" },
@@ -291,9 +291,9 @@ const glossaryTerms: GlossaryTerm[] = [
     id: "rn-coverage",
     letter: "R",
     term: "Registered Nurse (RN) Coverage",
-    definition: "The requirement that residential aged care facilities maintain adequate registered nurse staffing and availability to meet resident care needs. The Aged Care Act 2024 requires a minimum of 40 care minutes per resident per day from registered nurses. RN coverage ensures residents have access to qualified clinical assessment and decision-making.",
+    definition: "The requirement that residential aged care facilities maintain adequate registered nurse staffing and availability to meet resident care needs. Since 1 October 2024, the Aged Care Act 2024 requires a minimum of 44 care minutes per resident per day from registered nurses. RN coverage ensures residents have access to qualified clinical assessment and decision-making.",
     related: [
-      { label: "Workforce Compliance module", href: "/modules/workforce-compliance" },
+      { label: "Workforce module", href: "/modules/workforce" },
       { label: "Care minutes calculator", href: "/blog/care-minutes-target-200-minutes-compliance" },
     ],
   },
@@ -313,7 +313,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Restrictive Practice",
     definition: "Any measure or action that restricts a resident's rights, freedom of movement, or autonomy, including physical restraint, chemical restraint (medication), and seclusion. All restrictive practices must be justified, minimised, documented, and regularly reviewed. Use is only permitted when necessary to prevent harm and only as a last resort.",
     related: [
-      { label: "Restrictive Practices module", href: "/modules/restrictive-practices" },
+      { label: "SIRS & Incidents module", href: "/modules/sirs" },
     ],
   },
   {
@@ -330,7 +330,7 @@ const glossaryTerms: GlossaryTerm[] = [
     id: "self-assessment",
     letter: "S",
     term: "Self-Assessment",
-    definition: "The provider-led evaluation process to determine compliance with the eight Aged Care Quality Standards. Providers conduct self-assessments annually, documenting evidence, identifying gaps, and planning improvements. Self-assessments prepare providers for ACQSC assessment contacts and demonstrate commitment to continuous quality improvement.",
+    definition: "The provider-led evaluation process to determine compliance with the seven Strengthened Aged Care Quality Standards. Providers conduct self-assessments regularly, documenting evidence, identifying gaps, and planning improvements. Self-assessments prepare providers for ACQSC assessment contacts and demonstrate commitment to continuous quality improvement.",
     related: [
       { label: "Quality Standards module", href: "/modules/quality-standards" },
     ],
@@ -359,7 +359,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: "Workforce Compliance",
     definition: "The comprehensive framework ensuring all aged care workers meet required qualifications, screening, training, and conduct standards. Workforce compliance includes criminal history checks, health assessments, code of conduct adherence, professional development, and fitness-to-practise evaluations. Compliance protects residents and supports safe, quality care.",
     related: [
-      { label: "Workforce Compliance module", href: "/modules/workforce-compliance" },
+      { label: "Workforce module", href: "/modules/workforce" },
     ],
   },
 ];

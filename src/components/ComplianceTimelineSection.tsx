@@ -64,7 +64,7 @@ const steps = [
     step: "06",
     title: "Evidence Flows to Standards",
     description:
-      "Incident data, investigation findings, and remediation evidence auto-link to Quality Standard 8 (Governance). Your next ACQSC assessment is already prepared.",
+      "Incident data, investigation findings, and remediation evidence auto-link to Quality Standard 2 (The Organisation). Your next ACQSC assessment is already prepared.",
     time: "Continuous",
     colour: "bg-[#F5F6F2] text-[#3E5D4A] border-[#96A998]/30",
     iconColour: "text-[#3E5D4A]",

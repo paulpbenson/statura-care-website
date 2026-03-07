@@ -51,7 +51,7 @@ export const complianceModules: ModuleData[] = [
     ],
     integrations: [
       { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Incidents record which responsible person was on duty, linking incident accountability to the register." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Governing body compliance evidence auto-feeds into Quality Standard 8 (Organisational Governance) assessments." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Governing body compliance evidence auto-feeds into Quality Standard 2 (The Organisation) assessments." },
       { moduleSlug: "governance", moduleName: "Governance", description: "Board composition and skills matrix data flows into governance meeting packs and risk oversight." },
     ],
   },
@@ -65,31 +65,31 @@ export const complianceModules: ModuleData[] = [
     section: "ss146\u2013147",
     tagline: "Audit-ready at all times \u2014 not just before an assessment.",
     shortDescription:
-      "Self-assess against all 8 Quality Standards, map evidence from across modules, track continuous improvement, and generate audit preparation packs.",
+      "Self-assess against all 7 Quality Standards, map evidence from across modules, track continuous improvement, and generate audit preparation packs.",
     longDescription:
-      "The 8 Aged Care Quality Standards define the outcomes providers must achieve. Statura Care\u2019s Quality Standards module structures your self-assessment process, automatically maps evidence from every active module, and maintains a continuous improvement register \u2014 so you\u2019re always assessment-ready, not scrambling before an ACQSC visit.",
+      "The 7 Strengthened Aged Care Quality Standards define the outcomes providers must achieve. Statura Care\u2019s Quality Standards module structures your self-assessment process, automatically maps evidence from every active module, and maintains a continuous improvement register \u2014 so you\u2019re always assessment-ready, not scrambling before an ACQSC visit.",
     problemStatement:
       "ACQSC assessments can happen at any time \u2014 announced or unannounced. If your evidence is scattered across filing cabinets, shared drives, and individual knowledge, you\u2019re at risk. Preparing for an assessment shouldn\u2019t be a three-month project. It should be the natural output of day-to-day compliance work.",
     applicableTo: ["residential", "home-care"],
     capabilities: [
-      { title: "Self-Assessment Engine", description: "Assess compliance at the outcome level for each of the 8 Quality Standards. Rate each outcome as Compliant, Partially Compliant, Non-Compliant, or Not Assessed \u2014 with narrative reasoning and evidence references." },
-      { title: "Cross-Module Evidence Mapping", description: "Evidence flows in from every active module automatically. SIRS incident data feeds Standard 8. Workforce staffing data feeds Standard 7. Complaints data feeds Standard 6. You build evidence through normal operations, not manual collection." },
+      { title: "Self-Assessment Engine", description: "Assess compliance at the outcome level for each of the 7 Quality Standards. Rate each outcome as Compliant, Partially Compliant, Non-Compliant, or Not Assessed \u2014 with narrative reasoning and evidence references." },
+      { title: "Cross-Module Evidence Mapping", description: "Evidence flows in from every active module automatically. SIRS incident data feeds Standard 2 (The Organisation) and Standard 3 (The Care and Services). Workforce staffing data feeds Standard 2. Clinical data feeds Standard 5 (Clinical Care). You build evidence through normal operations, not manual collection." },
       { title: "Continuous Improvement Register", description: "Every non-compliance or partial compliance triggers an improvement action with tracking: what needs improving, who\u2019s responsible, due date, progress updates, completion evidence, and verification." },
-      { title: "Assessment Cycle Management", description: "Rolling assessment schedule so you\u2019re not assessing all 8 standards at once. Set frequency per standard (default 6 months), assign assessors, and track when each standard is next due." },
+      { title: "Assessment Cycle Management", description: "Rolling assessment schedule so you\u2019re not assessing all 7 standards at once. Set frequency per standard (default 6 months), assign assessors, and track when each standard is next due." },
       { title: "Audit Preparation Pack", description: "Generate a comprehensive digital audit binder for ACQSC assessment contacts. Includes all self-assessments, mapped evidence, improvement actions, and cross-module data \u2014 structured the way assessors expect to see it." },
-      { title: "Compliance Dashboard", description: "Visual heatmap across all 8 standards showing outcome-level compliance status. Instantly identify gaps, track improvement over time, and report to your governing body with confidence." },
+      { title: "Compliance Dashboard", description: "Visual heatmap across all 7 standards showing outcome-level compliance status. Instantly identify gaps, track improvement over time, and report to your governing body with confidence." },
     ],
     regulatoryRequirements: [
-      { title: "Continuous Self-Assessment", description: "Providers must continuously assess their compliance against the 8 Quality Standards." },
+      { title: "Continuous Self-Assessment", description: "Providers must continuously assess their compliance against the 7 Quality Standards." },
       { title: "Evidence Documentation", description: "Compliance must be supported by documented evidence \u2014 not just assertions." },
       { title: "Continuous Improvement", description: "A systematic continuous improvement approach is a registration condition." },
       { title: "Assessment Readiness", description: "ACQSC assessments can occur at any time. Providers must be able to demonstrate compliance on demand." },
     ],
     integrations: [
-      { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Incident data auto-feeds into Standard 8 (Governance) and Standard 3.4 (Restrictive Practices)." },
-      { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Governing body data feeds into Standard 8 governance evidence." },
-      { moduleSlug: "complaints", moduleName: "Complaints", description: "Complaint data feeds into Standard 6 (Feedback and Complaints)." },
-      { moduleSlug: "clinical-care", moduleName: "Clinical Care", description: "Clinical assessments and care plans feed into Standards 2 and 3 evidence." },
+      { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Incident data auto-feeds into Standard 2 (The Organisation) and Standard 3 (The Care and Services)." },
+      { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Governing body data feeds into Standard 2 (The Organisation) evidence." },
+      { moduleSlug: "complaints", moduleName: "Complaints", description: "Complaint data feeds into Standard 2 (The Organisation)." },
+      { moduleSlug: "clinical-care", moduleName: "Clinical Care", description: "Clinical assessments and care plans feed into Standard 3 (The Care and Services) and Standard 5 (Clinical Care) evidence." },
       { moduleSlug: "analytics", moduleName: "Analytics & Benchmarking", description: "Cross-module compliance scoring provides a single view of standards performance." },
     ],
   },
@@ -168,7 +168,7 @@ export const complianceModules: ModuleData[] = [
     ],
     integrations: [
       { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Incidents record which responsible person was on duty at the time." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Incident data auto-feeds into Standard 8 (Governance) and Standard 3.4 (Restrictive Practices)." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Incident data auto-feeds into Standard 2 (The Organisation) and Standard 3 (The Care and Services)." },
       { moduleSlug: "clinical-care", moduleName: "Clinical Care", description: "Clinical incidents link to vital signs and assessment data for a complete picture." },
     ],
   },
@@ -241,7 +241,7 @@ export const complianceModules: ModuleData[] = [
     integrations: [
       { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "A disclosure can trigger creation of a SIRS incident when the alleged conduct meets SIRS criteria." },
       { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Disclosures concerning a responsible person link to their record." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Whistleblower framework feeds into Standard 6 (Feedback and Complaints) and Standard 8 (Governance)." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Whistleblower framework feeds into Standard 2 (The Organisation) evidence." },
     ],
   },
 
@@ -275,7 +275,7 @@ export const complianceModules: ModuleData[] = [
       { title: "Governing Body Reporting", description: "Complaint trends must be reported to the governing body regularly." },
     ],
     integrations: [
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Complaint data feeds into Quality Standard 6 (Feedback and Complaints)." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Complaint data feeds into Quality Standard 2 (The Organisation)." },
       { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Complaints can escalate to SIRS incidents when reportable conduct is identified." },
       { moduleSlug: "whistleblower", moduleName: "Whistleblower", description: "Complaints can convert to protected disclosures when the complainant meets the criteria." },
     ],
@@ -287,7 +287,7 @@ export const complianceModules: ModuleData[] = [
     code: "Governance",
     category: "Compliance & Governance",
     icon: Scale,
-    section: "Quality Standard 8",
+    section: "Quality Standard 2",
     tagline: "Structured oversight for your governing body.",
     shortDescription:
       "Board and committee meeting management, action tracking, strategic risk register with 5\u00d75 matrix, conflict of interest declarations, compliance calendar, and policy register.",
@@ -305,14 +305,14 @@ export const complianceModules: ModuleData[] = [
       { title: "Policy Register", description: "Centralised register of all organisational policies with version control, review dates, approval history, and distribution tracking." },
     ],
     regulatoryRequirements: [
-      { title: "Effective Governance", description: "Quality Standard 8 requires providers to demonstrate effective organisational governance, including clinical governance." },
+      { title: "Effective Governance", description: "Quality Standard 2 (The Organisation) requires providers to demonstrate effective organisational governance, including clinical governance." },
       { title: "Risk Management", description: "Providers must have a documented risk management framework with regular review by the governing body." },
       { title: "Conflict Management", description: "Board members must declare and manage conflicts of interest appropriately." },
       { title: "Policy Framework", description: "Providers must maintain current policies and procedures covering all aspects of care and operations." },
     ],
     integrations: [
       { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Board member records flow from the responsible persons register into governance meeting attendance and skills matrices." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Governance activity feeds directly into Quality Standard 8 (Organisational Governance) evidence." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Governance activity feeds directly into Quality Standard 2 (The Organisation) evidence." },
       { moduleSlug: "reporting-hub", moduleName: "Reporting Hub", description: "Board packs are compiled from the Reporting Hub with governance data included automatically." },
     ],
   },
@@ -348,7 +348,7 @@ export const complianceModules: ModuleData[] = [
     ],
     integrations: [
       { moduleSlug: "sirs", moduleName: "SIRS & Incidents", description: "Falls data cross-references with SIRS incident records." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "QI data feeds into Quality Standard 3 (Clinical Care) evidence." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "QI data feeds into Quality Standard 5 (Clinical Care) evidence." },
       { moduleSlug: "clinical-care", moduleName: "Clinical Care", description: "Clinical assessment data informs QI domain calculations." },
     ],
   },
@@ -381,7 +381,7 @@ export const complianceModules: ModuleData[] = [
     ],
     integrations: [
       { moduleSlug: "responsible-persons", moduleName: "Responsible Persons", description: "Identifies dual relationships where responsible persons are also associates." },
-      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Association records feed into Quality Standard 8 (Governance) evidence." },
+      { moduleSlug: "quality-standards", moduleName: "Quality Standards", description: "Association records feed into Quality Standard 2 (The Organisation) evidence." },
     ],
   },
 ];

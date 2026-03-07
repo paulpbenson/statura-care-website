@@ -84,7 +84,7 @@ const obligations = [
     title: "Quality Standards",
     sections: "ss 146\u2013147",
     description:
-      "Providers must meet all 8 Aged Care Quality Standards at all times. These standards cover the person\u2019s experience of care, organisational governance, clinical safety, infection prevention, the care environment, food and nutrition, activities, and continuous improvement. Self-assessment and evidence packs are essential for assessment contacts.",
+      "Providers must meet all 7 Strengthened Aged Care Quality Standards at all times. These standards cover the individual (dignity, choice, autonomy), the organisation (governance, safety culture, workforce), care and services, the environment, clinical care, food and nutrition, and the residential community. Self-assessment and evidence packs are essential for assessment contacts.",
     href: "/modules/quality-standards",
   },
   {
@@ -116,7 +116,7 @@ const obligations = [
     title: "Workforce",
     sections: "ss 66\u201372",
     description:
-      "Providers must ensure all workers are screened, qualified, and competent. The Act mandates minimum care minutes of 200 minutes per resident per day (including 40 RN minutes), 24/7 registered nurse availability in residential care, and ongoing training. Workforce compliance is a core condition of registration.",
+      "Providers must ensure all workers are screened, qualified, and competent. The Act mandates minimum care minutes of 215 minutes per resident per day (including 44 RN minutes) since 1 October 2024, 24/7 registered nurse availability in residential care, and ongoing training. Workforce compliance is a core condition of registration.",
     href: "/modules/workforce",
   },
   {
@@ -139,22 +139,22 @@ const obligations = [
 
 const timelineEvents = [
   {
-    date: "1 July 2024",
+    date: "1 November 2025",
     title: "Aged Care Act 2024 commenced",
     description:
-      "The new Act replaced the Aged Care Act 1997 as the primary legislation governing aged care in Australia. New obligations for registration, governance, incidents, quality, and workforce took effect.",
+      "The new Act replaced the Aged Care Act 1997 as the primary legislation governing aged care in Australia. New obligations for registration, governance, incidents, quality, and workforce took effect alongside the Strengthened Quality Standards.",
   },
   {
-    date: "1 July 2025",
+    date: "1 November 2025",
     title: "Support at Home program launched",
     description:
-      "The Support at Home program replaced Home Care Packages (HCP) and the Commonwealth Home Support Programme (CHSP). 8 classification levels, quarterly budgets, and per-service contributions commenced.",
+      "The Support at Home program replaced Home Care Packages (HCP). 8 classification levels, quarterly budgets, and per-service contributions commenced. The Commonwealth Home Support Programme (CHSP) will transition to Support at Home no earlier than 1 July 2027.",
   },
   {
     date: "Ongoing",
     title: "ACQSC assessment contacts under new framework",
     description:
-      "The ACQSC conducts assessment contacts against the 8 Quality Standards and the strengthened regulatory framework. Providers must maintain continuous compliance and audit-ready evidence.",
+      "The ACQSC conducts assessment contacts against the 7 Strengthened Quality Standards and the strengthened regulatory framework. Providers must maintain continuous compliance and audit-ready evidence.",
   },
 ];
 
@@ -165,11 +165,11 @@ const faqs = [
   },
   {
     q: "When did the Aged Care Act 2024 commence?",
-    a: "The Aged Care Act 2024 commenced on 1 July 2024. The Support at Home program, established under the Act, commenced on 1 July 2025. Providers were expected to meet their new obligations from commencement, with some transitional arrangements for specific provisions.",
+    a: "The Aged Care Act 2024 received Royal Assent in late 2024 and commenced on 1 November 2025 (deferred from the originally planned date of 1 July 2025). The Support at Home program, established under the Act, also commenced on 1 November 2025. Providers were expected to meet their new obligations from commencement, with some transitional arrangements for specific provisions.",
   },
   {
     q: "What are the key changes from the previous Act?",
-    a: "The key changes include: strengthened governance and responsible persons requirements with a 10-matters suitability test; enhanced SIRS reporting with defined Priority 1 (24-hour) and Priority 2 (30 business day) timeframes; 8 new Quality Standards replacing the previous standards; minimum care minutes of 200 per resident per day including 40 RN minutes; the Support at Home program replacing HCP and CHSP; enhanced ACQSC powers including compliance notices and civil penalties; and strengthened whistleblower protections.",
+    a: "The key changes include: strengthened governance and responsible persons requirements with a 10-matters suitability test; enhanced SIRS reporting with defined Priority 1 (24-hour) and Priority 2 (30 business day) timeframes; 7 Strengthened Quality Standards (effective 1 November 2025) replacing the previous 8 standards; minimum care minutes of 215 per resident per day including 44 RN minutes (since 1 October 2024); the Support at Home program replacing HCP (CHSP transitions no earlier than July 2027); enhanced ACQSC powers including compliance notices and civil penalties; and strengthened whistleblower protections.",
   },
   {
     q: "Does the Aged Care Act 2024 apply to home care providers?",
@@ -184,8 +184,8 @@ const faqs = [
     a: "Purpose-built compliance software helps providers structure their obligations into manageable modules, automate deadline tracking (such as SIRS reporting timeframes and complaints resolution deadlines), maintain audit-ready evidence for assessment contacts, identify cross-module risks through integrated intelligence, and generate compliance reports on demand. This reduces administrative burden and allows staff to focus on delivering care.",
   },
   {
-    q: "What are the 8 Aged Care Quality Standards?",
-    a: "The 8 Quality Standards under the Act cover: (1) The person\u2019s experience of care, (2) The organisation\u2019s governance and accountability, (3) Clinical care and safety, (4) The care environment, (5) Food and nutrition, (6) Activities and community, (7) Infection prevention and control, and (8) Workforce and human resources. Providers must meet all 8 standards at all times.",
+    q: "What are the 7 Strengthened Aged Care Quality Standards?",
+    a: "The 7 Strengthened Quality Standards (effective 1 November 2025) are: (1) The Individual \u2014 dignity, choice, autonomy, and cultural safety; (2) The Organisation \u2014 governance, safety culture, and workforce governance; (3) The Care and Services \u2014 safe, effective, person-centred care; (4) The Environment \u2014 safe, comfortable, welcoming environments; (5) Clinical Care \u2014 clinical governance, medication management, infection prevention, and palliative care; (6) Food and Nutrition \u2014 dietary needs, preferences, and cultural requirements; and (7) The Residential Community \u2014 community life and meaningful activities (residential care only). Standards 1\u20136 apply to all providers; Standard 7 applies specifically to residential care.",
   },
   {
     q: "What is SIRS reporting?",
@@ -219,7 +219,7 @@ export default function AgedCareAct2024Page() {
       "@type": "Legislation",
       name: "Aged Care Act 2024",
       legislationJurisdiction: "Australia",
-      legislationDate: "2024-07-01",
+      legislationDate: "2025-11-01",
     },
   };
 
@@ -292,7 +292,7 @@ export default function AgedCareAct2024Page() {
                 <span className="text-[#3E5D4A]">aged care in Australia.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                The Aged Care Act 2024 commenced on 1 July 2024 and represents the
+                The Aged Care Act 2024 commenced on 1 November 2025 and represents the
                 most significant reform to aged care legislation in over two
                 decades. Born from the Royal Commission into Aged Care Quality and
                 Safety, the Act fundamentally restructures how aged care is
@@ -318,7 +318,7 @@ export default function AgedCareAct2024Page() {
                 {
                   icon: Scale,
                   stat: "Support at Home",
-                  label: "New home care program replacing HCP & CHSP",
+                  label: "New home care program replacing HCP",
                 },
                 {
                   icon: ShieldCheck,
@@ -416,9 +416,10 @@ export default function AgedCareAct2024Page() {
                 </h2>
                 <p className="mt-4 text-lg text-slate-500 leading-relaxed">
                   The Aged Care Act 2024 establishes the Support at Home (SAH)
-                  program, which replaced Home Care Packages (HCP) and the
-                  Commonwealth Home Support Programme (CHSP) from 1 July 2025. It
-                  is a fundamental restructure of how home care is funded,
+                  program, which replaced Home Care Packages (HCP) from
+                  1 November 2025. The Commonwealth Home Support Programme (CHSP)
+                  will transition to Support at Home no earlier than 1 July 2027.
+                  SAH is a fundamental restructure of how home care is funded,
                   delivered, and regulated in Australia.
                 </p>
                 <p className="mt-4 text-lg text-slate-500 leading-relaxed">
@@ -705,7 +706,7 @@ export default function AgedCareAct2024Page() {
                 { title: "Responsible Persons Register Guide", href: "/blog/responsible-persons-register-guide" },
                 { title: "Quality Standards Self-Assessment Checklist", href: "/blog/aged-care-quality-standards-self-assessment-checklist" },
                 { title: "Prudential Compliance & Refundable Deposits", href: "/blog/prudential-compliance-refundable-deposits-aged-care" },
-                { title: "Care Minutes Target: 200 Minutes Compliance", href: "/blog/care-minutes-target-200-minutes-compliance" },
+                { title: "Care Minutes Target: 215 Minutes Compliance", href: "/blog/care-minutes-target-200-minutes-compliance" },
                 { title: "Support at Home Program Guide", href: "/blog/support-at-home-program-guide" },
                 { title: "Aged Care Compliance Glossary", href: "/glossary" },
                 { title: "All Compliance Modules", href: "/modules" },

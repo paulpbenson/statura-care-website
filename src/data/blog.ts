@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
     slug: "aged-care-quality-standards-self-assessment-checklist",
     title: "Aged Care Quality Standards Self-Assessment: A Practical Checklist for Providers",
     description:
-      "How to conduct an effective self-assessment against all 8 Aged Care Quality Standards, map evidence across modules, identify gaps, and prepare for ACQSC assessment contacts.",
+      "How to conduct an effective self-assessment against all 7 Aged Care Quality Standards, map evidence across modules, identify gaps, and prepare for ACQSC assessment contacts.",
     publishedAt: "2026-01-27",
     author: "Statura Care",
     category: "Quality & Safety",
@@ -46,14 +46,14 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "care-minutes-target-200-minutes-compliance",
-    title: "Meeting the 200 Care Minutes Target: A Compliance Guide for Aged Care Providers",
+    title: "Meeting the 215 Care Minutes Target: A Compliance Guide for Aged Care Providers",
     description:
-      "Understanding the mandatory 200 care minutes per resident per day requirement, including the 40-minute RN component, 24/7 RN coverage obligations, and practical strategies for tracking and reporting staffing compliance.",
+      "Understanding the mandatory 215 care minutes per resident per day requirement, including the 44-minute RN component, 24/7 RN coverage obligations, and practical strategies for tracking and reporting staffing compliance.",
     publishedAt: "2026-01-20",
     author: "Statura Care",
     category: "Workforce",
     readingTime: "9 min read",
-    tags: ["care minutes", "workforce compliance", "staffing", "RN coverage", "200 minutes"],
+    tags: ["care minutes", "workforce compliance", "staffing", "RN coverage", "215 minutes"],
   },
   {
     slug: "prudential-compliance-refundable-deposits-aged-care",
@@ -125,7 +125,7 @@ export const blogPosts: BlogPost[] = [
     slug: "support-at-home-program-guide",
     title: "The Support at Home Program: What Aged Care Providers Need to Know",
     description:
-      "A comprehensive guide to the Support at Home (SAH) program that replaced Home Care Packages from July 2025. Covers 8 classification levels, quarterly budgets, per-service contributions, wellness goals, and what providers need to do to comply.",
+      "A comprehensive guide to the Support at Home (SAH) program that replaced Home Care Packages from 1 November 2025. Covers 8 classification levels, quarterly budgets, per-service contributions, wellness goals, and what providers need to do to comply.",
     publishedAt: "2026-03-01",
     author: "Statura Care",
     category: "Support at Home",
@@ -156,9 +156,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "aged-care-quality-standards-overview",
-    title: "The 8 Aged Care Quality Standards: A Complete Overview for Providers",
+    title: "The 7 Strengthened Aged Care Quality Standards: A Complete Overview for Providers",
     description:
-      "A comprehensive overview of all 8 Aged Care Quality Standards under the Aged Care Act 2024. What each standard requires, how they apply to both residential care and Support at Home, and how to demonstrate compliance.",
+      "A comprehensive overview of all 7 Strengthened Aged Care Quality Standards under the Aged Care Act 2024. What each standard requires, how they apply to both residential care and Support at Home, and how to demonstrate compliance.",
     publishedAt: "2026-02-15",
     author: "Statura Care",
     category: "Quality & Safety",

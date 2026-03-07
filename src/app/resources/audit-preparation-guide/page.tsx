@@ -24,12 +24,12 @@ import {
 export const metadata: Metadata = {
   title: "ACQSC Audit Preparation Guide — How to Prepare for Assessment Contacts",
   description:
-    "Comprehensive guide to preparing for ACQSC assessment contacts under the Aged Care Act 2024. Covers all 8 Quality Standards, evidence requirements, self-assessment, documentation, and practical preparation strategies for aged care providers.",
+    "Comprehensive guide to preparing for ACQSC assessment contacts under the Aged Care Act 2024. Covers all 7 Strengthened Quality Standards, evidence requirements, self-assessment, documentation, and practical preparation strategies for aged care providers.",
   alternates: { canonical: "https://statura.care/resources/audit-preparation-guide" },
   openGraph: {
     title: "ACQSC Audit Preparation Guide | Statura Care",
     description:
-      "Comprehensive guide to preparing for ACQSC assessment contacts under the Aged Care Act 2024. Covers all 8 Quality Standards, evidence requirements, and practical preparation strategies.",
+      "Comprehensive guide to preparing for ACQSC assessment contacts under the Aged Care Act 2024. Covers all 7 Strengthened Quality Standards, evidence requirements, and practical preparation strategies.",
     url: "https://statura.care/resources/audit-preparation-guide",
     type: "website",
     locale: "en_AU",
@@ -58,14 +58,14 @@ interface QualityStandard {
 const qualityStandards: QualityStandard[] = [
   {
     number: 1,
-    name: "Consumer dignity and choice",
+    name: "The Individual",
     description:
-      "Ensures care recipients are treated with dignity, can exercise choice and independence, and have their identity, culture, and diversity valued and supported.",
+      "Assesses how providers and workers treat older people \u2014 with dignity, respect for choices, identity, culture, and autonomy.",
     evidenceTypes: [
-      "Individualised care plans reflecting consumer preferences",
+      "Individualised care plans reflecting consumer preferences and cultural needs",
       "Records of informed consent and advance care directives",
       "Feedback and satisfaction survey results",
-      "Evidence of cultural and linguistic support provided",
+      "Evidence of cultural safety practices and linguistic support",
     ],
     modules: [
       { label: "Quality Standards", href: "/modules/quality-standards" },
@@ -75,61 +75,47 @@ const qualityStandards: QualityStandard[] = [
   },
   {
     number: 2,
-    name: "Ongoing assessment and planning",
+    name: "The Organisation",
     description:
-      "Requires comprehensive assessments of each care recipient, with care plans that are regularly reviewed and updated to reflect changing needs.",
+      "Covers governing body responsibility, culture of safety and quality, workforce governance, risk management, complaints handling, and continuous improvement.",
     evidenceTypes: [
-      "Initial and ongoing assessment records",
-      "Care plan review schedules and completion evidence",
-      "Multidisciplinary team meeting minutes",
-      "Re-assessment records following incidents or changes in condition",
+      "Governing body meeting minutes and decision records",
+      "Risk register with assessment and mitigation evidence",
+      "Workforce planning, screening, training, and care minutes data",
+      "Complaints register, feedback analysis, and improvement actions",
+      "Continuous improvement register with progress evidence",
+    ],
+    modules: [
+      { label: "Governance", href: "/modules/governance" },
+      { label: "Responsible Persons", href: "/modules/responsible-persons" },
+      { label: "Workforce Compliance", href: "/modules/workforce" },
+      { label: "Complaints", href: "/modules/complaints" },
+    ],
+    icon: Settings,
+  },
+  {
+    number: 3,
+    name: "The Care and Services",
+    description:
+      "Requires safe, effective, person-centred care and services including assessments, care planning, personal care, and support services.",
+    evidenceTypes: [
+      "Comprehensive assessment and care plan documentation",
+      "Evidence of regular care plan reviews and consumer involvement",
+      "SIRS incident register with investigation and remediation outcomes",
+      "Restrictive practices register and behaviour support plans",
     ],
     modules: [
       { label: "Clinical Care", href: "/modules/clinical-care" },
+      { label: "SIRS & Incidents", href: "/modules/sirs" },
       { label: "Quality Standards", href: "/modules/quality-standards" },
     ],
     icon: ClipboardList,
   },
   {
-    number: 3,
-    name: "Personal care and clinical care",
-    description:
-      "Covers safe, effective personal and clinical care that is appropriate to each consumer\u2019s needs, including medication management, infection prevention, and clinical governance.",
-    evidenceTypes: [
-      "Clinical assessment and care plan documentation",
-      "Medication management records and reconciliation reports",
-      "Infection prevention and control procedures and outbreak logs",
-      "Wound management and vital signs monitoring records",
-    ],
-    modules: [
-      { label: "Clinical Care", href: "/modules/clinical-care" },
-      { label: "Medications", href: "/modules/medications" },
-      { label: "Infection Prevention", href: "/modules/infection-prevention" },
-    ],
-    icon: Stethoscope,
-  },
-  {
     number: 4,
-    name: "Services and supports for daily living",
+    name: "The Environment",
     description:
-      "Ensures care recipients receive services that support their daily living, including meals, accommodation, transport, social activities, and allied health services.",
-    evidenceTypes: [
-      "Activity programs and participation records",
-      "Meal service and nutrition management records",
-      "Allied health referral and service delivery logs",
-      "Accommodation maintenance and safety inspection records",
-    ],
-    modules: [
-      { label: "Accommodation", href: "/modules/accommodation" },
-      { label: "Quality Standards", href: "/modules/quality-standards" },
-    ],
-    icon: Home,
-  },
-  {
-    number: 5,
-    name: "Organisation\u2019s service environment",
-    description:
-      "Requires safe, comfortable, well-maintained environments that meet the needs of care recipients, including physical facilities, equipment, and emergency preparedness.",
+      "Requires safe, comfortable, welcoming environments that meet consumers' needs, including physical facilities, equipment, and emergency preparedness.",
     evidenceTypes: [
       "Building and equipment maintenance schedules with completion records",
       "Emergency and disaster preparedness plans and drill records",
@@ -143,61 +129,61 @@ const qualityStandards: QualityStandard[] = [
     icon: Building2,
   },
   {
-    number: 6,
-    name: "Feedback and complaints",
+    number: 5,
+    name: "Clinical Care",
     description:
-      "Requires effective systems for receiving and responding to feedback and complaints, with outcomes used to drive service improvement.",
+      "Covers clinical governance, medication management, infection prevention, wound care, palliative care, and response to clinical deterioration.",
     evidenceTypes: [
-      "Complaints register with resolution evidence and timeframes",
-      "Feedback collection methods and analysis reports",
-      "Improvement actions arising from complaints and feedback",
-      "Open disclosure records for incident-related complaints",
+      "Clinical governance framework and clinical audit results",
+      "Medication management records, reconciliation, and incident reports",
+      "Infection prevention and control procedures and outbreak logs",
+      "Wound management, vital signs monitoring, and palliative care records",
     ],
     modules: [
-      { label: "Complaints", href: "/modules/complaints" },
-      { label: "Quality Standards", href: "/modules/quality-standards" },
+      { label: "Clinical Care", href: "/modules/clinical-care" },
+      { label: "Medications", href: "/modules/medications" },
+      { label: "Infection Prevention", href: "/modules/infection-prevention" },
     ],
-    icon: MessageSquare,
+    icon: Stethoscope,
+  },
+  {
+    number: 6,
+    name: "Food and Nutrition",
+    description:
+      "Covers food service quality, dietary requirements, nutritional assessment, meal preferences, and meeting cultural food needs.",
+    evidenceTypes: [
+      "Menu planning records and dietary requirement documentation",
+      "Nutritional assessment and monitoring records",
+      "Consumer satisfaction surveys on food and meals",
+      "Evidence of meeting cultural and religious food requirements",
+    ],
+    modules: [
+      { label: "Quality Standards", href: "/modules/quality-standards" },
+      { label: "Clinical Care", href: "/modules/clinical-care" },
+    ],
+    icon: Home,
   },
   {
     number: 7,
-    name: "Human resources",
+    name: "The Residential Community",
     description:
-      "Covers workforce planning, recruitment, training, performance management, and ensuring sufficient qualified staff to deliver safe, quality care.",
+      "Applies to residential care only. Covers community life, social connections, meaningful activities, and how the residential setting supports quality of life.",
     evidenceTypes: [
-      "Staff screening and police check records with expiry tracking",
-      "Training registers and completion records",
-      "Care minutes compliance data (200 minutes target, 40 RN minutes)",
-      "Performance review and professional development records",
+      "Activity programs showing variety and consumer participation",
+      "Evidence of community engagement and social connection support",
+      "Consumer feedback on community life and activities",
+      "Records showing how consumer preferences shape community activities",
     ],
     modules: [
-      { label: "Workforce Compliance", href: "/modules/workforce" },
-      { label: "Rostering", href: "/modules/rostering" },
+      { label: "Quality Standards", href: "/modules/quality-standards" },
+      { label: "Accommodation", href: "/modules/accommodation" },
     ],
     icon: Users,
-  },
-  {
-    number: 8,
-    name: "Organisational governance",
-    description:
-      "Requires effective governance structures, accountability, risk management, continuous improvement, and compliance with legislative obligations.",
-    evidenceTypes: [
-      "Governing body meeting minutes and decision records",
-      "Risk register with assessment and mitigation evidence",
-      "SIRS incident register with investigation and remediation outcomes",
-      "Continuous improvement register with progress evidence",
-    ],
-    modules: [
-      { label: "Organisational Governance", href: "/modules/organisational-governance" },
-      { label: "SIRS & Incidents", href: "/modules/sirs" },
-      { label: "Responsible Persons", href: "/modules/responsible-persons" },
-    ],
-    icon: Settings,
   },
 ];
 
 const evidenceChecklist = [
-  "Self-assessment records against each of the eight Quality Standards",
+  "Self-assessment records against each of the seven Quality Standards",
   "Improvement plans with progress evidence and completion dates",
   "Incident registers (SIRS) with investigation outcomes and remediation evidence",
   "Complaints register with resolution evidence, timeframes, and improvement actions",
@@ -322,7 +308,7 @@ export default function AuditPreparationGuidePage() {
                 <p className="text-lg text-slate-500 leading-relaxed">
                   Assessment contacts involve onsite inspections, document review,
                   interviews with staff, residents, and families, and observation of
-                  care practices. Assessors evaluate compliance across all eight
+                  care practices. Assessors evaluate compliance across all seven
                   Quality Standards.
                 </p>
               </div>
@@ -362,7 +348,7 @@ export default function AuditPreparationGuidePage() {
           </div>
         </section>
 
-        {/* The 8 Quality Standards */}
+        {/* The 7 Quality Standards */}
         <section className="bg-[#F8FAFC] py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-2xl mb-14">
@@ -370,12 +356,12 @@ export default function AuditPreparationGuidePage() {
                 What Assessors Evaluate
               </p>
               <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
-                The 8 Aged Care{" "}
+                The 7 Aged Care{" "}
                 <span className="text-[#3E5D4A]">Quality Standards.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                Every assessment contact evaluates your compliance against the eight
-                Quality Standards. Understanding what assessors look for in each
+                Every assessment contact evaluates your compliance against the seven
+                Strengthened Quality Standards. Understanding what assessors look for in each
                 standard is the foundation of audit preparation.
               </p>
             </div>

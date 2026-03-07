@@ -216,7 +216,7 @@ export default function DemoPage() {
                 <span className="text-[#3E5D4A]">complete compliance.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                32 modules. 8 Quality Standards. 68 compliance deadlines tracked
+                32 modules. 7 Quality Standards. 68 compliance deadlines tracked
                 automatically. One platform.
               </p>
             </div>

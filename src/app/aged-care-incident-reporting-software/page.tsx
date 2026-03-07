@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title:
     "SIRS Incident Reporting Software Australia — Meet Priority 1 & Priority 2 Deadlines",
   description:
-    "Purpose-built SIRS incident reporting and compliance software for Australian residential and home care providers. Automated Priority 1 (24-hour) and Priority 2 (30-day) deadline tracking. ACQSC notification workflows. Quality Standard 8 evidence mapping. Australian-hosted.",
+    "Purpose-built SIRS incident reporting and compliance software for Australian residential and home care providers. Automated Priority 1 (24-hour) and Priority 2 (30-day) deadline tracking. ACQSC notification workflows. Quality Standards evidence mapping. Australian-hosted.",
   alternates: {
     canonical: "https://statura.care/aged-care-incident-reporting-software",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "SIRS Priority 2 reporting",
     "aged care incident investigation",
     "ACQSC incident notification",
-    "Quality Standard 8 software",
+    "Quality Standards compliance software",
     "incident audit trail aged care",
   ],
 };
@@ -74,9 +74,9 @@ const benefits = [
   },
   {
     icon: TrendingUp,
-    title: "Quality Standard 8 evidence mapping",
+    title: "Quality Standards evidence mapping",
     description:
-      "Every incident investigation automatically maps to Quality Standard 8 (Feedback and Complaints) evidence. Self-assessment data updates in real time. Audit preparation packs auto-generate.",
+      "Every incident investigation automatically maps to Quality Standard 2 (The Organisation) and Standard 3 (The Care and Services) evidence. Self-assessment data updates in real time. Audit preparation packs auto-generate.",
   },
   {
     icon: Lock,
@@ -115,7 +115,7 @@ const sirsWorkflow = [
   {
     step: 6,
     title: "Evidence & Learning",
-    description: "Archive complete incident file. Link to Quality Standard 8. Update policies if needed.",
+    description: "Archive complete incident file. Link to Quality Standards 2 and 3. Update policies if needed.",
   },
 ];
 
@@ -125,7 +125,7 @@ const comparisonPoints = [
   { feature: "Pre-configured reportable incident types", statura: true, generic: false },
   { feature: "ACQSC notification form integration", statura: true, generic: false },
   { feature: "Investigation workflow management", statura: true, generic: "partial" },
-  { feature: "Quality Standard 8 evidence mapping", statura: true, generic: false },
+  { feature: "Quality Standards evidence mapping", statura: true, generic: false },
   { feature: "Immutable audit trail", statura: true, generic: "partial" },
   { feature: "Role-based access control", statura: true, generic: true },
   { feature: "Automated escalation alerts", statura: true, generic: "partial" },
@@ -156,7 +156,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "Purpose-built SIRS incident reporting and compliance software for Australian residential and home care providers. Automated Priority 1 and Priority 2 deadline tracking with investigation workflows and Quality Standard 8 evidence mapping.",
+      "Purpose-built SIRS incident reporting and compliance software for Australian residential and home care providers. Automated Priority 1 and Priority 2 deadline tracking with investigation workflows and Quality Standards evidence mapping.",
     url: "https://statura.care/aged-care-incident-reporting-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -172,7 +172,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
       "Incident classification",
       "Investigation workflows",
       "ACQSC notification",
-      "Quality Standard 8 evidence mapping",
+      "Quality Standards evidence mapping",
       "Audit trail",
     ],
     screenshot: "https://statura.care/opengraph-image",
@@ -219,7 +219,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
         name: "Does the SIRS module integrate with other compliance areas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. SIRS data automatically feeds into Quality Standard 8 (Organisational Governance) evidence, complaints management, restrictive practices tracking, and workforce compliance. Incidents involving restrictive practices are flagged for both SIRS reporting and the restrictive practices register.",
+          text: "Yes. SIRS data automatically feeds into Quality Standard 2 (The Organisation) and Standard 3 (The Care and Services) evidence, complaints management, restrictive practices tracking, and workforce compliance. Incidents involving restrictive practices are flagged for both SIRS reporting and the restrictive practices register.",
         },
       },
     ],
@@ -257,7 +257,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
                 Purpose-built SIRS incident reporting software for Australian aged care
                 providers — residential and home care. Automatic Priority 1 (24-hour) and
                 Priority 2 (30-day) deadline tracking. Investigation workflows. ACQSC
-                notification. Quality Standard 8 evidence mapping. Immutable audit trail.
+                notification. Quality Standards evidence mapping. Immutable audit trail.
                 Covers SIRS obligations under the Aged Care Act 2024, including Support at
                 Home providers. Not adapted from generic incident management tools — built
                 specifically for SIRS compliance.
@@ -480,7 +480,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
                   href: "/blog/acqsc-incident-notification-requirements",
                 },
                 {
-                  title: "Quality Standard 8: Feedback and Complaints",
+                  title: "Quality Standards Evidence Mapping",
                   href: "/blog/quality-standard-8-aged-care",
                 },
                 {
@@ -536,7 +536,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
                 },
                 {
                   q: "Does the SIRS module integrate with other compliance areas?",
-                  a: "Yes. SIRS data automatically feeds into Quality Standard 8 (Organisational Governance) evidence, complaints management, restrictive practices tracking, and workforce compliance. Incidents involving restrictive practices are flagged for both SIRS reporting and the restrictive practices register.",
+                  a: "Yes. SIRS data automatically feeds into Quality Standard 2 (The Organisation) and Standard 3 (The Care and Services) evidence, complaints management, restrictive practices tracking, and workforce compliance. Incidents involving restrictive practices are flagged for both SIRS reporting and the restrictive practices register.",
                 },
               ].map((faq, idx) => (
                 <div
