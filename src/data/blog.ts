@@ -121,6 +121,72 @@ export const blogPosts: BlogPost[] = [
     readingTime: "9 min read",
     tags: ["data security", "privacy", "My Aged Care", "information governance", "cyber security"],
   },
+  {
+    slug: "support-at-home-program-guide",
+    title: "The Support at Home Program: What Aged Care Providers Need to Know",
+    description:
+      "A comprehensive guide to the Support at Home (SAH) program that replaced Home Care Packages from July 2025. Covers 8 classification levels, quarterly budgets, per-service contributions, wellness goals, and what providers need to do to comply.",
+    publishedAt: "2026-03-01",
+    author: "Statura Care",
+    category: "Support at Home",
+    readingTime: "12 min read",
+    tags: ["Support at Home", "SAH", "home care", "HCP transition", "classification levels"],
+  },
+  {
+    slug: "acqsc-assessment-contact-preparation",
+    title: "Preparing for an ACQSC Assessment Contact: A Practical Guide for Providers",
+    description:
+      "How to prepare for announced and unannounced ACQSC assessment contacts. Covers what assessors look for, evidence organisation, common pitfalls, and practical strategies for maintaining continuous audit readiness.",
+    publishedAt: "2026-03-03",
+    author: "Statura Care",
+    category: "Compliance Guides",
+    readingTime: "11 min read",
+    tags: ["ACQSC", "assessment contact", "audit preparation", "quality standards", "compliance"],
+  },
+  {
+    slug: "support-at-home-contributions-explained",
+    title: "Support at Home Contributions Explained: Tiers, Categories, and Caps",
+    description:
+      "A detailed guide to how client contributions work under the Support at Home program. Covers the 4 means-testing tiers, 3 service categories, per-service contribution rates, lifetime caps, and hardship provisions.",
+    publishedAt: "2026-02-27",
+    author: "Statura Care",
+    category: "Support at Home",
+    readingTime: "10 min read",
+    tags: ["SAH contributions", "means testing", "service categories", "lifetime cap", "hardship"],
+  },
+  {
+    slug: "aged-care-quality-standards-overview",
+    title: "The 8 Aged Care Quality Standards: A Complete Overview for Providers",
+    description:
+      "A comprehensive overview of all 8 Aged Care Quality Standards under the Aged Care Act 2024. What each standard requires, how they apply to both residential care and Support at Home, and how to demonstrate compliance.",
+    publishedAt: "2026-02-15",
+    author: "Statura Care",
+    category: "Quality & Safety",
+    readingTime: "14 min read",
+    tags: ["quality standards", "Aged Care Act 2024", "compliance", "self-assessment", "ACQSC"],
+  },
+  {
+    slug: "support-at-home-quarterly-budgets",
+    title: "SAH Quarterly Budgets: Allocation, Carry-Over, and Budget Management",
+    description:
+      "A practical guide to managing quarterly budgets under the Support at Home program. Covers budget allocation by classification level, carry-over caps, care management deductions, and strategies for effective budget tracking.",
+    publishedAt: "2026-02-28",
+    author: "Statura Care",
+    category: "Support at Home",
+    readingTime: "9 min read",
+    tags: ["SAH budgets", "quarterly budgets", "carry-over", "classification levels", "budget management"],
+  },
+  {
+    slug: "aged-care-workforce-compliance-guide",
+    title: "Aged Care Workforce Compliance: Screening, Training, and Staffing Requirements",
+    description:
+      "A comprehensive guide to workforce compliance obligations for aged care providers. Covers worker screening, mandatory training, care minutes targets, 24/7 RN coverage, SCHADS Award obligations, and the Code of Conduct.",
+    publishedAt: "2026-02-12",
+    author: "Statura Care",
+    category: "Workforce",
+    readingTime: "11 min read",
+    tags: ["workforce compliance", "worker screening", "care minutes", "RN coverage", "SCHADS", "code of conduct"],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
