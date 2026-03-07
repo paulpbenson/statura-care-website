@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 
 const plans = [
-  { name: "Essentials", modules: "Up to 3", team: "5 members", highlight: false },
-  { name: "Professional", modules: "Up to 8", team: "15 members", highlight: true, badge: "Most popular" },
-  { name: "Enterprise", modules: "All 31", team: "Unlimited", highlight: false },
+  { name: "Essentials", modules: "Up to 5", team: "10 members", highlight: false },
+  { name: "Professional", modules: "Up to 15", team: "25 members", highlight: true, badge: "Most popular" },
+  { name: "Enterprise", modules: "All 32", team: "Unlimited", highlight: false },
 ];
 
 export function HomePricingSection() {

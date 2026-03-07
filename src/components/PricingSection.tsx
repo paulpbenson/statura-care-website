@@ -9,8 +9,8 @@ const plans = [
     period: "",
     highlight: false,
     features: [
-      "Up to 3 modules",
-      "5 team members",
+      "Up to 5 modules",
+      "10 team members",
       "Audit trail & document storage",
       "Compliance alerts",
       "Email support",
@@ -25,8 +25,8 @@ const plans = [
     highlight: true,
     badge: "Most popular",
     features: [
-      "Up to 8 modules",
-      "15 team members",
+      "Up to 15 modules",
+      "25 team members",
       "Everything in Essentials",
       "Cross-module intelligence",
       "PDF report generation",

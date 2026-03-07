@@ -159,7 +159,7 @@ export function ModulesSection() {
         {/* Section header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-xs font-semibold text-[#3E5D4A] uppercase tracking-[0.2em] mb-3">
-            32 Modules
+            {moduleGroups.reduce((sum, g) => sum + g.modules.length, 0)} Modules
           </p>
           <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
             Every obligation,{" "}

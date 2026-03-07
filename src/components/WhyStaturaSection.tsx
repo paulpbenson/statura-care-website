@@ -70,7 +70,7 @@ export function WhyStaturaSection() {
             {/* Stats */}
             <div className="mt-10 grid grid-cols-3 gap-6">
               {[
-                { value: "14", label: "Compliance modules" },
+                { value: "32", label: "Compliance modules" },
                 { value: "8", label: "Quality Standards covered" },
                 { value: "24hr", label: "P1 deadline tracking" },
               ].map((stat) => (

@@ -19,7 +19,7 @@ export function Logo({
         alt="Statura Care"
         width={300}
         height={120}
-        className="h-auto w-full max-h-20"
+        className="h-auto w-auto max-h-12 lg:max-h-14"
         priority
       />
     </div>

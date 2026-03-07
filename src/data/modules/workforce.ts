@@ -125,7 +125,7 @@ export const workforceModules: ModuleData[] = [
     shortDescription:
       "Support at Home packages with 8 classification levels, wellness goals, short-term pathways, quarterly budgets with carry-over, service delivery, absence tracking, and legacy HCP/CHSP management.",
     longDescription:
-      "The Support at Home program (replacing HCP and CHSP from July 2025) introduces 8 classification levels, quarterly budgets with carry-over caps, three service categories, mandatory wellness goals, and short-term restorative pathways. Statura Care\u2019s Support at Home module manages the full service delivery lifecycle \u2014 from package allocation and wellness planning through visit scheduling, budget tracking, and absence management.",
+      "The Support at Home program (which replaced HCP and CHSP from July 2025) introduces 8 classification levels, quarterly budgets with carry-over caps, three service categories, mandatory wellness goals, and short-term restorative pathways. Statura Care\u2019s Support at Home module manages the full service delivery lifecycle \u2014 from package allocation and wellness planning through visit scheduling, budget tracking, and absence management.",
     problemStatement:
       "The transition to Support at Home introduces classification-based budgets, quarterly carry-over caps, mandatory wellness goals, and three new service categories \u2014 a fundamental shift from HCP. Providers need a system that handles SAH natively while supporting clients still transitioning from HCP and CHSP.",
     applicableTo: ["home-care"],

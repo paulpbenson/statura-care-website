@@ -215,7 +215,7 @@ export default function AgedCareComplianceSoftwarePage() {
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Statura Care is purpose-built aged care compliance software for
                 Australian providers — covering both residential aged care and the
-                Support at Home program launching July 2025. 32 modules across every
+                Support at Home program. 32 modules across every
                 regulatory obligation, from SIRS incident reporting to quality
                 standards to prudential compliance. One platform for both care types.
                 Not adapted from generic risk software. Built from the ground up for

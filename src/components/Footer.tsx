@@ -20,13 +20,13 @@ const footerLinks = {
     { label: "All Modules", href: "/modules" },
   ],
   Solutions: [
+    { label: "For Residential Care", href: "/for-residential-care" },
+    { label: "For Home Care", href: "/for-home-care" },
+    { label: "For Both Care Types", href: "/for-both-care-types" },
     { label: "Compliance Software", href: "/aged-care-compliance-software" },
     { label: "Support at Home", href: "/support-at-home-software" },
-    { label: "Incident Reporting", href: "/aged-care-incident-reporting-software" },
-    { label: "Quality Standards", href: "/aged-care-quality-standards-software" },
     { label: "Rostering", href: "/aged-care-rostering-software" },
     { label: "Clinical Care", href: "/aged-care-clinical-software" },
-    { label: "Governance", href: "/aged-care-governance-software" },
   ],
   Resources: [
     { label: "Blog", href: "/blog" },

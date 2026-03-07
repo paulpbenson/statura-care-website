@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Support at Home Software | Statura Care",
     description:
-      "Purpose-built software for the Support at Home program launching 1 July 2025. SAH classification management, quarterly budgets, contribution calculations, claims, and wellness goals.",
+      "Purpose-built software for the Support at Home program. SAH classification management, quarterly budgets, contribution calculations, claims, and wellness goals. Australian-hosted.",
     url: "https://statura.care/support-at-home-software",
     type: "website",
     locale: "en_AU",
@@ -135,7 +135,7 @@ export default function SupportAtHomeSoftwarePage() {
         name: "What is the Support at Home program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "SAH replaces HCP and CHSP from 1 July 2025. It introduces 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals.",
+          text: "The Support at Home (SAH) program replaced HCP and CHSP from 1 July 2025. It introduced 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals.",
         },
       },
       {
@@ -185,10 +185,11 @@ export default function SupportAtHomeSoftwarePage() {
                 <span className="text-[#96A998]">Support at Home.</span>
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-                The SAH program replaces Home Care Packages from 1 July 2025.
-                Statura Care is ready — with classification management, quarterly
-                budgets, contribution calculations, claims, wellness goals, and
-                full care delivery tracking across all 8 levels.
+                The Support at Home program has replaced Home Care Packages
+                as Australia&apos;s home care funding model. Statura Care is built
+                for it — with classification management, quarterly budgets,
+                contribution calculations, claims, wellness goals, and full
+                care delivery tracking across all 8 levels.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -320,8 +321,8 @@ export default function SupportAtHomeSoftwarePage() {
                 Support at Home resources
               </h2>
               <p className="mt-3 text-base text-slate-500 leading-relaxed">
-                Guides to help you prepare for the transition from HCP to the
-                Support at Home program.
+                Guides to help you navigate the Support at Home program and
+                manage the transition from HCP.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -365,7 +366,7 @@ export default function SupportAtHomeSoftwarePage() {
               {[
                 {
                   q: "What is the Support at Home program?",
-                  a: "SAH replaces HCP and CHSP from 1 July 2025. It introduces 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals. The program is designed to provide a single, streamlined home care system that focuses on wellness, reablement, and independence.",
+                  a: "The Support at Home (SAH) program replaced HCP and CHSP from 1 July 2025. It introduced 8 classification levels, per-service contributions, quarterly budgets, and mandatory wellness goals. The program provides a single, streamlined home care system that focuses on wellness, reablement, and independence.",
                 },
                 {
                   q: "Can I use Statura Care for both residential and home care?",
@@ -398,7 +399,7 @@ export default function SupportAtHomeSoftwarePage() {
 
         <CTABanner
           title="Ready for Support at Home?"
-          description="Request a demo today. Be prepared for 1 July 2025. Australian-hosted in Sydney."
+          description="Request a demo and see how Statura Care manages Support at Home. Australian-hosted in Sydney."
         />
       </main>
       <Footer />
