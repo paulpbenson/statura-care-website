@@ -21,8 +21,12 @@ const footerLinks = {
   ],
   Solutions: [
     { label: "Compliance Software", href: "/aged-care-compliance-software" },
+    { label: "Support at Home", href: "/support-at-home-software" },
     { label: "Incident Reporting", href: "/aged-care-incident-reporting-software" },
     { label: "Quality Standards", href: "/aged-care-quality-standards-software" },
+    { label: "Rostering", href: "/aged-care-rostering-software" },
+    { label: "Clinical Care", href: "/aged-care-clinical-software" },
+    { label: "Governance", href: "/aged-care-governance-software" },
   ],
   Resources: [
     { label: "Blog", href: "/blog" },
@@ -31,8 +35,11 @@ const footerLinks = {
     { label: "ACQSC", href: "https://www.agedcarequality.gov.au", external: true },
   ],
   Company: [
+    { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Security", href: "/security" },
+    { label: "Privacy", href: "/privacy" },
+    { label: "Terms", href: "/terms" },
   ],
 };
 
@@ -95,6 +102,12 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Statura Pty Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
+            <Link href="/privacy" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">
+              Privacy
+            </Link>
+            <Link href="/terms" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">
+              Terms
+            </Link>
             <span className="text-xs text-slate-500">
               Australian hosted (Sydney)
             </span>

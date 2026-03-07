@@ -12,6 +12,7 @@ const navItems = [
   { label: "Integrations", href: "/integrations" },
   { label: "Security", href: "/security" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

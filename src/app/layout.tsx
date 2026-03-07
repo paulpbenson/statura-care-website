@@ -116,6 +116,13 @@ export default function RootLayout({
           "@type": "Country",
           name: "Australia",
         },
+        contactPoint: {
+          "@type": "ContactPoint",
+          email: "hello@statura.care",
+          contactType: "sales",
+          areaServed: "AU",
+          availableLanguage: "English",
+        },
         priceRange: "$$",
         knowsAbout: [
           "Aged Care Act 2024",
@@ -181,7 +188,8 @@ export default function RootLayout({
           "Medications Management",
           "Rostering & Scheduling",
           "WHS & Safety",
-          "Home Care Services",
+          "Support at Home",
+          "SAH Contributions & Claims",
           "Billing & Finance",
           "Document Management",
           "Integrations Hub",
