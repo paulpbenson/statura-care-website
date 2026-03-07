@@ -61,7 +61,7 @@ export default function TermsPage() {
                   These Terms of Service (&quot;Terms&quot;) constitute a
                   legally binding agreement between you (&quot;you&quot;,
                   &quot;your&quot;, &quot;Customer&quot;) and Statura Pty Ltd
-                  (ABN ___________), trading as Statura Care (&quot;we&quot;,
+                  trading as Statura Care (&quot;we&quot;,
                   &quot;us&quot;, &quot;our&quot;, &quot;Statura Care&quot;).
                 </p>
                 <p className="text-base text-slate-500 leading-relaxed mb-4">

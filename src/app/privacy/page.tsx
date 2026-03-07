@@ -57,7 +57,7 @@ export default function PrivacyPage() {
                   1. Introduction
                 </h2>
                 <p className="text-base text-slate-500 leading-relaxed mb-4">
-                  Statura Pty Ltd (ABN ___________), trading as Statura Care
+                  Statura Pty Ltd, trading as Statura Care
                   (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), is committed
                   to protecting your privacy and handling your personal
                   information responsibly.
