@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Compliance Software Australia — Built for the Aged Care Act 2024",
   description:
-    "Purpose-built aged care compliance software for Australian providers. 32 modules covering SIRS reporting, quality standards, responsible persons, workforce compliance, prudential obligations, and more. Australian-hosted. Request a demo.",
+    "Purpose-built aged care compliance software for Australian providers. Covers both residential aged care and Support at Home. 32 modules covering SIRS reporting, quality standards, responsible persons, workforce compliance, prudential obligations, and more. Australian-hosted. Request a demo.",
   alternates: { canonical: "https://statura.care/aged-care-compliance-software" },
   openGraph: {
     title: "Aged Care Compliance Software Australia | Statura Care",
@@ -40,6 +40,8 @@ export const metadata: Metadata = {
     "ACQSC compliance software",
     "aged care quality and safety software",
     "residential aged care compliance",
+    "support at home compliance software",
+    "home care compliance software Australia",
     "aged care governance software",
     "compliance management aged care",
   ],
@@ -77,6 +79,12 @@ const benefits = [
       "SIRS data feeds Quality Standard 8 evidence. Workforce staffing feeds Standard 7. Complaint trends feed Standard 6. Data entered once works everywhere.",
   },
   {
+    icon: Puzzle,
+    title: "Residential and Support at Home in one platform",
+    description:
+      "Manage compliance obligations for residential aged care and the Support at Home program from a single platform. No duplicate data entry, no separate systems — one source of truth for providers operating across both care types.",
+  },
+  {
     icon: Server,
     title: "Australian-hosted in Sydney",
     description:
@@ -86,6 +94,7 @@ const benefits = [
 
 const comparisonPoints = [
   { feature: "Built specifically for Aged Care Act 2024", statura: true, generic: false },
+  { feature: "Residential and Support at Home in one platform", statura: true, generic: false },
   { feature: "All 32 compliance and care areas covered", statura: true, generic: false },
   { feature: "SIRS incident reporting with deadline automation", statura: true, generic: "partial" },
   { feature: "Responsible persons suitability assessments", statura: true, generic: false },
@@ -138,7 +147,7 @@ export default function AgedCareComplianceSoftwarePage() {
         name: "What is aged care compliance software?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Aged care compliance software is a digital platform that helps residential aged care providers manage their regulatory obligations under the Aged Care Act 2024. It automates deadline tracking, incident reporting, evidence collection, and audit preparation across areas like SIRS, quality standards, responsible persons, and prudential compliance.",
+          text: "Aged care compliance software is a digital platform that helps aged care providers manage their regulatory obligations under the Aged Care Act 2024 — across both residential care and the Support at Home program. It automates deadline tracking, incident reporting, evidence collection, and audit preparation across areas like SIRS, quality standards, responsible persons, and prudential compliance.",
         },
       },
       {
@@ -178,7 +187,7 @@ export default function AgedCareComplianceSoftwarePage() {
         name: "Who is Statura Care designed for?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Statura Care is designed for Australian residential aged care providers — including compliance officers, facility managers, clinical governance teams, and governing body members. It supports seven distinct user roles so each team member sees exactly what they need.",
+          text: "Statura Care is designed for Australian aged care providers — residential facilities, home care organisations, and providers operating across both. The platform covers obligations under the Aged Care Act 2024 for both residential care and the Support at Home program. It supports seven distinct user roles so compliance officers, facility managers, care coordinators, clinical governance teams, and governing body members each see exactly what they need.",
         },
       },
     ],
@@ -205,10 +214,12 @@ export default function AgedCareComplianceSoftwarePage() {
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Statura Care is purpose-built aged care compliance software for
-                Australian providers. 32 modules covering every regulatory obligation
-                — from SIRS incident reporting to quality standards to prudential
-                compliance. Not adapted from generic risk software. Built from the
-                ground up for aged care.
+                Australian providers — covering both residential aged care and the
+                Support at Home program launching July 2025. 32 modules across every
+                regulatory obligation, from SIRS incident reporting to quality
+                standards to prudential compliance. One platform for both care types.
+                Not adapted from generic risk software. Built from the ground up for
+                aged care.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -246,7 +257,10 @@ export default function AgedCareComplianceSoftwarePage() {
                 Generic GRC platforms require months of configuration to approximate
                 aged care compliance. Statura Care delivers it out of the box —
                 because every module was designed around the specific obligations
-                in the Aged Care Act 2024 and the Quality Standards.
+                in the Aged Care Act 2024 and the Quality Standards. Residential
+                and Support at Home obligations are covered in a single platform,
+                so providers operating across both care types don't need separate
+                systems.
               </p>
             </div>
 
@@ -443,7 +457,7 @@ export default function AgedCareComplianceSoftwarePage() {
               {[
                 {
                   q: "What is aged care compliance software?",
-                  a: "Aged care compliance software is a digital platform that helps residential aged care providers manage their regulatory obligations under the Aged Care Act 2024. It automates deadline tracking, incident reporting, evidence collection, and audit preparation across areas like SIRS, quality standards, responsible persons, and prudential compliance.",
+                  a: "Aged care compliance software is a digital platform that helps aged care providers manage their regulatory obligations under the Aged Care Act 2024 — across both residential care and the Support at Home program. It automates deadline tracking, incident reporting, evidence collection, and audit preparation across areas like SIRS, quality standards, responsible persons, and prudential compliance.",
                 },
                 {
                   q: "How is Statura Care different from generic GRC software?",
@@ -463,7 +477,7 @@ export default function AgedCareComplianceSoftwarePage() {
                 },
                 {
                   q: "Who is Statura Care designed for?",
-                  a: "Statura Care is designed for Australian residential aged care providers — including compliance officers, facility managers, clinical governance teams, and governing body members. It supports seven distinct user roles so each team member sees exactly what they need.",
+                  a: "Statura Care is designed for Australian aged care providers — residential facilities, home care organisations, and providers operating across both. The platform covers obligations under the Aged Care Act 2024 for both residential care and the Support at Home program. It supports seven distinct user roles so compliance officers, facility managers, care coordinators, clinical governance teams, and governing body members each see exactly what they need.",
                 },
               ].map((faq, idx) => (
                 <div

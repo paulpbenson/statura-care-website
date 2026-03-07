@@ -24,12 +24,12 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Quality Standards Software — ACQSC Compliance & Self-Assessment",
   description:
-    "Purpose-built aged care quality standards software for self-assessment against the 8 Aged Care Quality Standards. Map evidence, rate compliance, identify gaps, and prepare for ACQSC assessment contacts. Australian-hosted.",
+    "Purpose-built quality standards software for residential aged care and Support at Home providers. Self-assess against all 8 Aged Care Quality Standards, map evidence, identify gaps, and prepare for ACQSC assessment contacts. Australian-hosted.",
   alternates: { canonical: "https://statura.care/aged-care-quality-standards-software" },
   openGraph: {
     title: "Aged Care Quality Standards Software | Statura Care",
     description:
-      "Self-assessment software for the 8 Aged Care Quality Standards. Continuous improvement, evidence mapping, and ACQSC audit preparation.",
+      "Self-assessment software for the 8 Aged Care Quality Standards. For residential and Support at Home providers. Evidence mapping, continuous improvement, and ACQSC audit preparation.",
     url: "https://statura.care/aged-care-quality-standards-software",
     type: "website",
     locale: "en_AU",
@@ -92,7 +92,7 @@ const qualityStandards = [
     number: "1",
     title: "Person-Centred Care",
     description:
-      "Assess how well your organisation provides person-centred care that respects values, preferences, and individual needs. Map evidence from care plans, resident feedback, and incident records.",
+      "Assess how well your organisation provides person-centred care that respects values, preferences, and individual needs. Map evidence from care plans, consumer feedback, and incident records.",
   },
   {
     number: "2",
@@ -110,7 +110,7 @@ const qualityStandards = [
     number: "4",
     title: "Staffing and Organisational Planning",
     description:
-      "Assess workforce planning, care minutes targets, and staffing adequacy. Monitor staffing ratios, training, and suitability throughout the year.",
+      "Assess workforce planning, staffing adequacy, and care minutes targets. Monitor staffing levels, training, and workforce suitability across residential and home care services.",
   },
   {
     number: "5",
@@ -187,7 +187,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
     name: "Statura Care — Aged Care Quality Standards Software",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "Purpose-built aged care quality standards software for self-assessment against the 8 Aged Care Quality Standards. Evidence mapping, continuous improvement, and ACQSC audit preparation.",
+    description: "Purpose-built quality standards software for residential aged care and Support at Home providers. Self-assessment against the 8 Aged Care Quality Standards, evidence mapping, continuous improvement, and ACQSC audit preparation.",
     url: "https://statura.care/aged-care-quality-standards-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -217,7 +217,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "What are the 8 Aged Care Quality Standards?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The 8 Aged Care Quality Standards are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
+          text: "The 8 Aged Care Quality Standards apply to all registered aged care providers, including both residential care and Support at Home services. They are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
         },
       },
       {
@@ -233,7 +233,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "How often should providers self-assess against the Quality Standards?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The ACQSC recommends continuous self-assessment rather than point-in-time exercises. Best practice is to conduct formal reviews quarterly with ongoing evidence collection between reviews. Statura Care supports both approaches with real-time compliance dashboards and scheduled assessment workflows.",
+          text: "Self-assessment against the Quality Standards is required for all registered providers, whether delivering residential care or Support at Home services. The ACQSC recommends continuous self-assessment rather than point-in-time exercises. Best practice is to conduct formal reviews quarterly with ongoing evidence collection between reviews. Statura Care supports both approaches with real-time compliance dashboards and scheduled assessment workflows.",
         },
       },
       {
@@ -241,7 +241,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "What is an ACQSC assessment contact?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. These can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
+          text: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. Assessment contacts apply to both residential aged care and Support at Home providers. They can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
         },
       },
       {
@@ -276,7 +276,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 Prepare for ACQSC assessment contacts with confidence.
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Statura Care's quality standards software helps your organisation assess compliance across all 8 standards, map evidence, identify gaps, and track continuous improvement. Prepare audit-ready documentation in minutes.
+                Whether you operate residential aged care or Support at Home services, the 8 Quality Standards apply equally. Statura Care helps you assess compliance across all 8 standards, map evidence, identify gaps, and track continuous improvement. Prepare audit-ready documentation in minutes.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -311,7 +311,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 <span className="text-[#3E5D4A]">self-assessment and improvement.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                Statura Care's quality standards module goes beyond simple checklists. It connects evidence across all your modules, helps you understand compliance reality, and guides continuous improvement.
+                Whether you run residential facilities, Support at Home services, or both, Statura Care's quality standards module goes beyond simple checklists. It connects evidence across all your modules, helps you understand compliance reality, and guides continuous improvement.
               </p>
             </div>
 
@@ -348,7 +348,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 <span className="text-[#3E5D4A]">Self-assess all of them.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-                Self-assess your organisation against each of the 8 Aged Care Quality Standards. Map evidence, understand compliance gaps, and track improvement on each standard.
+                The 8 Quality Standards apply to all registered aged care providers — residential and Support at Home alike. Self-assess your organisation against each standard, map evidence, understand compliance gaps, and track improvement.
               </p>
             </div>
 
@@ -459,7 +459,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                       ACQSC Assessment Preparation
                     </h2>
                     <p className="text-base text-slate-500 leading-relaxed">
-                      When ACQSC assessment contacts your organisation, be ready. Generate comprehensive audit preparation packs that show:
+                      ACQSC assessment contacts apply to both residential and Support at Home providers. When assessment contacts your organisation, be ready. Generate comprehensive audit preparation packs that show:
                     </p>
                   </div>
                 </div>
@@ -600,7 +600,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
               {[
                 {
                   q: "What are the 8 Aged Care Quality Standards?",
-                  a: "The 8 Aged Care Quality Standards are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
+                  a: "The 8 Aged Care Quality Standards apply to all registered aged care providers, including both residential care and Support at Home services. They are: Standard 1 (Consumer Dignity and Choice), Standard 2 (Ongoing Assessment and Planning), Standard 3 (Personal and Clinical Care), Standard 4 (Services and Supports for Daily Living), Standard 5 (Organisation's Service Environment), Standard 6 (Feedback and Complaints), Standard 7 (Human Resources), and Standard 8 (Organisational Governance).",
                 },
                 {
                   q: "How does self-assessment work in Statura Care?",
@@ -608,11 +608,11 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 },
                 {
                   q: "How often should providers self-assess against the Quality Standards?",
-                  a: "The ACQSC recommends continuous self-assessment rather than point-in-time exercises. Best practice is to conduct formal reviews quarterly with ongoing evidence collection between reviews. Statura Care supports both approaches with real-time compliance dashboards and scheduled assessment workflows.",
+                  a: "Self-assessment against the Quality Standards is required for all registered providers, whether delivering residential care or Support at Home services. The ACQSC recommends continuous self-assessment rather than point-in-time exercises. Best practice is to conduct formal reviews quarterly with ongoing evidence collection between reviews. Statura Care supports both approaches with real-time compliance dashboards and scheduled assessment workflows.",
                 },
                 {
                   q: "What is an ACQSC assessment contact?",
-                  a: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. These can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
+                  a: "An assessment contact is a visit or review conducted by the Aged Care Quality and Safety Commission to evaluate a provider's compliance with the Quality Standards. Assessment contacts apply to both residential aged care and Support at Home providers. They can be announced or unannounced and may focus on specific standards or cover all eight. Providers who maintain continuous self-assessment evidence are significantly better prepared.",
                 },
                 {
                   q: "Can Statura Care generate audit preparation packs?",
@@ -696,7 +696,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         {/* CTA Banner */}
         <CTABanner
           title="Ready to assess and improve your Quality Standards compliance?"
-          description="Request a personalised demo tailored to your organisation. Australian-hosted."
+          description="For residential aged care and Support at Home providers. Request a personalised demo tailored to your organisation. Australian-hosted."
         />
       </main>
       <Footer />

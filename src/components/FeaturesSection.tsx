@@ -31,7 +31,7 @@ const features = [
     icon: Shield,
     title: "Cross-Module Intelligence",
     description:
-      "When modules work together, intelligence multiplies. SIRS incident data auto-feeds into Quality Standards evidence. KeyPerson assessments populate governance reporting. No double entry.",
+      "When modules work together, intelligence multiplies. SIRS incident data auto-feeds into Quality Standards evidence. Support at Home budgets flow into billing. KeyPerson assessments populate governance reporting. No double entry.",
   },
   {
     icon: BarChart3,
@@ -61,9 +61,10 @@ export function FeaturesSection() {
             <span className="text-[#3E5D4A]">not bolted on.</span>
           </h2>
           <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-            Statura Care was designed specifically for the Aged Care Act 2024.
-            Every feature maps directly to a legislative obligation — nothing
-            generic, nothing unnecessary.
+            Statura Care was designed specifically for the Aged Care Act 2024
+            — covering both residential care and Support at Home. Every feature
+            maps directly to a legislative obligation — nothing generic,
+            nothing unnecessary.
           </p>
         </div>
 

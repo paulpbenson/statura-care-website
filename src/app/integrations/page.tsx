@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Integrations",
   description:
-    "Statura Care integrates with Australia's leading aged care systems — rostering, clinical care, training, accounting, and background screening — so compliance data flows automatically instead of being re-entered.",
+    "Statura Care integrates with Australia's leading aged care systems — rostering, clinical care, training, accounting, and background screening — for both residential care and Support at Home. Compliance data flows automatically instead of being re-entered.",
   alternates: { canonical: "https://statura.care/integrations" },
   openGraph: {
     title: "Integrations — Statura Care Compliance Platform",
@@ -50,7 +50,7 @@ const categories: IntegrationCategory[] = [
     title: "Rostering & Workforce",
     subtitle: "Shift data in. Care minutes calculated.",
     icon: CalendarClock,
-    why: "Instead of manually logging staffing hours, pull actual roster data and calculate 200-minute compliance automatically. Know your RN coverage gaps before they become a breach.",
+    why: "Instead of manually logging staffing hours, pull actual roster data and calculate care minutes compliance automatically — whether that's 215-minute targets for residential or visit schedules for Support at Home. Know your coverage gaps before they become a breach.",
     integrations: [
       {
         name: "Humanforce",
@@ -204,7 +204,7 @@ const categories: IntegrationCategory[] = [
     title: "Accounting & Finance",
     subtitle: "Financial position in real time.",
     icon: Landmark,
-    why: "Prudential compliance requires demonstrating your liquidity position against refundable deposit obligations. Pulling live financial data from your accounting system means your liquidity dashboard reflects reality — not last month's spreadsheet.",
+    why: "Prudential compliance requires demonstrating your liquidity position against refundable deposit obligations, and Support at Home providers need accurate budget tracking against quarterly allocations. Pulling live financial data from your accounting system means your dashboards reflect reality — not last month's spreadsheet.",
     integrations: [
       {
         name: "Xero",
@@ -299,8 +299,9 @@ export default function IntegrationsPage() {
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Statura Care connects with the rostering, clinical, training,
                 accounting, and screening systems Australian aged care providers
-                already use — so compliance data flows in automatically instead
-                of being re-entered.
+                already use — across both residential care and Support at Home
+                — so compliance data flows in automatically instead of being
+                re-entered.
               </p>
             </div>
           </div>

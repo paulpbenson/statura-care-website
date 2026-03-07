@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     q: "How is pricing calculated?",
-    a: "Pricing is based on the number of modules activated and team members. We tailor pricing to your organisation's size and needs — contact us for a quote.",
+    a: "Pricing is based on the number of modules activated and team members. The same modules and pricing apply whether you're running residential care, Support at Home, or both — contact us for a quote.",
   },
   {
     q: "What support is included?",
@@ -128,8 +128,8 @@ export default function PricingPage() {
                 <span className="text-[#96A998]">Scale as you grow.</span>
               </h1>
               <p className="mt-6 text-lg text-slate-300 leading-relaxed">
-                Contact us for a tailored quote. Request a demo to see the
-                platform in action.
+                Same platform, same pricing — whether you run residential care,
+                Support at Home, or both. Contact us for a tailored quote.
               </p>
             </div>
           </div>

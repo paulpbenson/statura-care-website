@@ -45,8 +45,8 @@ export function Footer() {
           <div className="col-span-2 lg:col-span-1">
             <Logo variant="dark" className="max-w-[180px]" />
             <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
-              Smart applications for regulated industries. Built in Australia for
-              Australian aged care providers.
+              Compliance and care management for residential aged care and
+              Support at Home. Built in Australia for Australian providers.
             </p>
             <a
               href="mailto:hello@statura.care"

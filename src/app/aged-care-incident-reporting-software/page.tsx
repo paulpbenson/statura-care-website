@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title:
     "SIRS Incident Reporting Software Australia — Meet Priority 1 & Priority 2 Deadlines",
   description:
-    "Purpose-built SIRS incident reporting and compliance software for Australian aged care providers. Automated Priority 1 (24-hour) and Priority 2 (30-day) deadline tracking. ACQSC notification workflows. Quality Standard 8 evidence mapping. Australian-hosted.",
+    "Purpose-built SIRS incident reporting and compliance software for Australian residential and home care providers. Automated Priority 1 (24-hour) and Priority 2 (30-day) deadline tracking. ACQSC notification workflows. Quality Standard 8 evidence mapping. Australian-hosted.",
   alternates: {
     canonical: "https://statura.care/aged-care-incident-reporting-software",
   },
@@ -90,7 +90,7 @@ const sirsWorkflow = [
   {
     step: 1,
     title: "Incident Report",
-    description: "Staff member reports incident with initial observations and context.",
+    description: "Staff member reports incident with initial observations and context — in a facility or during an in-home visit.",
   },
   {
     step: 2,
@@ -156,7 +156,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "Purpose-built SIRS incident reporting and compliance software for Australian aged care providers. Automated Priority 1 and Priority 2 deadline tracking with investigation workflows and Quality Standard 8 evidence mapping.",
+      "Purpose-built SIRS incident reporting and compliance software for Australian residential and home care providers. Automated Priority 1 and Priority 2 deadline tracking with investigation workflows and Quality Standard 8 evidence mapping.",
     url: "https://statura.care/aged-care-incident-reporting-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -187,7 +187,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
         name: "What is SIRS in aged care?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "SIRS stands for the Serious Incident Response Scheme, a mandatory framework under the Aged Care Act 2024 that requires residential aged care providers to identify, record, report, investigate, and resolve serious incidents. Reportable incidents include unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, neglect, and inappropriate restrictive practices.",
+          text: "SIRS stands for the Serious Incident Response Scheme, a mandatory framework under the Aged Care Act 2024 that requires aged care providers — both residential and home care, including Support at Home — to identify, record, report, investigate, and resolve serious incidents. Reportable incidents include unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, neglect, and inappropriate restrictive practices.",
         },
       },
       {
@@ -255,10 +255,12 @@ export default function AgedCareIncidentReportingSoftwarePage() {
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Purpose-built SIRS incident reporting software for Australian aged care
-                providers. Automatic Priority 1 (24-hour) and Priority 2 (30-day) deadline
-                tracking. Investigation workflows. ACQSC notification. Quality Standard 8
-                evidence mapping. Immutable audit trail. Not adapted from generic incident
-                management tools — built specifically for SIRS compliance.
+                providers — residential and home care. Automatic Priority 1 (24-hour) and
+                Priority 2 (30-day) deadline tracking. Investigation workflows. ACQSC
+                notification. Quality Standard 8 evidence mapping. Immutable audit trail.
+                Covers SIRS obligations under the Aged Care Act 2024, including Support at
+                Home providers. Not adapted from generic incident management tools — built
+                specifically for SIRS compliance.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
@@ -294,9 +296,12 @@ export default function AgedCareIncidentReportingSoftwarePage() {
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
                 Managing SIRS incident reporting with email and spreadsheets is error-prone
-                and audit-unfriendly. Statura Care automates the entire workflow from initial
-                report through investigation to ACQSC notification — ensuring no Priority 1
-                deadline is missed and every incident is documented for audit readiness.
+                and audit-unfriendly. Under the Aged Care Act 2024, SIRS obligations apply
+                to both residential and home care providers, including those delivering
+                services under Support at Home. Statura Care automates the entire workflow
+                from initial report through investigation to ACQSC notification — ensuring
+                no Priority 1 deadline is missed and every incident is documented for audit
+                readiness, whether it occurs in a facility or during an in-home visit.
               </p>
             </div>
 
@@ -515,7 +520,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
               {[
                 {
                   q: "What is SIRS in aged care?",
-                  a: "SIRS stands for the Serious Incident Response Scheme, a mandatory framework under the Aged Care Act 2024 that requires residential aged care providers to identify, record, report, investigate, and resolve serious incidents. Reportable incidents include unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, neglect, and inappropriate restrictive practices.",
+                  a: "SIRS stands for the Serious Incident Response Scheme, a mandatory framework under the Aged Care Act 2024 that requires aged care providers — both residential and home care, including Support at Home — to identify, record, report, investigate, and resolve serious incidents. Reportable incidents include unreasonable use of force, unlawful sexual contact, psychological abuse, unexpected death, neglect, and inappropriate restrictive practices.",
                 },
                 {
                   q: "What are the SIRS reporting deadlines?",
@@ -552,7 +557,7 @@ export default function AgedCareIncidentReportingSoftwarePage() {
 
         <CTABanner
           title="Ready to automate SIRS incident reporting?"
-          description="Request a personalised demo tailored to your organisation. Australian-hosted."
+          description="Request a personalised demo tailored to your organisation — residential or home care. Australian-hosted."
         />
       </main>
       <Footer />

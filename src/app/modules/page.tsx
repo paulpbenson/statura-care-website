@@ -131,10 +131,11 @@ export default function ModulesPage() {
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
                 SIRS incident data auto-feeds into Quality Standard evidence.
                 Workforce staffing data flows into care minutes compliance.
+                Support at Home budgets feed into contributions and claims.
                 Clinical assessments inform QI reporting. Rostering integrates
                 with billing. Every module shares a common audit trail,
                 document store, and alert system — so data entered once works
-                everywhere.
+                everywhere, whether you run residential care, home care, or both.
               </p>
             </div>
           </div>

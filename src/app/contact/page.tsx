@@ -8,7 +8,7 @@ import { Mail, Clock, MessageSquare } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Request a demo of Statura Care, ask a question about aged care compliance modules, or discuss your organisation's requirements. We respond within one business day.",
+    "Request a demo of Statura Care for residential care or Support at Home. Ask about compliance modules, or discuss your organisation's requirements. We respond within one business day.",
   alternates: { canonical: "https://statura.care/contact" },
   openGraph: {
     title: "Contact Statura Care — Request a Demo",

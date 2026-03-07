@@ -166,9 +166,10 @@ export function ModulesSection() {
             <span className="text-[#3E5D4A]">one platform.</span>
           </h2>
           <p className="mt-4 text-lg text-slate-500 leading-relaxed">
-            Pick the modules you need today. Add more as you grow. Each module
-            plugs into the same platform core — shared audit trail, alerts,
-            documents, and dashboard.
+            Residential care, Support at Home, or both. Pick the modules you
+            need today. Add more as you grow. Each module plugs into the same
+            platform core — shared audit trail, alerts, documents, and
+            dashboard.
           </p>
         </div>
 

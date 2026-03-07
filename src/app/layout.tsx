@@ -4,7 +4,7 @@ import "./globals.css";
 const SITE_URL = "https://statura.care";
 const SITE_NAME = "Statura Care";
 const SITE_DESCRIPTION =
-  "Purpose-built aged care compliance and care management software for Australian providers. 32 modules covering compliance, governance, clinical care, workforce, rostering, billing, home care, and analytics under the Aged Care Act 2024. Australian-hosted.";
+  "Purpose-built compliance and care management software for Australian aged care providers. 32 modules covering residential care and Support at Home — compliance, governance, clinical care, workforce, rostering, billing, home care, and analytics under the Aged Care Act 2024. One platform for both care types. Australian-hosted.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "aged care governance",
     "residential aged care compliance",
     "home care software Australia",
+    "Support at Home software",
+    "SAH aged care",
+    "home care compliance software",
     "aged care rostering software",
     "aged care clinical software",
     "aged care billing software",
@@ -123,6 +126,9 @@ export default function RootLayout({
           "Restrictive practices",
           "AN-ACC classification",
           "Prudential compliance",
+          "Support at Home program",
+          "Home care compliance",
+          "Care minutes compliance",
         ],
         sameAs: [],
       },
