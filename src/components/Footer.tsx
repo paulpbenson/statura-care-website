@@ -43,7 +43,7 @@ export function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-1">
-            <Logo variant="dark" />
+            <Logo variant="dark" className="max-w-[180px]" />
             <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
               Smart applications for regulated industries. Built in Australia for
               Australian aged care providers.

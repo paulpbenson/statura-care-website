@@ -87,7 +87,7 @@ export function Header() {
                   {/* Modules Mega Dropdown */}
                   {isModulesOpen && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                      <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(15,23,42,0.15)] border border-slate-200/80 p-6 w-[860px]">
+                      <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(15,23,42,0.15)] border border-slate-200/80 p-6 w-[860px] max-h-[calc(100vh-6rem)] overflow-y-auto">
                         <div className="flex items-center justify-between mb-4">
                           <p className="text-xs font-semibold text-slate-400 uppercase tracking-[0.15em]">
                             {modules.length} Modules across 6 categories
