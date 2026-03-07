@@ -21,12 +21,12 @@ import {
 export const metadata: Metadata = {
   title: "Aged Care Compliance Software Australia — Built for the Aged Care Act 2024",
   description:
-    "Purpose-built aged care compliance software for Australian providers. 31 modules covering SIRS reporting, quality standards, responsible persons, workforce compliance, prudential obligations, and more. Australian-hosted. Request a demo.",
+    "Purpose-built aged care compliance software for Australian providers. 32 modules covering SIRS reporting, quality standards, responsible persons, workforce compliance, prudential obligations, and more. Australian-hosted. Request a demo.",
   alternates: { canonical: "https://statura.care/aged-care-compliance-software" },
   openGraph: {
     title: "Aged Care Compliance Software Australia | Statura Care",
     description:
-      "The modular compliance platform built specifically for the Aged Care Act 2024. 31 modules. Australian-hosted. Request a demo.",
+      "The modular compliance platform built specifically for the Aged Care Act 2024. 32 modules. Australian-hosted. Request a demo.",
     url: "https://statura.care/aged-care-compliance-software",
     type: "website",
     locale: "en_AU",
@@ -86,7 +86,7 @@ const benefits = [
 
 const comparisonPoints = [
   { feature: "Built specifically for Aged Care Act 2024", statura: true, generic: false },
-  { feature: "All 31 compliance and care areas covered", statura: true, generic: false },
+  { feature: "All 32 compliance and care areas covered", statura: true, generic: false },
   { feature: "SIRS incident reporting with deadline automation", statura: true, generic: "partial" },
   { feature: "Responsible persons suitability assessments", statura: true, generic: false },
   { feature: "Quality Standards self-assessment engine", statura: true, generic: false },
@@ -115,7 +115,7 @@ export default function AgedCareComplianceSoftwarePage() {
     name: "Statura Care — Aged Care Compliance Software",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "Purpose-built aged care compliance software for Australian providers. 31 modules covering every obligation under the Aged Care Act 2024.",
+    description: "Purpose-built aged care compliance software for Australian providers. 32 modules covering every obligation under the Aged Care Act 2024.",
     url: "https://statura.care/aged-care-compliance-software",
     author: { "@type": "Organization", name: "Statura Pty Ltd", url: "https://statura.care" },
     offers: {
@@ -154,7 +154,7 @@ export default function AgedCareComplianceSoftwarePage() {
         name: "How many modules does Statura Care include?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Statura Care includes 31 modules covering every major compliance and care area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Governance, Quality Indicators, Prudential Compliance, Agreements & Consent, Funding & Claims, Clinical Care, Care Delivery, Medications, Infection Prevention, Rostering, WHS, Home Care, Billing, Documents, Integrations, Reporting, Notifications, Analytics, Resident Registry, Advance Care Planning, Family Portal, Accommodation, and Provider Registration.",
+          text: "Statura Care includes 32 modules covering every major compliance and care area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Governance, Quality Indicators, Prudential Compliance, Agreements & Consent, Funding & Claims, Clinical Care, Care Delivery, Medications, Infection Prevention, Rostering, WHS, Home Care, Billing, Documents, Integrations, Reporting, Notifications, Analytics, Resident Registry, Advance Care Planning, Family Portal, Accommodation, and Provider Registration.",
         },
       },
       {
@@ -205,7 +205,7 @@ export default function AgedCareComplianceSoftwarePage() {
               </h1>
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Statura Care is purpose-built aged care compliance software for
-                Australian providers. 31 modules covering every regulatory obligation
+                Australian providers. 32 modules covering every regulatory obligation
                 — from SIRS incident reporting to quality standards to prudential
                 compliance. Not adapted from generic risk software. Built from the
                 ground up for aged care.
@@ -271,7 +271,7 @@ export default function AgedCareComplianceSoftwarePage() {
           </div>
         </section>
 
-        {/* 31 Modules */}
+        {/* 32 Modules */}
         <section className="bg-[#F8FAFC] py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-2xl mb-14">
@@ -279,7 +279,7 @@ export default function AgedCareComplianceSoftwarePage() {
                 Complete Coverage
               </p>
               <h2 className="font-serif font-bold text-3xl lg:text-4xl text-[#1E293B] leading-tight tracking-tight">
-                31 modules.{" "}
+                32 modules.{" "}
                 <span className="text-[#3E5D4A]">Every obligation covered.</span>
               </h2>
               <p className="mt-4 text-lg text-slate-500 leading-relaxed">
@@ -377,7 +377,7 @@ export default function AgedCareComplianceSoftwarePage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="grid sm:grid-cols-4 gap-8 text-center">
               {[
-                { stat: "31", label: "Compliance modules" },
+                { stat: "32", label: "Compliance modules" },
                 { stat: "24hr", label: "P1 SIRS deadline tracking" },
                 { stat: "8", label: "Quality Standards covered" },
                 { stat: "Sydney", label: "Australian-hosted data" },
@@ -451,7 +451,7 @@ export default function AgedCareComplianceSoftwarePage() {
                 },
                 {
                   q: "How many modules does Statura Care include?",
-                  a: "Statura Care includes 31 modules covering every major compliance and care area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Governance, Quality Indicators, Prudential Compliance, Agreements & Consent, Funding & Claims, Clinical Care, Care Delivery, Medications, Infection Prevention, Rostering, WHS, Home Care, Billing, Documents, Integrations, Reporting, Notifications, Analytics, Resident Registry, Advance Care Planning, Family Portal, Accommodation, and Provider Registration.",
+                  a: "Statura Care includes 32 modules covering every major compliance and care area: Responsible Persons, Code of Conduct, Workforce Compliance, Associated Providers, SIRS & Incidents, Quality Standards, Complaints, Whistleblower, Governance, Quality Indicators, Prudential Compliance, Agreements & Consent, Funding & Claims, Clinical Care, Care Delivery, Medications, Infection Prevention, Rostering, WHS, Home Care, Billing, Documents, Integrations, Reporting, Notifications, Analytics, Resident Registry, Advance Care Planning, Family Portal, Accommodation, and Provider Registration.",
                 },
                 {
                   q: "Is Statura Care hosted in Australia?",

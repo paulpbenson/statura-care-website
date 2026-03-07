@@ -4,6 +4,7 @@ import {
   Receipt,
   FolderOpen,
   Plug,
+  Coins,
 } from "lucide-react";
 import type { ModuleData } from "./types";
 
@@ -115,7 +116,44 @@ export const financialModules: ModuleData[] = [
       { moduleSlug: "agreements", moduleName: "Agreements & Consent", description: "Fee schedules from agreements drive invoice generation and payment tracking." },
       { moduleSlug: "funding", moduleName: "Funding & Claims", description: "Subsidy income and means-tested fee data flow between funding and billing." },
       { moduleSlug: "prudential", moduleName: "Prudential Compliance", description: "DAP charges and deposit interest calculations link to prudential records." },
-      { moduleSlug: "home-care", moduleName: "Home Care Services", description: "Home care service delivery and travel costs flow into client invoicing." },
+      { moduleSlug: "support-at-home", moduleName: "Support at Home", description: "Home care service delivery and travel costs flow into client invoicing." },
+      { moduleSlug: "sah-contributions-claims", moduleName: "SAH Contributions & Claims", description: "SAH claim payments and client contributions reconcile with billing records." },
+    ],
+  },
+
+  {
+    slug: "sah-contributions-claims",
+    name: "SAH Contributions & Claims",
+    code: "SahFunding",
+    category: "Financial & Administrative",
+    icon: Coins,
+    section: "SAH Part 3A",
+    tagline: "Calculate contributions. Submit claims. Track every dollar.",
+    shortDescription:
+      "Support at Home client contribution calculations, ACPP claims submission with pre-validation, price list management, and client financial ledger tracking.",
+    longDescription:
+      "The Support at Home program introduces a fundamentally new funding model \u2014 per-service contributions based on service category and means testing tier, with lifetime caps and no basic daily fee. Statura Care\u2019s SAH Contributions & Claims module automates the complex contribution calculations, validates claims before ACPP submission, manages your price list, and provides a complete financial ledger for every client.",
+    problemStatement:
+      "SAH contributions vary by service category (Clinical, Independence, Everyday Living) and means testing tier (four tiers from full pensioners to self-funded). Calculating the correct contribution per service, tracking against lifetime caps, generating ACPP claims, and reconciling payments is complex. Manual calculation is error-prone and risks over- or under-charging clients.",
+    applicableTo: ["home-care"],
+    capabilities: [
+      { title: "Automatic Contribution Calculation", description: "When a service is delivered, the system automatically calculates the client\u2019s contribution based on their means testing tier and the service category. Clinical care has zero or minimal contributions; Everyday Living has the highest. Lifetime caps are tracked and enforced." },
+      { title: "ACPP Claims Submission", description: "Bundle completed services into claim periods, run pre-validation checks (duplicates, date range errors, missing fields, budget exceedance), and generate CSV files for Aged Care Provider Portal submission." },
+      { title: "Smart Claims Pre-Validation", description: "Before submission, the system checks for common rejection triggers: duplicate services, services outside package dates, suspended packages, missing worker details, budget exceeded, and services during recorded absences." },
+      { title: "Price List Management", description: "Maintain your organisation\u2019s price list by service type and category with unit prices, effective dates, and active/inactive status. Unique constraint prevents overlapping prices for the same service." },
+      { title: "Client Financial Ledger", description: "Complete per-client financial view: every service delivered, contribution charged, subsidy claimed, lifetime cap proximity, and budget position. Everything a care manager needs in one place." },
+      { title: "Claims & Contribution Reporting", description: "Claims register with submission status and payment tracking. Per-client contribution summaries. Budget variance analysis showing allocated vs actual spending by quarter." },
+    ],
+    regulatoryRequirements: [
+      { title: "Means-Tested Contributions", description: "Client contributions must be calculated correctly based on their means testing tier and the service category, with lifetime caps enforced." },
+      { title: "Lifetime Cap Compliance", description: "Total client contributions must not exceed the lifetime cap ($135,319 for new entrants, $84,572 for grandfathered clients, indexed biannually)." },
+      { title: "Accurate Claims", description: "ACPP claims must accurately reflect services delivered, correctly split between subsidy and client contribution." },
+      { title: "Price Transparency", description: "Providers must publish and maintain a current price list for all services offered under the SAH program." },
+    ],
+    integrations: [
+      { moduleSlug: "support-at-home", moduleName: "Support at Home", description: "Service delivery data flows from Support at Home into contribution calculations and ACPP claims." },
+      { moduleSlug: "billing", moduleName: "Billing & Finance", description: "Claim payments and client contributions reconcile with the billing and finance module." },
+      { moduleSlug: "funding", moduleName: "Funding & Claims", description: "SAH funding analytics complement residential AN-ACC funding for multi-service providers." },
     ],
   },
 

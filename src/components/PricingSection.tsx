@@ -42,7 +42,7 @@ const plans = [
     period: "",
     highlight: false,
     features: [
-      "All 31 modules",
+      "All 32 modules",
       "Unlimited team members",
       "Everything in Professional",
       "Multi-site management",

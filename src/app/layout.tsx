@@ -4,7 +4,7 @@ import "./globals.css";
 const SITE_URL = "https://statura.care";
 const SITE_NAME = "Statura Care";
 const SITE_DESCRIPTION =
-  "Purpose-built aged care compliance and care management software for Australian providers. 31 modules covering compliance, governance, clinical care, workforce, rostering, billing, home care, and analytics under the Aged Care Act 2024. Australian-hosted.";
+  "Purpose-built aged care compliance and care management software for Australian providers. 32 modules covering compliance, governance, clinical care, workforce, rostering, billing, home care, and analytics under the Aged Care Act 2024. Australian-hosted.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

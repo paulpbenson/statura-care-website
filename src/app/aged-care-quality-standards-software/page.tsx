@@ -225,7 +225,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
         name: "How does self-assessment work in Statura Care?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 31 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
+          text: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 32 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
         },
       },
       {
@@ -604,7 +604,7 @@ export default function AgedCareQualityStandardsSoftwarePage() {
                 },
                 {
                   q: "How does self-assessment work in Statura Care?",
-                  a: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 31 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
+                  a: "Statura Care's Quality Standards module lets you rate compliance against each standard's requirements, map evidence from across all 32 modules, identify gaps with automated analysis, and generate audit preparation packs. Evidence from SIRS, workforce, complaints, and other modules automatically populates relevant standards.",
                 },
                 {
                   q: "How often should providers self-assess against the Quality Standards?",

@@ -50,7 +50,7 @@ export function HeroSection() {
           {/* Subheading */}
           <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
             Statura Care is the compliance and care management platform
-            purpose-built for Australian aged care providers. 31 modules
+            purpose-built for Australian aged care providers. 32 modules
             covering residential care, home care, clinical, workforce,
             financial, and governance obligations under the Aged Care Act 2024.
           </p>

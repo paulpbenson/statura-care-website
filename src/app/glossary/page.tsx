@@ -498,7 +498,7 @@ export default function GlossaryPage() {
               Need help with compliance?
             </h2>
             <p className="text-lg text-slate-300 mb-8">
-              Statura Care provides purpose-built software to manage aged care compliance and care obligations across all 31 modules.
+              Statura Care provides purpose-built software to manage aged care compliance and care obligations across all 32 modules.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
